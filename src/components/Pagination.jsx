@@ -33,7 +33,7 @@ const ProductList = ({ products, productsPerPage, category }) => {
     setCurrentPage(value);
   };
 
-  const favoritesIds = favorites.map(product => product.id)
+  const favoritesIds = favorites ? favorites.map(product => product.id) : [];
 
   return (
     <div>
