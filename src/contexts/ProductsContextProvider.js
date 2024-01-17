@@ -13,7 +13,7 @@ const ProductsContextProvider = ({ children }) => {
 
   const addFav = (product) => {
     setFavorites((prevState) => {
-      const index = prevState.findIndex((prod) => prod.id === product.id);
+      const index = prevState?.findIndex((prod) => prod.id === product.id);
   
       if (index !== -1) {
         const updatedState = [...prevState];
