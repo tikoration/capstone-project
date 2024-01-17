@@ -13,8 +13,11 @@ const ProductsContextProvider = ({ children }) => {
 
   const addFav = (product) => {
     setFavorites((prevState) => {
-      const index = prevState?.findIndex((prod) => prod.id === product.id);
-  
+      if (!prevState) {
+        return [product];
+      }
+      const index = prevState.findIndex((prod) => prod.id === product.id);
+
       if (index !== -1) {
         const updatedState = [...prevState];
         updatedState.splice(index, 1);
