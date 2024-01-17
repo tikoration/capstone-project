@@ -30,8 +30,8 @@ const DetailedProductPage = () => {
 
   const imagesForSlider = clothes.filter((product) => product.category === backPath &&  product.id !== productId);
   
-  const favoritesIds = favorites.map(product => product.id)
-  const isFavorited = favoritesIds.includes(productId)
+  const favoritesIds = favorites ? favorites.map(product => product.id) : [];
+const isFavorited = favoritesIds.includes(productId);
   
   const isMobileView = window.innerWidth <= 1300;
   return (

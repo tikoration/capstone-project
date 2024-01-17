@@ -10,7 +10,7 @@ const FavoritesPage = () => {
 
   return (
     <FavoritePage>
-      {favorites.length > 0 ? (
+      {favorites && favorites.length > 0 ? (
         <ProductList products={favorites} productsPerPage={8} />
       ) : (
         <div className="favorites-no-products">
