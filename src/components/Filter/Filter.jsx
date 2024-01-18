@@ -1,5 +1,5 @@
 import "./FilterStyle.css";
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { useFilterContext } from "../../contexts/FilterContextProvider";
 
@@ -9,6 +9,7 @@ const Filter = () => {
   const [selectedColorOption, setSelectedColorOption] = useState("");
   const { t } = useTranslation();
   const { setSortByPrice, setFilterByColor, setFilterBySale, setSortByNewestDate } = useFilterContext();
+  const filterRef = useRef(null);
 
   useEffect(() => {
     setSortByPrice(selectedPriceOption);
@@ -49,8 +50,22 @@ const Filter = () => {
     [setSelectedColorOption, setShowFilter]
   );
 
+  const handleDocumentClick = useCallback((event) => {
+    if (filterRef.current && !filterRef.current.contains(event.target)) {
+      setShowFilter(false);
+    }
+  }, [setShowFilter]);
+
+  useEffect(() => {
+    document.addEventListener("click", handleDocumentClick);
+
+    return () => {
+      document.removeEventListener("click", handleDocumentClick);
+    };
+  }, [handleDocumentClick]);
+
   return (
-    <div className="filter-container">
+    <div className="filter-container" ref={filterRef}>
       <span
         className="material-symbols-outlined filter-icon"
         onClick={handleClick}
@@ -82,7 +97,7 @@ const Filter = () => {
             <option value="black">{t("Black")}</option>
           </select>
           <span onClick={handleOnSale} className="filter-options">{t("With Discount")}</span>
-          <span onClick={handleNewest}className="filter-options">{t("Newest")}</span>
+          <span onClick={handleNewest} className="filter-options">{t("Newest")}</span>
         </div>
       )}
     </div>

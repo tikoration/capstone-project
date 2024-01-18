@@ -18,7 +18,7 @@ import { Authorization, UserContent, UserForm } from "./UserInformation";
 import { Link } from "react-router-dom";
 import UserButtonsMobile from "./UserButtonsMobile";
 
-function UserInfo({ users, setUserInfo }) {
+function UserInfo({ users, setUserInfo, onSuccess }) {
   const {
     userName,
     setUserLoggedIn,
@@ -59,6 +59,7 @@ function UserInfo({ users, setUserInfo }) {
         `/api/v1/users/${user[0].id}`
       )
         .then(() => {
+          onSuccess(userRegister.Email, userRegister.Password);
           setIsUserOpen(false);
           setUserLoggedIn(false);
           setUserEmail("");

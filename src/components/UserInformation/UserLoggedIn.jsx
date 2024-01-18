@@ -15,7 +15,7 @@ import { SubmitButton } from "../components";
 import { useState } from "react";
 import UserInfo from "./UserInfo";
 
-const UserLoggedIn = ({users}) => {
+const UserLoggedIn = ({users, onSuccess}) => {
   const { t } = useTranslation();
   const {
     closeAuthorization,
@@ -94,7 +94,7 @@ const UserLoggedIn = ({users}) => {
               </div>
             </div>
           )}
-          {userInfo && <UserInfo users={users} setUserInfo={setUserInfo}/>}
+          {userInfo && <UserInfo onSuccess={onSuccess} users={users} setUserInfo={setUserInfo}/>}
         </Authorization>
         {/* <Overlay onClick={handleOverlayClick}></Overlay> */}
       </UserContent>

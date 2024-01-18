@@ -113,7 +113,7 @@ const UserAuthorization = () => {
         {isRessOpen && (
           <UserRessetPassword users={users} onSuccess={RegisterOnSuccess} />
         )}
-        {userLoggedIn && <UserLoggedIn users={users}/>}
+        {userLoggedIn && <UserLoggedIn onSuccess={RegisterOnSuccess} users={users}/>}
         {!isUserOpen && !userLoggedIn && (
           <div>
             <div className="UserHeading">
