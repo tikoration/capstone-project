@@ -44,7 +44,7 @@ const ContactUsPage = () => {
   };
 
   return (
-    <ContactStyle>
+    <ContactStyle className="container">
       <h1>{t("Contact Information")}</h1>
       <div className="about_info">
         <form ref={form} onSubmit={sendEmail}>

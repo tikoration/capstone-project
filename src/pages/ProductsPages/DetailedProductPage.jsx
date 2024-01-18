@@ -19,7 +19,12 @@ import CommentForm from "../../components/Requests/CommentForm";
 const DetailedProductPage = () => {
   const { t } = useTranslation();
   const { productId } = useParams();
-  const { mainPhoto, addFav: addtoFav, clothes, favorites } = useProductsContext();
+  const {
+    mainPhoto,
+    addFav: addtoFav,
+    clothes,
+    favorites,
+  } = useProductsContext();
 
   const [details, setDetails] = useState(false);
   const navigate = useNavigate();
@@ -28,14 +33,16 @@ const DetailedProductPage = () => {
   const currentUrl = location.pathname;
   const backPath = currentUrl.split("/")[1];
 
-  const imagesForSlider = clothes.filter((product) => product.category === backPath &&  product.id !== productId);
-  
-  const favoritesIds = favorites ? favorites.map(product => product.id) : [];
-const isFavorited = favoritesIds.includes(productId);
-  
+  const imagesForSlider = clothes.filter(
+    (product) => product.category === backPath && product.id !== productId
+  );
+
+  const favoritesIds = favorites ? favorites.map((product) => product.id) : [];
+  const isFavorited = favoritesIds.includes(productId);
+
   const isMobileView = window.innerWidth <= 1300;
   return (
-    <div>
+    <div className="container">
       {clothes?.map(
         (prod) =>
           prod.id === productId && (
@@ -52,11 +59,13 @@ const isFavorited = favoritesIds.includes(productId);
                 <SliderForMobile images={[prod.image, ...prod.moreImages]} />
               )}
               <div className="detailed-slider">
-                {
-                  !isMobileView &&
-                <PhotoSwiper photos={[prod.image, ...prod.moreImages]} id={prod.id} />
-                }
-                </div>
+                {!isMobileView && (
+                  <PhotoSwiper
+                    photos={[prod.image, ...prod.moreImages]}
+                    id={prod.id}
+                  />
+                )}
+              </div>
               {!isMobileView && (
                 <img
                   className="detailed-product-image"
@@ -85,9 +94,7 @@ const isFavorited = favoritesIds.includes(productId);
                   </h2>
                   <FontAwesomeIcon
                     className="heart-icon"
-                    icon={
-                      isMobileView && !isFavorited ? farHeart : faHeart
-                    }
+                    icon={isMobileView && !isFavorited ? farHeart : faHeart}
                     style={{ color: isFavorited ? "brown" : "black" }}
                   />
                 </div>

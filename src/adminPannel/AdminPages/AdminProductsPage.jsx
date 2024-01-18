@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { useFilterContext } from "../../contexts/FilterContextProvider";
 import { useNavigate } from "react-router-dom";
 import useProductFetch from "../AdminHooks/useProductFetch";
-import { LoadingDiv } from "../../components/components";
+import { LoadingDiv, SubmitButton } from "../../components/components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowsRotate } from "@fortawesome/free-solid-svg-icons";
 import { useAdminAuth } from "../AdminContexts/AdminAuthContext";
@@ -51,9 +51,13 @@ const AdminProducts = () => {
   if (error) return <p>{error}</p>;
 
   return (
-    <div>
-      <button onClick={handleLogout}>Logout</button>
-      <button onClick={onClick}>Add Product</button>
+    <div className="container">
+      <div style={{ margin: "16px 0 0 16px" }}>
+        <SubmitButton style={{ marginRight: "16px" }} onClick={handleLogout}>
+          Logout
+        </SubmitButton>
+        <SubmitButton onClick={onClick}>Add Product</SubmitButton>
+      </div>
       <ProductList
         products={combinedProducts}
         resendRequest={resendRequest}

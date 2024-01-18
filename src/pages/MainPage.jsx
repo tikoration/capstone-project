@@ -37,7 +37,7 @@ const MainPage = () => {
           <div>
             <PopularCollections>
               <h3 className="popular-collection-title">{t("Popular")}</h3>
-              <div className="popular-collection-gallary">
+              <div className="popular-collection-gallary container">
                 <div className="mainBtn">
                   <SubmitBtn name={t("View All")} nav={"allProducts"} />
                 </div>

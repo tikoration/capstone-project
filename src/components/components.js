@@ -21,6 +21,7 @@ export const HeaderBg = styled.div`
   top: 0;
   transition: 0.3s ease;
   z-index: 999;
+  padding: 0 16px;
 
   .MainMenu {
     display: flex;

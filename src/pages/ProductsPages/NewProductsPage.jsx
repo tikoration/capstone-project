@@ -8,11 +8,13 @@ const NewProductsPage = () => {
   const newClothes = clothes.filter((prod) => prod.result === "new product");
 
   return (
-    <ProductList
-      products={newClothes}
-      productsPerPage={20}
-      category={t("New products")}
-    />
+    <div className="container">
+      <ProductList
+        products={newClothes}
+        productsPerPage={20}
+        category={t("New products")}
+      />
+    </div>
   );
 };
 

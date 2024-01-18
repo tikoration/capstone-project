@@ -16,7 +16,10 @@ const AllProducts = () => {
   const productsPerPage = 20;
 
   return (
-    <div style={{ height: AllProducts.length === 0 ? "100vh" : "" }}>
+    <div
+      className="container"
+      style={{ height: AllProducts.length === 0 ? "100vh" : "" }}
+    >
       <ProductList
         products={AllProducts}
         productsPerPage={productsPerPage}

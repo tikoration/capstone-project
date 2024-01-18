@@ -5,7 +5,7 @@ const ErrorPage = () => {
   const { t } = useTranslation();
 
   return (
-    <ErrorElement>
+    <ErrorElement className="container">
       <h1>404!</h1>
       <h2>{t("Page is unavailable")}...</h2>
       <h3>{t("Our phone number")} : +995 557 999 999</h3>

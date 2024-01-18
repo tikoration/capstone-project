@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from "react";
+import { AdminLoginDiv } from "../../pages/AllPages";
+import { useNavigate } from "react-router-dom";
 
 const ProductForm = ({ onFormSubmit, name, description, price, category }) => {
   const titleNameRef = useRef();
@@ -10,6 +12,7 @@ const ProductForm = ({ onFormSubmit, name, description, price, category }) => {
 
   const fileInputRef = useRef(null);
   const [previews, setPreviews] = useState([]);
+  const navigate = useNavigate();
 
   const handleFileChange = (e) => {
     const files = e.target.files;
@@ -48,7 +51,7 @@ const ProductForm = ({ onFormSubmit, name, description, price, category }) => {
   };
 
   return (
-    <div>
+    <AdminLoginDiv>
       <form onSubmit={onSubmit}>
         <input
           name="title"
@@ -64,7 +67,7 @@ const ProductForm = ({ onFormSubmit, name, description, price, category }) => {
           ref={priceRef}
           defaultValue={price}
         />
-        <input
+        <textarea
           name="description"
           type="text"
           placeholder="Product description"
@@ -86,12 +89,13 @@ const ProductForm = ({ onFormSubmit, name, description, price, category }) => {
           ref={fileInputRef}
           onChange={handleFileChange}
         />
+        {previews.map((pic, index) => (
+          <img key={index} src={pic} alt="img" className="UploadImage" />
+        ))}
         <button>Submit</button>
       </form>
-      {previews.map((pic, index) => (
-        <img key={index} src={pic} alt="img" style={{ width: "400px" }} />
-      ))}
-    </div>
+      <button onClick={() => navigate("/admin/products")}>Go back</button>
+    </AdminLoginDiv>
   );
 };
 

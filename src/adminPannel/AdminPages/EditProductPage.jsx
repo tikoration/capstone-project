@@ -15,24 +15,26 @@ import { useState, useRef } from "react";
 import useProductRequest from "../AdminHooks/useProductRequest";
 import { useFilterContext } from "../../contexts/FilterContextProvider";
 import useProductFetch from "../AdminHooks/useProductFetch";
+import { SubmitButton } from "../../components/components";
 
 const EditProductPage = () => {
   const { t } = useTranslation();
   const { productId } = useParams();
   const { mainPhoto } = useProductsContext();
-  const {sendRequest} = useProductRequest({url: `/api/v1/products/${productId}`, method: "PUT"})
   const [details, setDetails] = useState(false);
   const navigate = useNavigate();
-  const nameRef = useRef()
-  const priceRef = useRef()
-  const descriptionRef = useRef()
+  const nameRef = useRef();
+  const priceRef = useRef();
+  const descriptionRef = useRef();
   const { filteredProducts } = useFilterContext();
   const AdminProducts = filteredProducts.map((prod) => prod);
 
+  const { sendRequest } = useProductRequest({
+    url: `/api/v1/products/${productId}`,
+    method: "PUT",
+  });
 
-// დროებით ეს ყველაფერი გადმოვაკოპირე რომ ჩვენი დამატებულიც
-// გამოჩნდეს და დაედითება შეგვეძლოს -->>
-  const { products} = useProductFetch({
+  const { products } = useProductFetch({
     url: "/api/v1/products",
     method: "GET",
   });
@@ -49,17 +51,21 @@ const EditProductPage = () => {
     }) || [];
 
   const combinedProducts = [...productsList, ...AdminProducts];
-// <<---
+
   const onSubmit = (e) => {
-    e.preventDefault()
-    if(nameRef.current && priceRef.current && descriptionRef.current){
-       sendRequest({name: nameRef.current.value, price: priceRef.current.value, description: descriptionRef.current.value})
+    e.preventDefault();
+    if (nameRef.current && priceRef.current && descriptionRef.current) {
+      sendRequest({
+        name: nameRef.current.value,
+        price: priceRef.current.value,
+        description: descriptionRef.current.value,
+      });
     }
-}
+  };
 
   const isMobileView = window.innerWidth <= 1300;
   return (
-    <div>
+    <div className="container">
       {combinedProducts?.map(
         (prod) =>
           prod.id === productId && (
@@ -75,10 +81,12 @@ const EditProductPage = () => {
               {isMobileView && (
                 <SliderForMobile images={[prod.image, ...prod.moreImages]} />
               )}
-              <div style={{marginBottom: "30px"}} className="detailed-slider">
-              </div>
+              <div
+                style={{ marginBottom: "30px" }}
+                className="detailed-slider"
+              ></div>
               {!isMobileView && (
-                <div>
+                <div style={{ position: "relative" }}>
                   <img
                     className="detailed-product-image edit-mode"
                     src={mainPhoto || prod.image}
@@ -90,8 +98,9 @@ const EditProductPage = () => {
                       width: "108px",
                       justifyContent: "space-between",
                       position: "absolute",
-                      top: "50%",
-                      left: "35%",
+                      top: "35%",
+                      left: "50%",
+                      transform: "translate(-50%, -50%)",
                     }}
                   >
                     <FontAwesomeIcon
@@ -111,16 +120,18 @@ const EditProductPage = () => {
                 <div className="detailed-product-details">
                   <div className="detailed-name-price">
                     <input
-                      style={{ borderColor: "#0000FF" }}
+                      style={{ borderColor: "#0000FF", padding: "10px" }}
                       className="detailed-product-name"
                       name="name"
                       type="text"
                       defaultValue={prod.name}
                       ref={nameRef}
                     />
-                    <h2 className="d-p-id">{prod.id.slice(-6)}</h2>
+                    <h2 style={{ padding: "10px" }} className="d-p-id">
+                      {prod.id.slice(-6)}
+                    </h2>
                     <input
-                      style={{ borderColor: "#0000FF" }}
+                      style={{ borderColor: "#0000FF", padding: "10px" }}
                       className="detailed-product-name"
                       name="price"
                       type="number"
@@ -146,19 +157,29 @@ const EditProductPage = () => {
                   </h5>
                   {(!isMobileView || details) && (
                     <textarea
-                      style={{ borderColor: "#0000FF" }}
+                      style={{
+                        borderColor: "#0000FF",
+                        height: "150px",
+                        resize: "none",
+                        padding: "10px",
+                      }}
                       className="product-description-text"
                       type="text"
                       name="description"
                       defaultValue={prod.description}
                       ref={descriptionRef}
-                      >
-                      </textarea>
+                    ></textarea>
                   )}
                 </div>
               </div>
               <div>
-                <button onClick={onSubmit}>Update</button>
+                <SubmitButton onClick={onSubmit}>Update</SubmitButton>
+                <SubmitButton
+                  style={{ marginLeft: "16px" }}
+                  onClick={() => navigate("/admin/products")}
+                >
+                  Go back
+                </SubmitButton>
               </div>
             </DetailedProducts>
           )

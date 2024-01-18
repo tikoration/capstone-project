@@ -2,7 +2,6 @@
   "Woman": "Women",
   "Kids": "Kids",
   "woman": "Women",
-  "kids": "Kids",
   "Search": "Search",
   "About Us": "About us",
   "Contact": "Contact",
@@ -83,7 +82,7 @@
   "View more": "View more",
   "Hide all": "Hide all",
   "delete": "Delete",
-  "edit": " Edit", 
+  "edit": " Edit",
   "go back": "Go Back",
   "user": "User",
   "logout": "Log Out"

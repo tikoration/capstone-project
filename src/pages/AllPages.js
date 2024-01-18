@@ -38,6 +38,7 @@ export const ErrorElement = styled.div`
 
   @media screen and (max-width: 1032px) {
     padding: 0 16px;
+    height: 60vh;
 
     h1 {
       font-size: 215px;
@@ -349,6 +350,15 @@ export const AdminLoginDiv = styled.div`
     gap: 30px;
     margin-top: 60px;
 
+    .UploadImage {
+      align-self: center;
+      width: 440px;
+
+      @media screen and (max-width: 767px) {
+        width: 260px;
+      }
+    }
+
     .form-input {
       display: flex;
       flex-direction: column;
@@ -364,6 +374,11 @@ export const AdminLoginDiv = styled.div`
       border: none;
       color: white;
       background: #000;
+    }
+
+    textarea {
+      height: 150px;
+      padding: 10px;
     }
   }
 

@@ -152,6 +152,37 @@ export const Authorization = styled.div`
     }
   }
 
+  .userInformation {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    margin-bottom: 30px;
+
+    h2 {
+      color: #000;
+      font-family: ${FontFamily};
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      font-family: ${FontFamily};
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+
+  .RecPass {
+    color: #000;
+    font-family: ${FontFamily};
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
   .userInfo {
     margin-top: 60px;
     display: flex;
@@ -332,6 +363,24 @@ export const UserForm = styled.form`
         }
     }
   }
+
+  .ressButton {
+    height: 54px;
+    font-family: ${FontFamily};
+    font-size: 18px;
+    font-weight: 700;
+    line:height: 24px;
+    color: white;
+    border: 1px solid black;
+    background-color: black;
+    cursor: pointer;
+    transition: 0.3s
+   
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  
 
   .formLoadings {
     position: absolute;

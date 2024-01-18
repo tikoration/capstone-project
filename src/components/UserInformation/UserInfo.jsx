@@ -3,16 +3,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEye,
   faEyeSlash,
-  faChevronLeft,
   faArrowsRotate,
   faCheck,
+  faArrowLeft,
 } from "@fortawesome/free-solid-svg-icons";
+import Logo from "../../assets/MA.png";
 import useRequest from "../../hooks/useRequest";
 import { useAuthorization } from "../../contexts/AuthorizationContext";
 import { useTranslation } from "react-i18next";
 import useToggle from "../../hooks/useToggle";
 import useRegistration from "../../hooks/useRegistration";
 import { Loading } from "../components";
+import { Authorization, UserContent, UserForm } from "./UserInformation";
+import { Link } from "react-router-dom";
+import UserButtonsMobile from "./UserButtonsMobile";
 
 function UserInfo({ users, setUserInfo }) {
   const { userName } = useAuthorization();
@@ -48,68 +52,83 @@ function UserInfo({ users, setUserInfo }) {
     }
   };
   return (
-    <div>
-      <FontAwesomeIcon
-        onClick={() => setUserInfo(false)}
-        icon={faChevronLeft}
-      />
-      UserInfo
-      <h3>{t("Email address")}</h3>
-      <h3>{loggedInUser.Name}</h3>
-      <h3>{loggedInUser.Email}</h3>
-      <h3>{t("name")}</h3>
-      <h3>{loggedInUser.FName.split(" ")[0]}</h3>
-      <h3>{t("last name")}</h3>
-      <h3>{loggedInUser.FName.split(" ")[1]}</h3>
-      <form onSubmit={onFormSubmit}>
-        {/* აქ შენი UserRessetPasswordის ინფუთების კოდი გადმოვაკოპირე უბრალოდ */}
-        <div className="input PasInput marginDel">
-          <label htmlFor="Password2">{t("Password")}</label>
-          <input
-            name="Password"
-            id="Password2"
-            type={showPassword1 ? "text" : "password"}
-            placeholder={t("New Password")}
-            ref={PasswordRef}
-            onChange={handleInput}
-            autoComplete="new-password"
-          />
-          <FontAwesomeIcon
-            id="PasEye1"
-            icon={showPassword1 ? faEye : faEyeSlash}
-            onClick={toggle1}
-          />
+    <UserContent>
+      <Authorization>
+        <div className="UserHeading">
+          <div className="Heading Heading2">
+            <Link className="HeadingLogo" to={"/"}>
+              <img src={Logo} alt="Logo" />
+            </Link>
+            <FontAwesomeIcon
+              onClick={() => setUserInfo(false)}
+              icon={faArrowLeft}
+              className="goBackBtn"
+            />
+          </div>
+          <div onClick={() => setUserInfo(false)}>
+            <UserButtonsMobile />
+          </div>
         </div>
-        <div className="input PasInput">
-          <label htmlFor="CPassword2">{t("Confirm Password")}</label>
-          <input
-            name="CPassword"
-            id="CPassword2"
-            type={showPassword2 ? "text" : "password"}
-            placeholder={t("Confirm Password")}
-            ref={CPasswordRef}
-            onChange={handleInput}
-            autoComplete="new-password"
-          />
-          <FontAwesomeIcon
-            id="PasEye2"
-            icon={showPassword2 ? faEye : faEyeSlash}
-            onClick={toggle2}
-          />
+        <div className="userInformation">
+          <h2>{t("Email address")}</h2>
+          <h3>{loggedInUser.Email}</h3>
+          <h2>{t("Full name")}</h2>
+          <h3>{loggedInUser.FName}</h3>
+          <h2>{t("User name")}</h2>
+          <h3>{loggedInUser.UName}</h3>
         </div>
-        <button type="submit">{t("Resset Password")}</button>
-      </form>
-      <div className="formLoadings">
-        {loading && (
-          <Loading>
-            <FontAwesomeIcon icon={faArrowsRotate} />
-          </Loading>
-        )}
-        {sentRequest && (
-          <FontAwesomeIcon style={{ color: "green" }} icon={faCheck} />
-        )}
-      </div>
-    </div>
+        <h1 className="RecPass">{t("Recover Password")}</h1>
+        <UserForm onSubmit={onFormSubmit}>
+          <div className="input PasInput marginDel">
+            <label htmlFor="Password2">{t("Password")}</label>
+            <input
+              name="Password"
+              id="Password2"
+              type={showPassword1 ? "text" : "password"}
+              placeholder={t("New Password")}
+              ref={PasswordRef}
+              onChange={handleInput}
+              autoComplete="new-password"
+            />
+            <FontAwesomeIcon
+              id="PasEye1"
+              icon={showPassword1 ? faEye : faEyeSlash}
+              onClick={toggle1}
+            />
+          </div>
+          <div className="input PasInput">
+            <label htmlFor="CPassword2">{t("Confirm Password")}</label>
+            <input
+              name="CPassword"
+              id="CPassword2"
+              type={showPassword2 ? "text" : "password"}
+              placeholder={t("Confirm Password")}
+              ref={CPasswordRef}
+              onChange={handleInput}
+              autoComplete="new-password"
+            />
+            <FontAwesomeIcon
+              id="PasEye2"
+              icon={showPassword2 ? faEye : faEyeSlash}
+              onClick={toggle2}
+            />
+          </div>
+          <button className="ressButton" type="submit">
+            {t("Resset Password")}
+          </button>
+        </UserForm>
+        <div className="formLoadings">
+          {loading && (
+            <Loading>
+              <FontAwesomeIcon icon={faArrowsRotate} />
+            </Loading>
+          )}
+          {sentRequest && (
+            <FontAwesomeIcon style={{ color: "green" }} icon={faCheck} />
+          )}
+        </div>
+      </Authorization>
+    </UserContent>
   );
 }
 

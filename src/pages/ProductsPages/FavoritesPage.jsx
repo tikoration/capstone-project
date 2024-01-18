@@ -9,7 +9,7 @@ const FavoritesPage = () => {
   const { favorites } = useProductsContext();
 
   return (
-    <FavoritePage>
+    <FavoritePage className="container">
       {favorites && favorites.length > 0 ? (
         <ProductList products={favorites} productsPerPage={8} />
       ) : (

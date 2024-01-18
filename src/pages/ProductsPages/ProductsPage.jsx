@@ -16,11 +16,13 @@ const ProductsPage = () => {
     : clothes.filter((prod) => prod.category === currentCategory);
 
   return (
-    <ProductList
-      products={filteredClothes}
-      productsPerPage={20}
-      category={t(currentCategory)}
-    />
+    <div className="container">
+      <ProductList
+        products={filteredClothes}
+        productsPerPage={20}
+        category={t(currentCategory)}
+      />
+    </div>
   );
 };
 
