@@ -137,15 +137,17 @@ function UserInfo({ users, setUserInfo, onSuccess }) {
             {t("Resset Password")}
           </button>
         </UserForm>
-        <div className="formLoadings">
-          {loading && (
-            <Loading>
-              <FontAwesomeIcon icon={faArrowsRotate} />
-            </Loading>
-          )}
-          {sentRequest && (
-            <FontAwesomeIcon style={{ color: "green" }} icon={faCheck} />
-          )}
+        <div className="formLoadings3">
+          <div className="formLoad">
+            {loading && (
+              <Loading>
+                <FontAwesomeIcon icon={faArrowsRotate} />
+              </Loading>
+            )}
+            {sentRequest && (
+              <FontAwesomeIcon style={{ color: "green" }} icon={faCheck} />
+            )}
+          </div>
         </div>
       </Authorization>
     </UserContent>

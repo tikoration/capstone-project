@@ -18,7 +18,9 @@ const MainPage = () => {
   };
 
   return (
-    <MainContainer className={`main-page ${promoPhotoLoaded ? "loaded" : ""}`}>
+    <MainContainer
+      className={`main-page refresh-page ${promoPhotoLoaded ? "loaded" : ""}`}
+    >
       <div
         className={`main-photo-container ${promoPhotoLoaded ? "loaded" : ""}`}
       >
