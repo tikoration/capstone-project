@@ -7,7 +7,7 @@ const LocationPage = () => {
   const { t } = useTranslation();
 
   return (
-    <LocationStyle>
+    <LocationStyle className="refresh-page">
       <div className="location_desc">
         <div className="location_display">
           <img className="AtelieLogo" src={AtelieLogo} alt="Logo" />

@@ -222,6 +222,17 @@ export const Authorization = styled.div`
       margin-bottom: 21px;
     }
   }
+
+  .formLoadings3 {
+    position: relative;
+
+    .formLoad {
+      position: absolute;
+      top: -80px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 `;
 
 export const UsersContent = styled.div`

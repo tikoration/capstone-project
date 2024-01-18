@@ -16,7 +16,7 @@ const ProductsPage = () => {
     : clothes.filter((prod) => prod.category === currentCategory);
 
   return (
-    <div className="container">
+    <div className="container refresh-page">
       <ProductList
         products={filteredClothes}
         productsPerPage={20}

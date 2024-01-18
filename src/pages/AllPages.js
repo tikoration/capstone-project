@@ -445,12 +445,13 @@ export const DetailedProducts = styled.div`
   display: flex;
   justify-content: center;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 75px;
   gap: 30px;
-  height: 991px;
+  height: 800px;
 
   .detailed-product-image {
     width: 660px;
+    height: 760px;
     flex-shrink: 0;
     object-fit: cover;
   }
@@ -1049,6 +1050,10 @@ export const AboutStyle = styled.div`
       }
     }
 
+    .first_paragraph {
+      gap: 50px;
+    }
+
     .second_paragraph {
       margin-bottom: 41px;
     }
@@ -1130,6 +1135,20 @@ export const AboutStyle = styled.div`
 
   @media screen and (max-width: 767px) {
     margin-top: 50px;
+  }
+
+  @media screen and (max-width: 570px) {
+    .aboutContentInfo {
+      margin-bottom: 20px;
+
+      .first_paragraph {
+        gap: 10px;
+
+        video {
+          height: auto;
+        }
+      }
+    }
   }
 `;
 
