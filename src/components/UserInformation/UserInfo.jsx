@@ -19,7 +19,13 @@ import { Link } from "react-router-dom";
 import UserButtonsMobile from "./UserButtonsMobile";
 
 function UserInfo({ users, setUserInfo }) {
-  const { userName } = useAuthorization();
+  const {
+    userName,
+    setUserLoggedIn,
+    setIsUserOpen,
+    setUserEmail,
+    setUserName,
+  } = useAuthorization();
   const loggedInUser = users.find((user) => user.UName === userName);
   const { showPassword: showPassword1, togglePassword: toggle1 } =
     useToggle(false);
@@ -32,6 +38,7 @@ function UserInfo({ users, setUserInfo }) {
     method: "PUT",
     envVariable: "REACT_APP_USERS",
   });
+
   const { PasswordRef, CPasswordRef, validateInputs, handleInput } =
     useRegistration();
 
@@ -44,13 +51,25 @@ function UserInfo({ users, setUserInfo }) {
     };
 
     const isValid = validateInputs(userRegister);
+    const user = users.filter((user) => user.Email === userRegister.Email);
 
     if (isValid) {
-      sendRequest({ Password: userRegister.Password }).catch((err) =>
-        console.log(err)
-      );
+      sendRequest(
+        { Password: userRegister.Password, CPassword: userRegister.CPassword },
+        `/api/v1/users/${user[0].id}`
+      )
+        .then(() => {
+          setIsUserOpen(false);
+          setUserLoggedIn(false);
+          setUserEmail("");
+          setUserName("");
+        })
+        .catch((err) => {
+          console.error(err);
+        });
     }
   };
+
   return (
     <UserContent>
       <Authorization>
@@ -80,10 +99,10 @@ function UserInfo({ users, setUserInfo }) {
         <h1 className="RecPass">{t("Recover Password")}</h1>
         <UserForm onSubmit={onFormSubmit}>
           <div className="input PasInput marginDel">
-            <label htmlFor="Password2">{t("Password")}</label>
+            <label htmlFor="Password3">{t("Password")}</label>
             <input
               name="Password"
-              id="Password2"
+              id="Password3"
               type={showPassword1 ? "text" : "password"}
               placeholder={t("New Password")}
               ref={PasswordRef}
@@ -97,10 +116,10 @@ function UserInfo({ users, setUserInfo }) {
             />
           </div>
           <div className="input PasInput">
-            <label htmlFor="CPassword2">{t("Confirm Password")}</label>
+            <label htmlFor="CPassword3">{t("Confirm Password")}</label>
             <input
               name="CPassword"
-              id="CPassword2"
+              id="CPassword3"
               type={showPassword2 ? "text" : "password"}
               placeholder={t("Confirm Password")}
               ref={CPasswordRef}
