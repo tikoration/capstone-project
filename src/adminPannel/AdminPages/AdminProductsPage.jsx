@@ -29,6 +29,7 @@ const AdminProducts = () => {
         description: product.description,
         category: product.category,
         id: product._uuid,
+        image: product.url
       };
     }) || [];
 

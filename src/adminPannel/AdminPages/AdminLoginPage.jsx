@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useAdminAuth } from "../AdminContexts/AdminAuthContext";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AdminLoginDiv } from "../../pages/AllPages";
 import Logo from "../../assets/MA.png";
 import { Link } from "react-router-dom";
@@ -8,10 +8,10 @@ import { useTranslation } from "react-i18next";
 
 const AdminLogin = () => {
   const navigate = useNavigate();
-  const { login } = useAdminAuth();
-  //   დროებით ესე და მერე .env-ში შევინახოთ
-  const validUserName = "cap";
-  const validPassword = "12";
+  const { login, authenticated } = useAdminAuth();
+
+  const validUserName = process.env.REACT_APP_ADMIN_USERNAME ;
+  const validPassword = process.env.REACT_APP_ADMIN_PASSWORD ;
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -26,6 +26,10 @@ const AdminLogin = () => {
       setError("Invalid user or password");
     }
   };
+
+  useEffect(() => {
+    authenticated && navigate('/admin/products')
+  }, [authenticated, navigate])
 
   return (
     <AdminLoginDiv>

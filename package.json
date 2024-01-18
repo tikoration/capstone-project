@@ -4,6 +4,8 @@
   "private": true,
   "proxy": "https://crudapi.co.uk/",
   "dependencies": {
+    "@cloudinary/react": "^1.11.2",
+    "@cloudinary/url-gen": "^1.16.0",
     "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",

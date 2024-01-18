@@ -1,52 +1,47 @@
-import { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { AdminLoginDiv } from "../../pages/AllPages";
 import { useNavigate } from "react-router-dom";
+import UploadWidget from "./UploadWidget";
 
 const ProductForm = ({ onFormSubmit, name, description, price, category }) => {
   const titleNameRef = useRef();
   const priceRef = useRef();
   const descRef = useRef();
   const categoryRef = useRef();
-
-  // სურათს ამატებს უბრალოდ ინფუთში არჩევის დროს --->>>
-
-  const fileInputRef = useRef(null);
-  const [previews, setPreviews] = useState([]);
   const navigate = useNavigate();
+  const [url, updateUrl] = useState();
+  const [, updateError] = useState();
 
-  const handleFileChange = (e) => {
-    const files = e.target.files;
-    if (files.length > 0) {
-      const objectUrls = Array.from(files, (file) => URL.createObjectURL(file));
-      setPreviews(objectUrls);
+  const handleOnUpload = (error, result, widget) => {
+    if (error) {
+      updateError(error);
+      widget.close({
+        quiet: true,
+      });
+      return;
     }
+    updateUrl(result?.info?.secure_url);
   };
-
-  useEffect(() => {
-    return () => {
-      previews.forEach((url) => URL.revokeObjectURL(url));
-    };
-  }, [previews]);
-
-  // აქ მთავრდება --->>>
 
   const onSubmit = (e) => {
     e.preventDefault();
 
     if (
-      (titleNameRef.current,
-      priceRef.current,
-      descRef.current,
-      categoryRef.current)
+      titleNameRef.current &&
+      priceRef.current &&
+      descRef.current &&
+      categoryRef.current &&
+      url
     ) {
       onFormSubmit(
         titleNameRef.current.value,
         priceRef.current.value,
         descRef.current.value,
-        categoryRef.current.value
+        categoryRef.current.value,
+        url
       );
     } else {
-      prompt("Please fill info");
+      window.alert("Please fill in all the information.");
     }
   };
 
@@ -74,25 +69,24 @@ const ProductForm = ({ onFormSubmit, name, description, price, category }) => {
           ref={descRef}
           defaultValue={description}
         />
-        <input // აქ შეიძლება გაკეთდეს სელექთი
+        <input
           name="category"
           type="text"
           placeholder="Product Category"
           ref={categoryRef}
           defaultValue={category}
         />
-        <input
-          name="file"
-          type="file"
-          accept="image/jpg, image/jpeg, image/png"
-          multiple
-          ref={fileInputRef}
-          onChange={handleFileChange}
-        />
-        {previews.map((pic, index) => (
-          <img key={index} src={pic} alt="img" className="UploadImage" />
-        ))}
-        <button>Submit</button>
+        <UploadWidget onUpload={handleOnUpload}>
+          {({ open }) => {
+            function handleOnClick(e) {
+              e.preventDefault();
+              open();
+            }
+            return <button onClick={handleOnClick}>Upload an Image</button>;
+          }}
+        </UploadWidget>
+        {url && <img className="UploadImage" src={url} alt="Uploaded resource" />}
+        <button type="submit">Submit</button>
       </form>
       <button onClick={() => navigate("/admin/products")}>Go back</button>
     </AdminLoginDiv>

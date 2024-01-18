@@ -4,7 +4,6 @@ import {
   faChevronRight,
   faChevronLeft,
   faCircle,
-  faTrash,
   faPen,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -47,6 +46,7 @@ const EditProductPage = () => {
         description: product.description,
         category: product.category,
         id: product._uuid,
+        image: product.url
       };
     }) || [];
 
@@ -99,7 +99,7 @@ const EditProductPage = () => {
                       justifyContent: "space-between",
                       position: "absolute",
                       top: "35%",
-                      left: "50%",
+                      left: "57%",
                       transform: "translate(-50%, -50%)",
                     }}
                   >
@@ -107,11 +107,6 @@ const EditProductPage = () => {
                       size="2xl"
                       style={{ color: "#0000FF" }}
                       icon={faPen}
-                    />
-                    <FontAwesomeIcon
-                      size="2xl"
-                      style={{ color: "#D80000" }}
-                      icon={faTrash}
                     />
                   </div>
                 </div>
