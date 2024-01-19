@@ -379,6 +379,7 @@ export const AdminLoginDiv = styled.div`
     textarea {
       height: 150px;
       padding: 10px;
+      resize: none;
     }
   }
 
@@ -411,6 +412,58 @@ export const AdminLoginDiv = styled.div`
     }
   }
 `;
+
+export const UsersChart = styled.div`
+max-width: 1073px;
+display: flex;
+flex-direction: column;
+margin: auto;
+gap: 10px;
+margin-top: 120px;
+text-align: center;
+padding: 20px;
+
+  h1{
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
+  
+  .user-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid #0000004D;
+    height: 28px;
+    align-items: center;
+  }
+
+  .user-row-elements{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+
+    h2{
+      width: 250px;
+      text-align: left;
+    }
+
+    h2:first-child {
+      width: 150px;
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+    .user-row{
+      height: auto;
+      padding-bottom: 10px;
+    }
+    .user-row-elements{
+      flex-direction: column;
+      gap: 10px;
+      text-align: left;
+    }
+  }
+`
 
 export const ProductsListTop = styled.div`
   position: relative;
@@ -610,8 +663,8 @@ export const SimilarProductTitle = styled.h3`
 
 export const PhotoSwiperContainer = styled.div`
   position: absolute;
-  right: 75%;
-  bottom: 9%;
+  right: 90%;
+  bottom: 12%;
   z-index: 2;
   max-width: 532px;
 

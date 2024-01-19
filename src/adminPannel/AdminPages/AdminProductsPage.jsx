@@ -7,11 +7,13 @@ import { LoadingDiv, SubmitButton } from "../../components/components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowsRotate } from "@fortawesome/free-solid-svg-icons";
 import { useAdminAuth } from "../AdminContexts/AdminAuthContext";
+// import { useProductsContext } from "../../contexts/ProductsContextProvider";
 
 const AdminProducts = () => {
   const { t } = useTranslation();
   const { filteredProducts } = useFilterContext();
   const { logout } = useAdminAuth();
+  // const {clothes} = useProductsContext()
 
   const AdminProducts = filteredProducts.map((prod) => prod);
   const navigate = useNavigate();
@@ -28,16 +30,22 @@ const AdminProducts = () => {
         price: product.price,
         description: product.description,
         category: product.category,
+        color: product.color,
         id: product._uuid,
-        image: product.url
+        image: product.url,
+        moreImages: product.sliderImages
       };
     }) || [];
 
   const combinedProducts = [...productsList, ...AdminProducts];
-
+    
   const onClick = () => {
     navigate("/admin/add");
   };
+
+  // useEffect(() => {
+  //   setClothes
+  // }, [])
 
   const handleLogout = () => {
     logout();
@@ -57,7 +65,8 @@ const AdminProducts = () => {
         <SubmitButton style={{ marginRight: "16px" }} onClick={handleLogout}>
           Logout
         </SubmitButton>
-        <SubmitButton onClick={onClick}>Add Product</SubmitButton>
+        <SubmitButton  style={{ marginRight: "16px" }} onClick={onClick}>Add Product</SubmitButton>
+        <SubmitButton onClick={() => navigate('/admin/users')}>User Information</SubmitButton>
       </div>
       <ProductList
         products={combinedProducts}

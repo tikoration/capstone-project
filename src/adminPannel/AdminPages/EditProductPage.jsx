@@ -15,6 +15,8 @@ import useProductRequest from "../AdminHooks/useProductRequest";
 import { useFilterContext } from "../../contexts/FilterContextProvider";
 import useProductFetch from "../AdminHooks/useProductFetch";
 import { SubmitButton } from "../../components/components";
+import UploadWidget from "../AdminComponents/UploadWidget";
+import PhotoSwiper from "../../components/PhotoSwiper";
 
 const EditProductPage = () => {
   const { t } = useTranslation();
@@ -24,14 +26,40 @@ const EditProductPage = () => {
   const navigate = useNavigate();
   const nameRef = useRef();
   const priceRef = useRef();
+  const colorRef = useRef(null);
   const descriptionRef = useRef();
   const { filteredProducts } = useFilterContext();
   const AdminProducts = filteredProducts.map((prod) => prod);
+  const [url, updateUrl] = useState();
+  const [, updateError] = useState();
+  const [sliderImages, setSliderImages] = useState();
 
   const { sendRequest } = useProductRequest({
     url: `/api/v1/products/${productId}`,
     method: "PUT",
   });
+
+  const handleOnUpload = (error, result, widget) => {
+    if (error) {
+      updateError(error);
+      widget.close({
+        quiet: true,
+      });
+      return;
+    }
+    updateUrl(result?.info?.secure_url);
+  };
+
+  const handleOnMoreImagesUpload =  (error, result, widget) => {
+    if (error) {
+      updateError(error);
+      widget.close({
+        quiet: true,
+      });
+      return;
+    }
+    setSliderImages(prevState => prevState ? [...prevState, result?.info?.secure_url] : [result?.info?.secure_url])
+  };
 
   const { products } = useProductFetch({
     url: "/api/v1/products",
@@ -45,8 +73,10 @@ const EditProductPage = () => {
         price: product.price,
         description: product.description,
         category: product.category,
+        color: product.color,
         id: product._uuid,
-        image: product.url
+        image: product.url,
+        moreImages: product.sliderImages,
       };
     }) || [];
 
@@ -54,12 +84,16 @@ const EditProductPage = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    if (nameRef.current && priceRef.current && descriptionRef.current) {
+    if (nameRef.current && priceRef.current && descriptionRef.current && colorRef.current) {
       sendRequest({
         name: nameRef.current.value,
         price: priceRef.current.value,
+        color: colorRef.current.value,
         description: descriptionRef.current.value,
-      });
+        url: url,
+        sliderImages: sliderImages
+      })
+      .then(() => navigate(-1))
     }
   };
 
@@ -89,9 +123,43 @@ const EditProductPage = () => {
                 <div style={{ position: "relative" }}>
                   <img
                     className="detailed-product-image edit-mode"
-                    src={mainPhoto || prod.image}
+                    src={url || mainPhoto || prod.image}
                     alt="img"
                   />
+                  <div className="detailed-slider edit-mode">
+                    {!isMobileView && (
+                      <PhotoSwiper
+                        photos={[prod.image, ...prod.moreImages]}
+                        id={prod.id}
+                      />
+                    )}
+                   <div
+                    style={{
+                      position: "absolute",
+                      bottom: 150,
+                      left: -45,
+                      transform: "translate(-50%, -50%)",
+                      zIndex: 99
+                    }}
+                  >
+                    <UploadWidget onUpload={handleOnMoreImagesUpload}>
+                      {({ open }) => {
+                        function handleOnClick(e) {
+                          e.preventDefault();
+                          open();
+                        }
+                        return (
+                          <FontAwesomeIcon
+                            size="2xl"
+                            style={{ color: "#0000FF" }}
+                            icon={faPen}
+                            onClick={handleOnClick}
+                          />
+                        );
+                      }}
+                    </UploadWidget>
+                  </div>
+                  </div>
                   <div
                     style={{
                       display: "flex",
@@ -103,11 +171,22 @@ const EditProductPage = () => {
                       transform: "translate(-50%, -50%)",
                     }}
                   >
-                    <FontAwesomeIcon
-                      size="2xl"
-                      style={{ color: "#0000FF" }}
-                      icon={faPen}
-                    />
+                    <UploadWidget onUpload={handleOnUpload}>
+                      {({ open }) => {
+                        function handleOnClick(e) {
+                          e.preventDefault();
+                          open();
+                        }
+                        return (
+                          <FontAwesomeIcon
+                            size="2xl"
+                            style={{ color: "#0000FF" }}
+                            icon={faPen}
+                            onClick={handleOnClick}
+                          />
+                        );
+                      }}
+                    </UploadWidget>
                   </div>
                 </div>
               )}
@@ -135,9 +214,16 @@ const EditProductPage = () => {
                     />
                   </div>
                   <div>
+                  <input
+                      style={{ borderColor: "#0000FF", padding: "10px" }}
+                      name="color"
+                      type="text"
+                      defaultValue={prod.color}
+                      ref={colorRef}
+                    />
                     <FontAwesomeIcon
                       icon={faCircle}
-                      style={{ color: `${prod.color}` }}
+                      style={{ color: `${colorRef?.current?.value || prod.color}` }}
                       className="color-icon"
                     />
                   </div>
@@ -168,7 +254,7 @@ const EditProductPage = () => {
                 </div>
               </div>
               <div>
-                <SubmitButton onClick={onSubmit}>Update</SubmitButton>
+                <SubmitButton onClick={onSubmit}>{t("Update")}</SubmitButton>
                 <SubmitButton
                   style={{ marginLeft: "16px" }}
                   onClick={() => navigate("/admin/products")}

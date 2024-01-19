@@ -58,6 +58,14 @@ const DetailedProductPage = () => {
               {isMobileView && (
                 <SliderForMobile images={[prod.image, ...prod.moreImages]} />
               )}
+              <div style={{position: 'relative'}}>
+                {!isMobileView && (
+                  <img
+                    className="detailed-product-image"
+                    src={mainPhoto || prod.image}
+                    alt="img"
+                  />
+                )}
               <div className="detailed-slider">
                 {!isMobileView && (
                   <PhotoSwiper
@@ -66,13 +74,8 @@ const DetailedProductPage = () => {
                   />
                 )}
               </div>
-              {!isMobileView && (
-                <img
-                  className="detailed-product-image"
-                  src={mainPhoto || prod.image}
-                  alt="img"
-                />
-              )}
+
+              </div>
               <div className="detailed-product-details">
                 <div className="detailed-name-price">
                   <h1 className="detailed-product-name">{prod.name}</h1>

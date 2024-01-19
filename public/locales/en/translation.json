@@ -86,5 +86,12 @@
   "edit": " Edit",
   "go back": "Go Back",
   "user": "User",
-  "logout": "Log Out"
+  "logout": "Log Out",
+  "subscription": "Subscription",
+  "registration": "Registration",
+  "users data": "User Data",
+  "slider text": "*Please upload at least 4 slider images",
+  "upload image": "Upload an Image",
+  "upload slider images": "Upload Slider Images",
+  "add": "Add"
 }

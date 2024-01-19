@@ -8,6 +8,7 @@ import { AdminAuthProvider } from "../adminPannel/AdminContexts/AdminAuthContext
 import { ProtectedRoute } from "../adminPannel/AdminComponents/ProtectedRoute";
 import AddNewProduct from "../adminPannel/AdminPages/AddNewProductPage";
 import EditProductPage from "../adminPannel/AdminPages/EditProductPage";
+import UserData from "../adminPannel/AdminPages/UserData";
 
 const adminRoutes = [
   {
@@ -31,6 +32,10 @@ const adminRoutes = [
       {
         element: <ProtectedRoute element={<AdminProducts />} />,
         path: "products",
+      },
+      {
+        element: <ProtectedRoute element={<UserData />} />,
+        path: "users",
       },
       {
         element: <ProtectedRoute element={<EditProductPage />} />,
