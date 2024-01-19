@@ -156,7 +156,6 @@ svg {
 }
 
 @media screen and (max-width: 767px) {
-
   .popular-collection-gallary .iffcA-d {
     padding: 0;
   }
@@ -175,6 +174,22 @@ svg {
 .main-page.loaded {
   visibility: visible;
   opacity: 1;
+}
+
+.refresh-page {
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 767px) {
+  .refresh-page {
+    min-height: 60vh;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .mobileSwiper .swiper .swiper-wrapper .swiper-slide img {
+    height: 100%;
+  }
 }
 
 /* slider component that is used in 

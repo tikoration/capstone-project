@@ -14,7 +14,7 @@ const AboutUsPage = () => {
   };
 
   return (
-    <AboutStyle className="container">
+    <AboutStyle className="container refresh-page">
       <h2>{t("About Us")}</h2>
       <div className="aboutContent">
         <h1>{t("mariam’s atelier")}</h1>

@@ -8,7 +8,7 @@ const NewProductsPage = () => {
   const newClothes = clothes.filter((prod) => prod.result === "new product");
 
   return (
-    <div className="container">
+    <div className="container refresh-page">
       <ProductList
         products={newClothes}
         productsPerPage={20}

@@ -42,11 +42,11 @@ const DetailedProductPage = () => {
 
   const isMobileView = window.innerWidth <= 1300;
   return (
-    <div className="container">
+    <div className="container refresh-page">
       {clothes?.map(
         (prod) =>
           prod.id === productId && (
-            <DetailedProducts key={prod.id}>
+            <DetailedProducts className="mobileSwiper" key={prod.id}>
               {isMobileView && (
                 <FontAwesomeIcon
                   className="back-button"

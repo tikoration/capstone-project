@@ -17,7 +17,7 @@ const AllProducts = () => {
 
   return (
     <div
-      className="container"
+      className="container refresh-page"
       style={{ height: AllProducts.length === 0 ? "100vh" : "" }}
     >
       <ProductList
