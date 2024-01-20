@@ -10,13 +10,33 @@ const AddNewProduct = () => {
     method: "POST",
   });
 
-  const onSubmit = (name, price, description, color, category, url, sliderImages) => {
-    sendRequest([{ name, price, description, color, category, url, sliderImages }]);
+  const onSubmit = (
+    name,
+    price,
+    description,
+    color,
+    category,
+    subCategory,
+    url,
+    sliderImages
+  ) => {
+    sendRequest([
+      {
+        name,
+        price,
+        description,
+        color,
+        category,
+        subCategory,
+        url,
+        sliderImages,
+      },
+    ]);
   };
 
   if (loading)
     return (
-      <LoadingDiv style={{ left: "40px" }}>
+      <LoadingDiv style={{ left: "50%" }}>
         <FontAwesomeIcon icon={faArrowsRotate} />
       </LoadingDiv>
     );

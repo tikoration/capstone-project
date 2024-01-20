@@ -4,12 +4,22 @@ import { useNavigate } from "react-router-dom";
 import UploadWidget from "./UploadWidget";
 import { useTranslation } from "react-i18next";
 
-const ProductForm = ({ onFormSubmit, name, description, price, category }) => {
-  const {t} = useTranslation();
+const ProductForm = ({
+  onFormSubmit,
+  name,
+  description,
+  price,
+  category,
+  subCategory,
+  color,
+}) => {
+  const { t } = useTranslation();
   const titleNameRef = useRef();
   const priceRef = useRef();
   const descRef = useRef();
   const categoryRef = useRef();
+  const colorRef = useRef();
+  const subCategoryRef = useRef();
   const navigate = useNavigate();
   const [url, updateUrl] = useState();
   const [sliderImages, setSliderImages] = useState([]);
@@ -26,7 +36,7 @@ const ProductForm = ({ onFormSubmit, name, description, price, category }) => {
     updateUrl(result?.info?.secure_url);
   };
 
-  const handleOnMoreImagesUpload =  (error, result, widget) => {
+  const handleOnMoreImagesUpload = (error, result, widget) => {
     if (error) {
       updateError(error);
       widget.close({
@@ -34,29 +44,25 @@ const ProductForm = ({ onFormSubmit, name, description, price, category }) => {
       });
       return;
     }
-    setSliderImages(prevState => [...prevState, result?.info?.secure_url]);
+    setSliderImages((prevState) => [...prevState, result?.info?.secure_url]);
   };
 
   const onSubmit = (e) => {
     e.preventDefault();
 
-    if (
-      titleNameRef.current &&
-      priceRef.current &&
-      descRef.current &&
-      categoryRef.current &&
-      url
-    ) {
+    if (url) {
       onFormSubmit(
         titleNameRef.current.value,
         priceRef.current.value,
         descRef.current.value,
+        colorRef.current.value,
         categoryRef.current.value,
+        subCategoryRef.current.value,
         url,
         sliderImages
       );
     } else {
-      window.alert("Please fill in all the information.");
+      window.alert("Please choose Photo");
     }
   };
 
@@ -66,30 +72,49 @@ const ProductForm = ({ onFormSubmit, name, description, price, category }) => {
         <input
           name="title"
           type="text"
-          placeholder="Product Title"
+          placeholder={t("Product title")}
           ref={titleNameRef}
           defaultValue={name}
+          required
         />
         <input
           name="price"
           type="text"
-          placeholder="Product Price"
+          placeholder={t("Product price")}
           ref={priceRef}
           defaultValue={price}
+          required
         />
         <textarea
           name="description"
           type="text"
-          placeholder="Product description"
+          placeholder={t("Product description")}
           ref={descRef}
           defaultValue={description}
+          required
         />
         <input
           name="category"
           type="text"
-          placeholder="Product Category"
+          placeholder={t("Product Category")}
           ref={categoryRef}
           defaultValue={category}
+          required
+        />
+        <input
+          name="sCategory"
+          type="text"
+          placeholder={t("Sub Category")}
+          ref={subCategoryRef}
+          defaultValue={subCategory}
+        />
+        <input
+          name="color"
+          type="text"
+          placeholder={t("color")}
+          ref={colorRef}
+          defaultValue={color}
+          required
         />
         <UploadWidget onUpload={handleOnUpload}>
           {({ open }) => {
@@ -100,20 +125,28 @@ const ProductForm = ({ onFormSubmit, name, description, price, category }) => {
             return <button onClick={handleOnClick}>{t("upload image")}</button>;
           }}
         </UploadWidget>
-        <h2>{t("slider text")}</h2>
+        <h2 style={{ textAlign: "center" }}>{t("slider text")}</h2>
         <UploadWidget onUpload={handleOnMoreImagesUpload}>
           {({ open }) => {
             function handleOnClick(e) {
               e.preventDefault();
               open();
             }
-            return <button onClick={handleOnClick}>{t("upload slider images")}</button>;
+            return (
+              <button onClick={handleOnClick}>
+                {t("upload slider images")}
+              </button>
+            );
           }}
         </UploadWidget>
-        {url && <img className="UploadImage" src={url} alt="Uploaded resource" />}
+        {url && (
+          <img className="UploadImage" src={url} alt="Uploaded resource" />
+        )}
         <button type="submit">{t("add")}</button>
       </form>
-      <button onClick={() => navigate("/admin/products")}>{t("go back")}</button>
+      <button onClick={() => navigate("/admin/products")}>
+        {t("go back")}
+      </button>
     </AdminLoginDiv>
   );
 };

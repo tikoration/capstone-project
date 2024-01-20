@@ -1,28 +1,28 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from "react";
 
 let cloudinary;
 
 const UploadWidget = ({ children, onUpload }) => {
-
   const widget = useRef();
   useEffect(() => {
-
-    if ( !cloudinary ) {
+    if (!cloudinary) {
       cloudinary = window.cloudinary;
     }
 
     function onIdle() {
-      if ( !widget.current ) {
+      if (!widget.current) {
         widget.current = createWidget();
       }
     }
 
-    'requestIdleCallback' in window ? requestIdleCallback(onIdle) : setTimeout(onIdle, 1);
+    "requestIdleCallback" in window
+      ? requestIdleCallback(onIdle)
+      : setTimeout(onIdle, 1);
 
     return () => {
       widget.current?.destroy();
       widget.current = undefined;
-    }
+    };
     // eslint-disable-next-line
   }, []);
 
@@ -32,26 +32,26 @@ const UploadWidget = ({ children, onUpload }) => {
    */
 
   function createWidget() {
-
     const cloudName = process.env.REACT_APP_CLOUDINARY_CLOUD_NAME;
     const uploadPreset = process.env.REACT_APP_CLOUDINARY_UPLOAD_PRESET;
 
     if (!cloudName || !uploadPreset) {
       console.warn(`Kindly ensure you have the cloudName and UploadPreset 
-      setup in your .env file at the root of your project.`)
+      setup in your .env file at the root of your project.`);
     }
     const options = {
-      cloudName, 
+      cloudName,
       uploadPreset,
-    }
+    };
 
-    return cloudinary?.createUploadWidget(options,
-      function (error, result) {
-        if ((error || result.event === 'success') && typeof onUpload === 'function' ) {
-          onUpload(error, result, widget);
-        }
+    return cloudinary?.createUploadWidget(options, function (error, result) {
+      if (
+        (error || result.event === "success") &&
+        typeof onUpload === "function"
+      ) {
+        onUpload(error, result, widget);
       }
-    );
+    });
   }
 
   /**
@@ -60,17 +60,13 @@ const UploadWidget = ({ children, onUpload }) => {
    */
 
   function open() {
-    if ( !widget.current ) {
+    if (!widget.current) {
       widget.current = createWidget();
     }
     widget.current && widget.current.open();
   }
 
-  return (
-    <>
-      {children({ cloudinary, widget, open })}
-    </>
-  )
-}
+  return <>{children({ cloudinary, widget, open })}</>;
+};
 
 export default UploadWidget;

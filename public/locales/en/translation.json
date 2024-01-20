@@ -91,7 +91,14 @@
   "registration": "Registration",
   "users data": "User Data",
   "slider text": "*Please upload at least 4 slider images",
+  "Please choose Photo": "Please choose Photo",
   "upload image": "Upload an Image",
   "upload slider images": "Upload Slider Images",
-  "add": "Add"
+  "add": "Add",
+  "Product title": "Product title",
+  "Product price": "Product price",
+  "Product description": "Product description",
+  "Product Category": "Product Category",
+  "Sub Category": "Sub Category",
+  "color": "color"
 }

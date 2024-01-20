@@ -92,5 +92,12 @@
   "slider text": "*გთხოვთ, ატვირთოთ სულ მცირე 4 სლაიდერის ფოტოსურათი",
   "upload image": "ატვირთეთ ფოტოსურათი",
   "upload slider images": "ატვირთეთ სლაიდერის ფოტოსურათები",
-  "add": "დამატება"
+  "Please choose Photo": "გთხოვთ ატვირთოთ ფოტოსურათი",
+  "add": "დამატება",
+  "Product title": "პროდუქტის დასახელება",
+  "Product price": "პროდუქტის ფასი",
+  "Product description": "პროდუქტის აღწერა",
+  "Product Category": "პროდუქტის კატეგორია",
+  "Sub Category": "ქვე კატეგორია",
+  "color": "ფერი"
 }

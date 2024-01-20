@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import {useAdminAuth} from "../AdminContexts/AdminAuthContext"
+import { useAdminAuth } from "../AdminContexts/AdminAuthContext";
 import { useNavigate } from "react-router-dom";
 
 export const ProtectedRoute = ({ element }) => {

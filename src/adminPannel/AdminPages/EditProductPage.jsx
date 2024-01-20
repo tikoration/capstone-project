@@ -5,6 +5,7 @@ import {
   faChevronLeft,
   faCircle,
   faPen,
+  faArrowsRotate,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useProductsContext } from "../../contexts/ProductsContextProvider";
@@ -14,7 +15,7 @@ import { useState, useRef } from "react";
 import useProductRequest from "../AdminHooks/useProductRequest";
 import { useFilterContext } from "../../contexts/FilterContextProvider";
 import useProductFetch from "../AdminHooks/useProductFetch";
-import { SubmitButton } from "../../components/components";
+import { LoadingDiv, SubmitButton } from "../../components/components";
 import UploadWidget from "../AdminComponents/UploadWidget";
 import PhotoSwiper from "../../components/PhotoSwiper";
 
@@ -34,7 +35,7 @@ const EditProductPage = () => {
   const [, updateError] = useState();
   const [sliderImages, setSliderImages] = useState();
 
-  const { sendRequest } = useProductRequest({
+  const { sendRequest, loading } = useProductRequest({
     url: `/api/v1/products/${productId}`,
     method: "PUT",
   });
@@ -50,7 +51,7 @@ const EditProductPage = () => {
     updateUrl(result?.info?.secure_url);
   };
 
-  const handleOnMoreImagesUpload =  (error, result, widget) => {
+  const handleOnMoreImagesUpload = (error, result, widget) => {
     if (error) {
       updateError(error);
       widget.close({
@@ -58,13 +59,24 @@ const EditProductPage = () => {
       });
       return;
     }
-    setSliderImages(prevState => prevState ? [...prevState, result?.info?.secure_url] : [result?.info?.secure_url])
+    setSliderImages((prevState) =>
+      prevState
+        ? [...prevState, result?.info?.secure_url]
+        : [result?.info?.secure_url]
+    );
   };
 
   const { products } = useProductFetch({
     url: "/api/v1/products",
     method: "GET",
   });
+
+  if (loading)
+    return (
+      <LoadingDiv style={{ left: "50%" }}>
+        <FontAwesomeIcon icon={faArrowsRotate} />
+      </LoadingDiv>
+    );
 
   const productsList =
     products?.items.map((product) => {
@@ -84,16 +96,20 @@ const EditProductPage = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    if (nameRef.current && priceRef.current && descriptionRef.current && colorRef.current) {
+    if (
+      nameRef.current &&
+      priceRef.current &&
+      descriptionRef.current &&
+      colorRef.current
+    ) {
       sendRequest({
         name: nameRef.current.value,
         price: priceRef.current.value,
         color: colorRef.current.value,
         description: descriptionRef.current.value,
         url: url,
-        sliderImages: sliderImages
-      })
-      .then(() => navigate(-1))
+        sliderImages: sliderImages,
+      }).then(() => navigate(-1));
     }
   };
 
@@ -133,32 +149,32 @@ const EditProductPage = () => {
                         id={prod.id}
                       />
                     )}
-                   <div
-                    style={{
-                      position: "absolute",
-                      bottom: 150,
-                      left: -45,
-                      transform: "translate(-50%, -50%)",
-                      zIndex: 99
-                    }}
-                  >
-                    <UploadWidget onUpload={handleOnMoreImagesUpload}>
-                      {({ open }) => {
-                        function handleOnClick(e) {
-                          e.preventDefault();
-                          open();
-                        }
-                        return (
-                          <FontAwesomeIcon
-                            size="2xl"
-                            style={{ color: "#0000FF" }}
-                            icon={faPen}
-                            onClick={handleOnClick}
-                          />
-                        );
+                    <div
+                      style={{
+                        position: "absolute",
+                        bottom: 150,
+                        left: -45,
+                        transform: "translate(-50%, -50%)",
+                        zIndex: 99,
                       }}
-                    </UploadWidget>
-                  </div>
+                    >
+                      <UploadWidget onUpload={handleOnMoreImagesUpload}>
+                        {({ open }) => {
+                          function handleOnClick(e) {
+                            e.preventDefault();
+                            open();
+                          }
+                          return (
+                            <FontAwesomeIcon
+                              size="2xl"
+                              style={{ color: "#0000FF" }}
+                              icon={faPen}
+                              onClick={handleOnClick}
+                            />
+                          );
+                        }}
+                      </UploadWidget>
+                    </div>
                   </div>
                   <div
                     style={{
@@ -214,7 +230,7 @@ const EditProductPage = () => {
                     />
                   </div>
                   <div>
-                  <input
+                    <input
                       style={{ borderColor: "#0000FF", padding: "10px" }}
                       name="color"
                       type="text"
@@ -223,7 +239,9 @@ const EditProductPage = () => {
                     />
                     <FontAwesomeIcon
                       icon={faCircle}
-                      style={{ color: `${colorRef?.current?.value || prod.color}` }}
+                      style={{
+                        color: `${colorRef?.current?.value || prod.color}`,
+                      }}
                       className="color-icon"
                     />
                   </div>
