@@ -12,7 +12,7 @@ const ProductsPage = () => {
 
   const currentCategory = location.pathname.slice(1);
   const filteredClothes = filteredProducts
-    ? filteredProducts.filter((prod) => prod.category === currentCategory)
+    ? filteredProducts.filter((prod) => prod.category === currentCategory || prod.subCategory === currentCategory)
     : clothes.filter((prod) => prod.category === currentCategory);
 
   return (

@@ -17,13 +17,13 @@ const ProductForm = ({
   const titleNameRef = useRef();
   const priceRef = useRef();
   const descRef = useRef();
-  const categoryRef = useRef();
   const colorRef = useRef();
-  const subCategoryRef = useRef();
   const navigate = useNavigate();
   const [url, updateUrl] = useState();
   const [sliderImages, setSliderImages] = useState([]);
   const [, updateError] = useState();
+  const [categoryInp, setCategoryInp] = useState();
+  const [subCategoryInp, setSubCategoryInp] = useState();
 
   const handleOnUpload = (error, result, widget) => {
     if (error) {
@@ -56,8 +56,8 @@ const ProductForm = ({
         priceRef.current.value,
         descRef.current.value,
         colorRef.current.value,
-        categoryRef.current.value,
-        subCategoryRef.current.value,
+        categoryInp,
+        subCategoryInp,
         url,
         sliderImages
       );
@@ -93,21 +93,35 @@ const ProductForm = ({
           defaultValue={description}
           required
         />
-        <input
+        <div>
+        <h3>{t("category")}</h3>
+        <select
+          value={categoryInp}
+          onChange={(e) => setCategoryInp(e.target.value)}
           name="category"
-          type="text"
-          placeholder={t("Product Category")}
-          ref={categoryRef}
-          defaultValue={category}
+          id="cars"
           required
-        />
-        <input
-          name="sCategory"
-          type="text"
-          placeholder={t("Sub Category")}
-          ref={subCategoryRef}
-          defaultValue={subCategory}
-        />
+        >
+          <option value=""></option>
+          <option value="kids">{t("kids")}</option>
+          <option value="woman">{t("woman")}</option>
+        </select>
+        </div>
+        {categoryInp === "woman" && (
+          <div>
+          <h3>{t("subcategory")}</h3>
+          <select
+            value={subCategoryInp}
+            onChange={(e) => setSubCategoryInp(e.target.value)}
+            name="sCategory"
+            id="sCategory"
+          >
+            <option value=""></option>
+            <option value="banquet">{t("banquet")}</option>
+            <option value="wedding">{t("wedding")}</option>
+          </select>
+          </div>
+        )}
         <input
           name="color"
           type="text"
@@ -125,6 +139,9 @@ const ProductForm = ({
             return <button onClick={handleOnClick}>{t("upload image")}</button>;
           }}
         </UploadWidget>
+          {url && (
+            <img className="UploadImage" src={url} alt="Uploaded resource" />
+          )}
         <h2 style={{ textAlign: "center" }}>{t("slider text")}</h2>
         <UploadWidget onUpload={handleOnMoreImagesUpload}>
           {({ open }) => {
@@ -139,13 +156,10 @@ const ProductForm = ({
             );
           }}
         </UploadWidget>
-        {url && (
-          <img className="UploadImage" src={url} alt="Uploaded resource" />
-        )}
         <button type="submit">{t("add")}</button>
       </form>
       <button onClick={() => navigate("/admin/products")}>
-        {t("go back")}
+        <a href="/">{t("go back")}</a>
       </button>
     </AdminLoginDiv>
   );

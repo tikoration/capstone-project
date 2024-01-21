@@ -2038,7 +2038,8 @@ const products = [
     image: banquetPhoto,
     price: 10,
     isOnSale: false,
-    category: "banquet",
+    category: "woman",
+    subCategory: "banquet",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -2058,7 +2059,8 @@ const products = [
     image: banquetPhoto,
     price: 10,
     isOnSale: false,
-    category: "banquet",
+    category: "woman",
+    subCategory: "banquet",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -2078,7 +2080,8 @@ const products = [
     image: banquetPhoto,
     price: 10,
     isOnSale: false,
-    category: "banquet",
+    category: "woman",
+    subCategory: "banquet",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -2098,7 +2101,8 @@ const products = [
     image: weddingPhoto,
     price: 10,
     isOnSale: false,
-    category: "wedding",
+    category: "woman",
+    subCategory: "wedding",
     moreImages: [
       moreWedding1,
       moreWedding2,
@@ -2118,7 +2122,8 @@ const products = [
     image: weddingPhoto,
     price: 10,
     isOnSale: false,
-    category: "wedding",
+    category: "woman",
+    subCategory: "wedding",
     moreImages: [
       moreWedding1,
       moreWedding2,
@@ -2138,7 +2143,8 @@ const products = [
     image: weddingPhoto,
     price: 10,
     isOnSale: false,
-    category: "wedding",
+    category: "woman",
+    subCategory: "wedding",
     moreImages: [
       moreWedding1,
       moreWedding2,

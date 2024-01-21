@@ -94,10 +94,14 @@
   "upload slider images": "ატვირთეთ სლაიდერის ფოტოსურათები",
   "Please choose Photo": "გთხოვთ ატვირთოთ ფოტოსურათი",
   "add": "დამატება",
+  "add product": "პროდუქციის დამატება",
   "Product title": "პროდუქტის დასახელება",
   "Product price": "პროდუქტის ფასი",
   "Product description": "პროდუქტის აღწერა",
   "Product Category": "პროდუქტის კატეგორია",
   "Sub Category": "ქვე კატეგორია",
-  "color": "ფერი"
+  "color": "ფერი",
+  "update": "განახლება",
+  "category": "კატეგორია",
+  "subcategory": "სუბკატეგორია"
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Authorization, UserForm } from "./UserInformation";
 import Logo from "../../assets/MA.png";
 import { Link } from "react-router-dom";
@@ -25,6 +25,7 @@ const UserRessetPassword = ({ onSuccess, users }) => {
   const { showPassword: showPassword2, togglePassword: toggle2 } =
     useToggle(false);
   const { closeRessetPassword } = useAuthorization();
+  const [emailExists, setEmailExists] = useState(true);
 
   const { loading, sentRequest, sendRequest } = useRequest({
     method: "PUT",
@@ -43,15 +44,26 @@ const UserRessetPassword = ({ onSuccess, users }) => {
     };
 
     const isValid = validateInputs(userRegister);
-    const user = users.filter(user => user.Email === userRegister.Email)
+    const user = users.filter((user) => user.Email === userRegister.Email);
+
+    const isMailExists = users?.find(
+      (user) => user.Email === userRegister.Email
+    );
 
     if (isValid) {
-      sendRequest({Password: userRegister.Password}, `/api/v1/users/${user[0].id}`)
-        .then(() => {
-          onSuccess(userRegister.Email, userRegister.Password);
-        })
-        .catch((err) => console.log(err));
-    }
+      if (isMailExists) {
+        sendRequest(
+          { Password: userRegister.Password },
+          `/api/v1/users/${user[0].id}`
+        )
+          .then(() => {
+            onSuccess(userRegister.Email, userRegister.Password);
+          })
+          .catch((err) => console.log(err));
+      } else {
+        return setEmailExists(false);
+      }
+    } 
   };
 
   return (
@@ -74,6 +86,9 @@ const UserRessetPassword = ({ onSuccess, users }) => {
         <div className="input">
           <label htmlFor="Email2">{t("Email address")}</label>
           <input
+            style={{
+              border: emailExists ? "1px solid black" : "1px solid #D80000",
+            }}
             name="Email"
             id="Email2"
             type="text"

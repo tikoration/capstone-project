@@ -7,45 +7,23 @@ import { LoadingDiv, SubmitButton } from "../../components/components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowsRotate } from "@fortawesome/free-solid-svg-icons";
 import { useAdminAuth } from "../AdminContexts/AdminAuthContext";
-// import { useProductsContext } from "../../contexts/ProductsContextProvider";
 
 const AdminProducts = () => {
   const { t } = useTranslation();
   const { filteredProducts } = useFilterContext();
   const { logout } = useAdminAuth();
-  // const {clothes} = useProductsContext()
 
   const AdminProducts = filteredProducts.map((prod) => prod);
   const navigate = useNavigate();
 
-  const { error, loading, products, resendRequest } = useProductFetch({
+  const { error, loading, resendRequest } = useProductFetch({
     url: "/api/v1/products",
     method: "GET",
   });
 
-  const productsList =
-    products?.items.map((product) => {
-      return {
-        name: product.name,
-        price: product.price,
-        description: product.description,
-        category: product.category,
-        color: product.color,
-        id: product._uuid,
-        image: product.url,
-        moreImages: product.sliderImages,
-      };
-    }) || [];
-
-  const combinedProducts = [...productsList, ...AdminProducts];
-
   const onClick = () => {
     navigate("/admin/add");
   };
-
-  // useEffect(() => {
-  //   setClothes
-  // }, [])
 
   const handleLogout = () => {
     logout();
@@ -53,7 +31,7 @@ const AdminProducts = () => {
 
   if (loading)
     return (
-      <LoadingDiv style={{ left: "50%" }}>
+      <LoadingDiv style={{ left: "40px" }}>
         <FontAwesomeIcon icon={faArrowsRotate} />
       </LoadingDiv>
     );
@@ -65,15 +43,11 @@ const AdminProducts = () => {
         <SubmitButton style={{ marginRight: "16px" }} onClick={handleLogout}>
           Logout
         </SubmitButton>
-        <SubmitButton style={{ marginRight: "16px" }} onClick={onClick}>
-          Add Product
-        </SubmitButton>
-        <SubmitButton onClick={() => navigate("/admin/users")}>
-          User Information
-        </SubmitButton>
+        <SubmitButton  style={{ marginRight: "16px" }} onClick={onClick}>Add Product</SubmitButton>
+        <SubmitButton onClick={() => navigate('/admin/users')}>User Information</SubmitButton>
       </div>
       <ProductList
-        products={combinedProducts}
+        products={AdminProducts}
         resendRequest={resendRequest}
         productsPerPage={20}
         category={t("allProducts")}

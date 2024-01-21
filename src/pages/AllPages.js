@@ -83,6 +83,7 @@ export const MainContainer = styled.div`
     width: 100%;
     height: auto;
     display: block;
+    object-fit: cover;
 
     @media screen and (max-width: 767px) {
       height: 481px;
@@ -369,7 +370,20 @@ export const AdminLoginDiv = styled.div`
       height: 40px;
       padding: 10px;
     }
+    
+    h3{
+      padding: 10px 0px;
+    }
 
+    select{
+      height: 40px;
+      padding: 10px;
+      width: 440px;
+
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
     button {
       border: none;
       color: white;

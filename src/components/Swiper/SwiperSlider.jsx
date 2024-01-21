@@ -4,7 +4,6 @@ import "swiper/css/effect-creative";
 import "./SwiperStyle.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCreative } from "swiper/modules";
-// import { Data } from "../../assets/imgData/ImageData";
 import SubmitBtn from "../Buttons/SubmitBtn";
 import { useTranslation } from "react-i18next";
 import weddingCategory from "../../assets/weddingCategory.jpg"
@@ -17,7 +16,6 @@ const SwiperSlider = () => {
   const banquetSlider = [banquetPhoto, banquetPhoto, banquetPhoto, banquetPhoto]
   const kidsSlider = [kidsPhoto, kidsPhoto, kidsPhoto, kidsPhoto]
   
-  // const getImageData = Data;
   return (
     <div className="swiper-slide swiper_container">
       <div className="swiper_content">
@@ -36,11 +34,7 @@ const SwiperSlider = () => {
           modules={[EffectCreative]}
           className="mySwiper"
         >
-          {banquetSlider
-            // .filter((img, index) => {
-            //   return img ? index < 4 : null;
-            // })
-            .map((img, index) => {
+          {banquetSlider.map((img, index) => {
               return (
                 <SwiperSlide key={index}>
                   <img src={img} alt="nature" />

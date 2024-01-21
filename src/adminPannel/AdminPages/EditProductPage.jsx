@@ -14,7 +14,6 @@ import SliderForMobile from "../../components/SliderForMobile";
 import { useState, useRef } from "react";
 import useProductRequest from "../AdminHooks/useProductRequest";
 import { useFilterContext } from "../../contexts/FilterContextProvider";
-import useProductFetch from "../AdminHooks/useProductFetch";
 import { LoadingDiv, SubmitButton } from "../../components/components";
 import UploadWidget from "../AdminComponents/UploadWidget";
 import PhotoSwiper from "../../components/PhotoSwiper";
@@ -66,33 +65,12 @@ const EditProductPage = () => {
     );
   };
 
-  const { products } = useProductFetch({
-    url: "/api/v1/products",
-    method: "GET",
-  });
-
   if (loading)
     return (
       <LoadingDiv style={{ left: "50%" }}>
         <FontAwesomeIcon icon={faArrowsRotate} />
       </LoadingDiv>
     );
-
-  const productsList =
-    products?.items.map((product) => {
-      return {
-        name: product.name,
-        price: product.price,
-        description: product.description,
-        category: product.category,
-        color: product.color,
-        id: product._uuid,
-        image: product.url,
-        moreImages: product.sliderImages,
-      };
-    }) || [];
-
-  const combinedProducts = [...productsList, ...AdminProducts];
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -116,7 +94,7 @@ const EditProductPage = () => {
   const isMobileView = window.innerWidth <= 1300;
   return (
     <div className="container">
-      {combinedProducts?.map(
+      {AdminProducts?.map(
         (prod) =>
           prod.id === productId && (
             <DetailedProducts key={prod.id}>
@@ -131,10 +109,6 @@ const EditProductPage = () => {
               {isMobileView && (
                 <SliderForMobile images={[prod.image, ...prod.moreImages]} />
               )}
-              <div
-                style={{ marginBottom: "30px" }}
-                className="detailed-slider"
-              ></div>
               {!isMobileView && (
                 <div style={{ position: "relative" }}>
                   <img
@@ -142,47 +116,13 @@ const EditProductPage = () => {
                     src={url || mainPhoto || prod.image}
                     alt="img"
                   />
-                  <div className="detailed-slider edit-mode">
-                    {!isMobileView && (
-                      <PhotoSwiper
-                        photos={[prod.image, ...prod.moreImages]}
-                        id={prod.id}
-                      />
-                    )}
-                    <div
-                      style={{
-                        position: "absolute",
-                        bottom: 150,
-                        left: -45,
-                        transform: "translate(-50%, -50%)",
-                        zIndex: 99,
-                      }}
-                    >
-                      <UploadWidget onUpload={handleOnMoreImagesUpload}>
-                        {({ open }) => {
-                          function handleOnClick(e) {
-                            e.preventDefault();
-                            open();
-                          }
-                          return (
-                            <FontAwesomeIcon
-                              size="2xl"
-                              style={{ color: "#0000FF" }}
-                              icon={faPen}
-                              onClick={handleOnClick}
-                            />
-                          );
-                        }}
-                      </UploadWidget>
-                    </div>
-                  </div>
                   <div
                     style={{
                       display: "flex",
                       width: "108px",
                       justifyContent: "space-between",
                       position: "absolute",
-                      top: "35%",
+                      top: "50%",
                       left: "57%",
                       transform: "translate(-50%, -50%)",
                     }}
@@ -204,6 +144,40 @@ const EditProductPage = () => {
                       }}
                     </UploadWidget>
                   </div>
+                    <div style={{position: "relative"}}className="detailed-slider edit-mode">
+                      {!isMobileView && (
+                        <PhotoSwiper
+                          photos={[prod.image, ...prod.moreImages]}
+                          id={prod.id}
+                        />
+                      )}
+                      <div
+                        style={{
+                          position: "absolute",
+                          bottom: '160px',
+                          left: '-30%',
+                          transform: "translate(-50%, -50%)",
+                          zIndex: 99,
+                        }}
+                      >
+                        <UploadWidget onUpload={handleOnMoreImagesUpload}>
+                          {({ open }) => {
+                            function handleOnClick(e) {
+                              e.preventDefault();
+                              open();
+                            }
+                            return (
+                              <FontAwesomeIcon
+                                size="2xl"
+                                style={{ color: "#0000FF" }}
+                                icon={faPen}
+                                onClick={handleOnClick}
+                              />
+                            );
+                          }}
+                        </UploadWidget>
+                      </div>
+                    </div>
                 </div>
               )}
               <div>
@@ -271,13 +245,13 @@ const EditProductPage = () => {
                   )}
                 </div>
               </div>
-              <div>
-                <SubmitButton onClick={onSubmit}>{t("Update")}</SubmitButton>
+              <div style={{position: 'absolute', right: '10%'}}>
+                <SubmitButton onClick={onSubmit}>{t("update")}</SubmitButton>
                 <SubmitButton
                   style={{ marginLeft: "16px" }}
                   onClick={() => navigate("/admin/products")}
                 >
-                  Go back
+                  {t('go back')}
                 </SubmitButton>
               </div>
             </DetailedProducts>
