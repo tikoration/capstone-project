@@ -1,4 +1,4 @@
-import useProductFetch from "../adminPannel/AdminHooks/useProductFetch";
+// import useProductFetch from "../adminPannel/AdminHooks/useProductFetch";
 import products from "../data/products";
 import useLocalStorage from "../hooks/useLocalStorage";
 import { createContext, useContext, useState, useEffect } from "react";
@@ -8,7 +8,7 @@ const ProductsContext = createContext(null);
 const ProductsContextProvider = ({ children }) => {
   const [mainPhoto, setMainPhoto] = useState(null);
   const [favorites, setFavorites] = useLocalStorage("favorites", []);
-  const [oldProducts, setClothes] = useState(products);
+  const [clothes, setClothes] = useState(products);
   const [currentPage, setCurrentPage] = useLocalStorage("currentPage", 1);
   const [loading, setLoading] = useState(true);
 
@@ -29,28 +29,28 @@ const ProductsContextProvider = ({ children }) => {
     });
   };
   
-  const {products: adminProducts} = useProductFetch({
-    url: "/api/v1/products",
-    method: "GET"
-  })
+  // const {products: adminProducts} = useProductFetch({
+  //   url: "/api/v1/products",
+  //   method: "GET"
+  // })
 
-  const productsList =
-  adminProducts?.items.map((product) => {
-      return {
-        name: product.name,
-        price: product.price,
-        description: product.description,
-        category: product.category,
-        subCategory: product.subCategory,
-        color: product.color,
-        id: product._uuid,
-        image: product.url,
-        moreImages: product.sliderImages,
-        result: product.result
-      };
-    }) || [];
+  // const productsList =
+  // adminProducts?.items.map((product) => {
+  //     return {
+  //       name: product.name,
+  //       price: product.price,
+  //       description: product.description,
+  //       category: product.category,
+  //       subCategory: product.subCategory,
+  //       color: product.color,
+  //       id: product._uuid,
+  //       image: product.url,
+  //       moreImages: product.sliderImages,
+  //       result: product.result
+  //     };
+  //   }) || [];
 
-    const clothes = [...productsList, ...oldProducts ]
+    // const clothes = [...productsList, ...oldProducts ]
 
   useEffect(() => {
     setTimeout(() => {

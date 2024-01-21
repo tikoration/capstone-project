@@ -1997,6 +1997,7 @@ const products = [
     price: 10,
     isOnSale: false,
     category: "kids",
+    result: "new product",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -2017,6 +2018,7 @@ const products = [
     price: 40,
     isOnSale: false,
     category: "kids",
+    result: "new product",
     moreImages: [
       detailedImage1,
       detailedImage2,
