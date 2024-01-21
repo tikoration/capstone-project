@@ -41,11 +41,10 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    if(click){
-      setCurrentPage(1)
+    if (click) {
+      setCurrentPage(1);
     }
-  }, [click, setCurrentPage])
-  
+  }, [click, setCurrentPage]);
 
   return (
     <HeaderBg id="MainHeader" onClick={() => setClick(!click)}>
@@ -92,15 +91,25 @@ const Header = () => {
               <div onClick={openAuthorization}>
                 <FontAwesomeIcon
                   icon={faUserCircle}
-                  style={{ color: isMainPage ? "white" : "black" }}
+                  className="icons"
+                  style={{
+                    color: isMainPage
+                      ? "white &:hover {#0000FF}"
+                      : "black &:hover {#0000FF}",
+                  }}
                 />
               </div>
             </div>
             <div onClick={handleClick}>
               <Link to="/favorites">
                 <FontAwesomeIcon
+                  className="icons"
                   icon={faHeart}
-                  style={{ color: isMainPage ? "white" : "black" }}
+                  style={{
+                    color: isMainPage
+                      ? "white &:hover {#0000FF}"
+                      : "black &:hover {#0000FF}",
+                  }}
                 />
               </Link>
             </div>

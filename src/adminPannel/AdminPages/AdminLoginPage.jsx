@@ -3,15 +3,13 @@ import { useAdminAuth } from "../AdminContexts/AdminAuthContext";
 import { useEffect, useState } from "react";
 import { AdminLoginDiv } from "../../pages/AllPages";
 import Logo from "../../assets/MA.png";
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const AdminLogin = () => {
   const navigate = useNavigate();
   const { login, authenticated } = useAdminAuth();
-
-  const validUserName = process.env.REACT_APP_ADMIN_USERNAME ;
-  const validPassword = process.env.REACT_APP_ADMIN_PASSWORD ;
+  const validUserName = process.env.REACT_APP_ADMIN_USERNAME;
+  const validPassword = process.env.REACT_APP_ADMIN_PASSWORD;
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -28,18 +26,19 @@ const AdminLogin = () => {
   };
 
   useEffect(() => {
-    authenticated && navigate('/admin/products')
-  }, [authenticated, navigate])
+    authenticated && navigate("/admin/products");
+  }, [authenticated, navigate]);
 
   return (
     <AdminLoginDiv>
-      <Link to={"/"}>
+      <a style={{ marginBottom: "40px" }} href="/">
         <img src={Logo} alt="Logo" />
-      </Link>
+      </a>
       <form onSubmit={handleSubmit}>
         <div className="form-input">
-          <label>{t("user")}</label>
+          <label htmlFor="adminName">{t("user")}</label>
           <input
+            id="adminName"
             name="adminName"
             type="text"
             placeholder={t("user")}
@@ -49,8 +48,9 @@ const AdminLogin = () => {
           />
         </div>
         <div className="form-input">
-          <label>{t("Password")}</label>
+          <label htmlFor="adminPassword">{t("Password")}</label>
           <input
+            id="adminPassword"
             name="adminPassword"
             type="password"
             placeholder={t("Password")}
@@ -63,7 +63,9 @@ const AdminLogin = () => {
         <button type="submit">{t("Log in")}</button>
       </form>
       <button className="goBack" onClick={() => navigate("/")}>
-        {t("go back")}
+        <a style={{ color: "black" }} href="/">
+          {t("go back")}
+        </a>
       </button>
       {error && <p style={{ color: "red" }}>{error}</p>}
     </AdminLoginDiv>

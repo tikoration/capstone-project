@@ -41,9 +41,13 @@ const ProductList = ({
   };
 
   const handleDelete = (id) => {
-    sendRequest(null, `/api/v1/products/${id}`).then(() => {
-      resendRequest();
-    });
+    sendRequest(null, `/api/v1/products/${id}`)
+      .then(() => {
+        window.location.reload();
+      })
+      .catch((error) => {
+        console.error("Error deleting product:", error);
+      });
   };
 
   return (

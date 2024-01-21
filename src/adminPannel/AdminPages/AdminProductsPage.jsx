@@ -31,7 +31,7 @@ const AdminProducts = () => {
 
   if (loading)
     return (
-      <LoadingDiv style={{ left: "40px" }}>
+      <LoadingDiv style={{ left: "50%" }}>
         <FontAwesomeIcon icon={faArrowsRotate} />
       </LoadingDiv>
     );
@@ -43,8 +43,12 @@ const AdminProducts = () => {
         <SubmitButton style={{ marginRight: "16px" }} onClick={handleLogout}>
           Logout
         </SubmitButton>
-        <SubmitButton  style={{ marginRight: "16px" }} onClick={onClick}>Add Product</SubmitButton>
-        <SubmitButton onClick={() => navigate('/admin/users')}>User Information</SubmitButton>
+        <SubmitButton style={{ marginRight: "16px" }} onClick={onClick}>
+          Add Product
+        </SubmitButton>
+        <SubmitButton onClick={() => navigate("/admin/users")}>
+          User Information
+        </SubmitButton>
       </div>
       <ProductList
         products={AdminProducts}

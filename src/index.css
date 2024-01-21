@@ -209,7 +209,7 @@ Main Page and Detailed Product Page  */
 }
 
 .filter-icon:hover {
-  color: #043b5c;
+  color: #0000ff;
 }
 
 /* Mini photo slider for  Detailed Product Page */
@@ -238,7 +238,7 @@ Main Page and Detailed Product Page  */
 }
 
 .BurgerIcon:hover {
-  color: rgba(0, 0, 142, 1);
+  color: #0000ff;
 }
 
 .emailSubSuccess::placeholder {
@@ -260,4 +260,8 @@ Main Page and Detailed Product Page  */
   width: 20px;
   height: 10px;
   opacity: 1;
+}
+
+.NoneLabel {
+  display: none;
 }

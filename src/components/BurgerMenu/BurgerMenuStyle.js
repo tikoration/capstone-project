@@ -34,7 +34,7 @@ export const BurgerStyle = styled.div`
   svg {
     color: black;
     &:hover {
-      color: rgba(0, 0, 142, 1);
+      color: #0000FF;
     }
   }
 
@@ -48,7 +48,7 @@ export const BurgerStyle = styled.div`
       cursor: pointer;
 
       &:hover {
-        color: rgba(0, 0, 142, 1);
+        color: #0000FF;
       }
     }
     
@@ -57,14 +57,14 @@ export const BurgerStyle = styled.div`
       color: black;
 
     &:hover {
-      color: rgba(0, 0, 142, 1);
+      color: #0000FF;
     }
     }
 
     svg {
       font-size: 21px;
       &:hover {
-        color: rgba(0, 0, 142, 1);
+        color: #0000FF;
       }
     }
 
@@ -77,7 +77,7 @@ export const BurgerStyle = styled.div`
     button svg {
       color: black;
       &:hover {
-        color: rgba(0, 0, 142, 1);
+        color: #0000FF;
       }
 
       @media screen and (max-width: 767px) {
@@ -128,7 +128,7 @@ export const BurgerStyle = styled.div`
 
     a:hover {
       text-decoration: underline;
-      color: rgba(0, 0, 142, 1);
+      color: #0000FF;
     }
 
     a:nth-child(2) {

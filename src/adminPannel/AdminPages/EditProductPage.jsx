@@ -87,7 +87,7 @@ const EditProductPage = () => {
         description: descriptionRef.current.value,
         url: url,
         sliderImages: sliderImages,
-      }).then(() => navigate(-1));
+      }).then(() => window.location.reload());
     }
   };
 
@@ -144,46 +144,53 @@ const EditProductPage = () => {
                       }}
                     </UploadWidget>
                   </div>
-                    <div style={{position: "relative"}}className="detailed-slider edit-mode">
-                      {!isMobileView && (
-                        <PhotoSwiper
-                          photos={[prod.image, ...prod.moreImages]}
-                          id={prod.id}
-                        />
-                      )}
-                      <div
-                        style={{
-                          position: "absolute",
-                          bottom: '160px',
-                          left: '-30%',
-                          transform: "translate(-50%, -50%)",
-                          zIndex: 99,
+                  <div
+                    style={{ position: "relative" }}
+                    className="detailed-slider edit-mode"
+                  >
+                    {!isMobileView && (
+                      <PhotoSwiper
+                        photos={[prod.image, ...prod.moreImages]}
+                        id={prod.id}
+                      />
+                    )}
+                    <div
+                      style={{
+                        position: "absolute",
+                        bottom: "160px",
+                        left: "-30%",
+                        transform: "translate(-50%, -50%)",
+                        zIndex: 99,
+                      }}
+                    >
+                      <UploadWidget onUpload={handleOnMoreImagesUpload}>
+                        {({ open }) => {
+                          function handleOnClick(e) {
+                            e.preventDefault();
+                            open();
+                          }
+                          return (
+                            <FontAwesomeIcon
+                              size="2xl"
+                              style={{ color: "#0000FF" }}
+                              icon={faPen}
+                              onClick={handleOnClick}
+                            />
+                          );
                         }}
-                      >
-                        <UploadWidget onUpload={handleOnMoreImagesUpload}>
-                          {({ open }) => {
-                            function handleOnClick(e) {
-                              e.preventDefault();
-                              open();
-                            }
-                            return (
-                              <FontAwesomeIcon
-                                size="2xl"
-                                style={{ color: "#0000FF" }}
-                                icon={faPen}
-                                onClick={handleOnClick}
-                              />
-                            );
-                          }}
-                        </UploadWidget>
-                      </div>
+                      </UploadWidget>
                     </div>
+                  </div>
                 </div>
               )}
               <div>
                 <div className="detailed-product-details">
                   <div className="detailed-name-price">
+                    <label htmlFor="NaMe" className="NoneLabel">
+                      name
+                    </label>
                     <input
+                      id="NaMe"
                       style={{ borderColor: "#0000FF", padding: "10px" }}
                       className="detailed-product-name"
                       name="name"
@@ -194,7 +201,11 @@ const EditProductPage = () => {
                     <h2 style={{ padding: "10px" }} className="d-p-id">
                       {prod.id.slice(-6)}
                     </h2>
+                    <label htmlFor="PriCe" className="NoneLabel">
+                      price
+                    </label>
                     <input
+                      id="PriCe"
                       style={{ borderColor: "#0000FF", padding: "10px" }}
                       className="detailed-product-name"
                       name="price"
@@ -204,7 +215,11 @@ const EditProductPage = () => {
                     />
                   </div>
                   <div>
+                    <label htmlFor="Color2" className="NoneLabel">
+                      Color
+                    </label>
                     <input
+                      id="Color2"
                       style={{ borderColor: "#0000FF", padding: "10px" }}
                       name="color"
                       type="text"
@@ -228,6 +243,9 @@ const EditProductPage = () => {
                       />
                     )}
                   </h5>
+                  <label htmlFor="DesCription" className="NoneLabel">
+                    Descr
+                  </label>
                   {(!isMobileView || details) && (
                     <textarea
                       style={{
@@ -236,6 +254,7 @@ const EditProductPage = () => {
                         resize: "none",
                         padding: "10px",
                       }}
+                      id="DesCription"
                       className="product-description-text"
                       type="text"
                       name="description"
@@ -245,13 +264,13 @@ const EditProductPage = () => {
                   )}
                 </div>
               </div>
-              <div style={{position: 'absolute', right: '10%'}}>
+              <div style={{ position: "absolute", right: "10%" }}>
                 <SubmitButton onClick={onSubmit}>{t("update")}</SubmitButton>
                 <SubmitButton
                   style={{ marginLeft: "16px" }}
                   onClick={() => navigate("/admin/products")}
                 >
-                  {t('go back')}
+                  {t("go back")}
                 </SubmitButton>
               </div>
             </DetailedProducts>

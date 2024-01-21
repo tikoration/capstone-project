@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { AdminLoginDiv } from "../../pages/AllPages";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import UploadWidget from "./UploadWidget";
 import { useTranslation } from "react-i18next";
 
@@ -18,7 +18,7 @@ const ProductForm = ({
   const priceRef = useRef();
   const descRef = useRef();
   const colorRef = useRef();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [url, updateUrl] = useState();
   const [sliderImages, setSliderImages] = useState([]);
   const [, updateError] = useState();
@@ -69,7 +69,9 @@ const ProductForm = ({
   return (
     <AdminLoginDiv>
       <form onSubmit={onSubmit}>
+        <label htmlFor="TiTle">{t("Product title")}</label>
         <input
+          id="TiTle"
           name="title"
           type="text"
           placeholder={t("Product title")}
@@ -77,7 +79,9 @@ const ProductForm = ({
           defaultValue={name}
           required
         />
+        <label htmlFor="Price">{t("Product price")}</label>
         <input
+          id="Price"
           name="price"
           type="text"
           placeholder={t("Product price")}
@@ -85,7 +89,9 @@ const ProductForm = ({
           defaultValue={price}
           required
         />
+        <label htmlFor="Description">{t("Product description")}</label>
         <textarea
+          id="Description"
           name="description"
           type="text"
           placeholder={t("Product description")}
@@ -94,35 +100,35 @@ const ProductForm = ({
           required
         />
         <div>
-        <h3>{t("category")}</h3>
-        <select
-          value={categoryInp}
-          onChange={(e) => setCategoryInp(e.target.value)}
-          name="category"
-          id="cars"
-          required
-        >
-          <option value=""></option>
-          <option value="kids">{t("kids")}</option>
-          <option value="woman">{t("woman")}</option>
-        </select>
+          <select
+            value={categoryInp}
+            onChange={(e) => setCategoryInp(e.target.value)}
+            name="category"
+            id="cars"
+            required
+          >
+            <option value="">{t("category")}</option>
+            <option value="kids">{t("kids")}</option>
+            <option value="woman">{t("woman")}</option>
+          </select>
         </div>
         {categoryInp === "woman" && (
           <div>
-          <h3>{t("subcategory")}</h3>
-          <select
-            value={subCategoryInp}
-            onChange={(e) => setSubCategoryInp(e.target.value)}
-            name="sCategory"
-            id="sCategory"
-          >
-            <option value=""></option>
-            <option value="banquet">{t("banquet")}</option>
-            <option value="wedding">{t("wedding")}</option>
-          </select>
+            <select
+              value={subCategoryInp}
+              onChange={(e) => setSubCategoryInp(e.target.value)}
+              name="sCategory"
+              id="sCategory"
+            >
+              <option value="">{t("Sub Category")}</option>
+              <option value="banquet">{t("banquet")}</option>
+              <option value="wedding">{t("wedding")}</option>
+            </select>
           </div>
         )}
+        <label htmlFor="Colors">{t("color")}</label>
         <input
+          id="Colors"
           name="color"
           type="text"
           placeholder={t("color")}
@@ -139,9 +145,9 @@ const ProductForm = ({
             return <button onClick={handleOnClick}>{t("upload image")}</button>;
           }}
         </UploadWidget>
-          {url && (
-            <img className="UploadImage" src={url} alt="Uploaded resource" />
-          )}
+        {url && (
+          <img className="UploadImage" src={url} alt="Uploaded resource" />
+        )}
         <h2 style={{ textAlign: "center" }}>{t("slider text")}</h2>
         <UploadWidget onUpload={handleOnMoreImagesUpload}>
           {({ open }) => {
@@ -158,8 +164,10 @@ const ProductForm = ({
         </UploadWidget>
         <button type="submit">{t("add")}</button>
       </form>
-      <button onClick={() => navigate("/admin/products")}>
-        <a href="/">{t("go back")}</a>
+      <button>
+        <a style={{ color: "black" }} href="/admin/products">
+          {t("go back")}
+        </a>
       </button>
     </AdminLoginDiv>
   );

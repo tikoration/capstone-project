@@ -49,7 +49,7 @@ export const Authorization = styled.div`
       font-size: 16px;
 
       &:hover {
-        color: rgba(0, 0, 142, 1);
+        color: #0000ff;
       }
     }
   }
@@ -231,6 +231,7 @@ export const Authorization = styled.div`
       top: -80px;
       left: 50%;
       transform: translate(-50%, -50%);
+      color: gray;
     }
   }
 `;
@@ -401,7 +402,8 @@ export const UserForm = styled.form`
   }
 
   .formLoadings2 {
-    top: 80%
+    color: gray;
+    top: 80%;
   }
 `;
 

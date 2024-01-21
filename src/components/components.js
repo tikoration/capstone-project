@@ -35,7 +35,7 @@ export const HeaderBg = styled.div`
     display: none;
     
     &:hover {
-        color: rgba(0, 0, 142, 1);
+        color: #0000FF;
       }
     }
 
@@ -118,7 +118,7 @@ export const Navigation = styled.nav`
     font-weight: 700;
 
     &:hover {
-      color: rgba(0, 0, 142, 1);
+      color: #0000ff;
     }
   }
 
@@ -200,6 +200,10 @@ export const Parameters = styled.div`
         }
       }
     }
+
+    .icons {
+      color: yellow;
+    }
   }
 
   div {
@@ -216,7 +220,7 @@ export const Parameters = styled.div`
       font-weight: 500;
 
       &:hover {
-        border-color: rgba(0, 0, 142, 1);
+        border-color: #0000ff;
       }
     }
 
@@ -247,12 +251,12 @@ export const Parameters = styled.div`
   }
 
   svg:hover {
-    color: rgba(0, 0, 142, 1);
+    color: #0000ff;
   }
 
   button:hover {
-    color: rgba(0, 0, 142, 1);
-    border-color: rgba(0, 0, 142, 1) c;
+    color: #0000ff;
+    border-color: #0000ff;
   }
 `;
 
@@ -277,8 +281,8 @@ export const SubmitButton = styled.button`
 
   &:hover {
     background-color: white;
-    color: rgba(0, 0, 142, 1);
-    border: 1px solid rgba(0, 0, 142, 1);
+    color: #0000ff;
+    border: 1px solid #0000ff;
     transition: 0.5s;
   }
 `;

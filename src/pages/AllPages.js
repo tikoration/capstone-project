@@ -104,7 +104,7 @@ export const MainContainer = styled.div`
         border: 1px solid white;
 
         &:hover {
-          border: 1px solid rgba(0, 0, 142, 1);
+          border: 1px solid #0000ff;
         }
       }
     }
@@ -137,7 +137,7 @@ export const PopularCollections = styled.div`
       border: 1px solid white;
 
       &:hover {
-        border: 1px solid rgba(0, 0, 142, 1);
+        border: 1px solid #0000ff;
       }
     }
   }
@@ -341,15 +341,18 @@ export const AdminLoginDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  margin: 60px 0 40px;
   gap: 10px;
 
   form {
     display: flex;
     flex-direction: column;
     width: 440px;
-    gap: 30px;
-    margin-top: 60px;
+    gap: 10px;
+
+    label {
+      display: none;
+    }
 
     .UploadImage {
       align-self: center;
@@ -370,12 +373,12 @@ export const AdminLoginDiv = styled.div`
       height: 40px;
       padding: 10px;
     }
-    
-    h3{
+
+    h3 {
       padding: 10px 0px;
     }
 
-    select{
+    select {
       height: 40px;
       padding: 10px;
       width: 440px;
@@ -428,35 +431,35 @@ export const AdminLoginDiv = styled.div`
 `;
 
 export const UsersChart = styled.div`
-max-width: 1073px;
-display: flex;
-flex-direction: column;
-margin: auto;
-gap: 10px;
-margin-top: 120px;
-text-align: center;
-padding: 20px;
+  max-width: 1073px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 10px;
+  margin-top: 120px;
+  text-align: center;
+  padding: 20px;
 
-  h1{
+  h1 {
     font-size: 25px;
     margin-bottom: 40px;
   }
-  
-  .user-row{
+
+  .user-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 2px solid #0000004D;
+    border-bottom: 2px solid #0000004d;
     height: 28px;
     align-items: center;
   }
 
-  .user-row-elements{
+  .user-row-elements {
     display: flex;
     flex-direction: row;
     gap: 70px;
 
-    h2{
+    h2 {
       width: 250px;
       text-align: left;
     }
@@ -467,17 +470,17 @@ padding: 20px;
   }
 
   @media screen and (max-width: 950px) {
-    .user-row{
+    .user-row {
       height: auto;
       padding-bottom: 10px;
     }
-    .user-row-elements{
+    .user-row-elements {
       flex-direction: column;
       gap: 10px;
       text-align: left;
     }
   }
-`
+`;
 
 export const ProductsListTop = styled.div`
   position: relative;
@@ -999,8 +1002,8 @@ export const ContactStyle = styled.div`
 
         &:hover {
           background-color: white;
-          color: rgba(0, 0, 142, 1);
-          border: 1px solid rgba(0, 0, 142, 1);
+          color: #0000FF;
+          border: 1px solid #0000FF;
           transition: 0.5s;
         }
       }
@@ -1072,8 +1075,9 @@ export const AboutStyle = styled.div`
     }
 
     img {
-      width: 50%;
-      height: 556px;
+      width: 45%;
+      height: 450px;
+      object-fit: cover;
     }
   }
 
@@ -1404,7 +1408,7 @@ export const RatesStyle = styled.div`
       transition: .3s;
 
       &:hover {
-        color: rgba(0, 0, 142, 1);
+        color: #0000FF;
       }
     }
   }
