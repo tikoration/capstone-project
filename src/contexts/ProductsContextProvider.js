@@ -45,7 +45,8 @@ const ProductsContextProvider = ({ children }) => {
         color: product.color,
         id: product._uuid,
         image: product.url,
-        moreImages: product.sliderImages
+        moreImages: product.sliderImages,
+        result: product.result
       };
     }) || [];
 

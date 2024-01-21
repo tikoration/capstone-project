@@ -47,6 +47,7 @@ const ProductForm = ({
     setSliderImages((prevState) => [...prevState, result?.info?.secure_url]);
   };
 
+  const result = "new product"
   const onSubmit = (e) => {
     e.preventDefault();
 
@@ -59,7 +60,8 @@ const ProductForm = ({
         categoryInp,
         subCategoryInp,
         url,
-        sliderImages
+        sliderImages,
+        result
       );
     } else {
       window.alert("Please choose Photo");

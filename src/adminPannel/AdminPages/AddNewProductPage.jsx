@@ -18,7 +18,8 @@ const AddNewProduct = () => {
     category,
     subCategory,
     url,
-    sliderImages
+    sliderImages,
+    result
   ) => {
     sendRequest([
       {
@@ -30,6 +31,7 @@ const AddNewProduct = () => {
         subCategory,
         url,
         sliderImages,
+        result
       },
     ]);
   };
