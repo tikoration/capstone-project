@@ -36,7 +36,7 @@ const ProductsContextProvider = ({ children }) => {
   };
   
   const {products: adminProducts} = useProductFetch({
-    url: "/api/v1/products",
+    url: "https://crudapi.co.uk/api/v1/products",
     method: "GET"
   })
 

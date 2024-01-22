@@ -57,7 +57,7 @@ const Comments = ({ comments, resendRequest }) => {
   };
 
   const deleteComment = (id) => {
-    sendRequest(null, `/api/v1/comments/${id}`)
+    sendRequest(null, `https://crudapi.co.uk/api/v1/comments/${id}`)
       .then(() => {
         resendRequest();
       })
@@ -70,7 +70,7 @@ const Comments = ({ comments, resendRequest }) => {
     e.preventDefault();
     if (edittedComment.current) {
       const comm = edittedComment.current.value;
-      sendRequestForEdit({ userComment: comm }, `/api/v1/comments/${id}`)
+      sendRequestForEdit({ userComment: comm }, `https://crudapi.co.uk/api/v1/comments/${id}`)
         .then(() => {
           resendRequest();
         })

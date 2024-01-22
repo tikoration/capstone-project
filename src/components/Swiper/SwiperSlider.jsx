@@ -60,11 +60,7 @@ const SwiperSlider = () => {
           modules={[EffectCreative]}
           className="mySwiper"
         >
-          {weddingSlider
-            // .filter((img, index) => {
-            //   return img ? index > 4 && index < 9 : null;
-            // })
-            .map((img, index) => {
+          {weddingSlider.map((img, index) => {
               return (
                 <SwiperSlide key={index}>
                   <img src={img} alt="nature" />

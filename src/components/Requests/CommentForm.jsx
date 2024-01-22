@@ -17,13 +17,13 @@ const CommentForm = () => {
   const {productId} = useParams()
 
   const { sendRequest, loading, sentRequest } = useRequest({
-    url: "/api/v1/comments",
+    url: "https://crudapi.co.uk/api/v1/comments",
     method: "POST",
     envVariable: "REACT_APP_COMMENTS",
   });
 
   const { fetchRequest, resendRequest } = useFetch({
-    url: "/api/v1/comments",
+    url: "https://crudapi.co.uk/api/v1/comments",
     method: "GET",
     envVariable: "REACT_APP_COMMENTS",
   });

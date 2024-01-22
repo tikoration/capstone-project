@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import { AdminLoginDiv } from "../../pages/AllPages";
-// import { useNavigate } from "react-router-dom";
 import UploadWidget from "./UploadWidget";
 import { useTranslation } from "react-i18next";
 
@@ -9,8 +8,6 @@ const ProductForm = ({
   name,
   description,
   price,
-  category,
-  subCategory,
   color,
 }) => {
   const { t } = useTranslation();
@@ -18,7 +15,6 @@ const ProductForm = ({
   const priceRef = useRef();
   const descRef = useRef();
   const colorRef = useRef();
-  // const navigate = useNavigate();
   const [url, updateUrl] = useState();
   const [sliderImages, setSliderImages] = useState([]);
   const [, updateError] = useState();

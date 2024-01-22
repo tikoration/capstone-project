@@ -8,11 +8,6 @@ const AllProducts = () => {
 
   const AllProducts = filteredProducts.map((prod) => prod);
 
-  // if (AllProducts.length === 0) {
-  //   const styledHeight = "100vh";
-  //   return styledHeight;
-  // }
-
   const productsPerPage = 20;
 
   return (

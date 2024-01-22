@@ -17,7 +17,7 @@ const AdminProducts = () => {
   const navigate = useNavigate();
 
   const { error, loading, resendRequest } = useProductFetch({
-    url: "/api/v1/products",
+    url: "https://crudapi.co.uk/api/v1/products",
     method: "GET",
   });
 

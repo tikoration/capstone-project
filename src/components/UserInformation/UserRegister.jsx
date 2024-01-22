@@ -30,13 +30,13 @@ const UserRegister = ({ onSuccess }) => {
   const [uNameExists, setUNameExists] = useState(false);
 
   const { loading, sentRequest, sendRequest } = useRequest({
-    url: "/api/v1/users",
+    url: "https://crudapi.co.uk/api/v1/users",
     method: "POST",
     envVariable: "REACT_APP_USERS",
   });
 
   const { fetchRequest } = useFetch({
-    url: "/api/v1/users",
+    url: "https://crudapi.co.uk/api/v1/users",
     method: "GET",
     envVariable: "REACT_APP_USERS",
   });

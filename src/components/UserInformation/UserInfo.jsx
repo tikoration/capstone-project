@@ -34,7 +34,7 @@ function UserInfo({ users, setUserInfo, onSuccess }) {
 
   const { t } = useTranslation();
   const { loading, sentRequest, sendRequest } = useRequest({
-    url: `/api/v1/users/${loggedInUser.id}`,
+    url: `https://crudapi.co.uk/api/v1/users/${loggedInUser.id}`,
     method: "PUT",
     envVariable: "REACT_APP_USERS",
   });
@@ -56,7 +56,7 @@ function UserInfo({ users, setUserInfo, onSuccess }) {
     if (isValid) {
       sendRequest(
         { Password: userRegister.Password, CPassword: userRegister.CPassword },
-        `/api/v1/users/${user[0].id}`
+        `https://crudapi.co.uk/api/v1/users/${user[0].id}`
       )
         .then(() => {
           onSuccess(userRegister.Email, userRegister.Password);

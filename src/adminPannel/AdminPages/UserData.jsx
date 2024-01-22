@@ -14,7 +14,7 @@ const UserData = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { fetchRequest, loading } = useFetch({
-    url: "/api/v1/users",
+    url: "https://crudapi.co.uk/api/v1/users",
     method: "GET",
     envVariable: "REACT_APP_USERS",
   });

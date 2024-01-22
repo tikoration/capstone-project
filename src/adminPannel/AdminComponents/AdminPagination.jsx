@@ -41,7 +41,7 @@ const ProductList = ({
   };
 
   const handleDelete = (id) => {
-    sendRequest(null, `/api/v1/products/${id}`)
+    sendRequest(null, `https://crudapi.co.uk/api/v1/products/${id}`)
       .then(() => {
         window.location.reload();
       })

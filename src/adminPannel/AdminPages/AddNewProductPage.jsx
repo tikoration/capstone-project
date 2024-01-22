@@ -6,7 +6,7 @@ import { faArrowsRotate } from "@fortawesome/free-solid-svg-icons";
 
 const AddNewProduct = () => {
   const { loading, sendRequest } = useProductRequest({
-    url: "/api/v1/products",
+    url: "https://crudapi.co.uk/api/v1/products",
     method: "POST",
   });
 

@@ -54,7 +54,7 @@ const UserRessetPassword = ({ onSuccess, users }) => {
       if (isMailExists) {
         sendRequest(
           { Password: userRegister.Password },
-          `/api/v1/users/${user[0].id}`
+          `https://crudapi.co.uk/api/v1/users/${user[0].id}`
         )
           .then(() => {
             onSuccess(userRegister.Email, userRegister.Password);

@@ -35,7 +35,7 @@ const EditProductPage = () => {
   const [sliderImages, setSliderImages] = useState();
 
   const { sendRequest, loading } = useProductRequest({
-    url: `/api/v1/products/${productId}`,
+    url: `https://crudapi.co.uk/api/v1/products/${productId}`,
     method: "PUT",
   });
 
