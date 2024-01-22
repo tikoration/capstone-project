@@ -1,4 +1,4 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { BrowserRouter, RouterProvider } from "react-router-dom";
 import appRoutes from "./routes/AppRoutes";
 import { StyleSheetManager } from "styled-components";
 
@@ -6,7 +6,14 @@ function App() {
   return (
     <div>
       <StyleSheetManager shouldForwardProp={(prop) => prop !== "isMainPage"}>
-        <RouterProvider router={createBrowserRouter(appRoutes)} />
+        <RouterProvider
+          router={
+            <BrowserRouter basename="/capstone-project">
+              {appRoutes}
+            </BrowserRouter>
+          }
+        />
+        ;
       </StyleSheetManager>
     </div>
   );
