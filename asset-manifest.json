@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/capstone-project/static/css/main.4c43f866.css",
+    "main.js": "/capstone-project/static/js/main.01ea6c69.js",
+    "static/js/787.de344223.chunk.js": "/capstone-project/static/js/787.de344223.chunk.js",
+    "static/media/mariamsAtelier.mp4": "/capstone-project/static/media/mariamsAtelier.144a1e3c5e86a5b16ea0.mp4",
+    "static/media/promo-photo.png": "/capstone-project/static/media/promo-photo.cc5496161617340f0402.png",
+    "static/media/detailed-image-2.png": "/capstone-project/static/media/detailed-image-2.e5020caabec32a772df8.png",
+    "static/media/wedding-photo.png": "/capstone-project/static/media/wedding-photo.e7bbc1eadf27a71e7ff5.png",
+    "static/media/kidPhoto.jpg": "/capstone-project/static/media/kidPhoto.5a341ab302ac1b0b2fdc.jpg",
+    "static/media/Montserrat-VariableFont_wght.ttf": "/capstone-project/static/media/Montserrat-VariableFont_wght.7e687123cd4528224ce5.ttf",
+    "static/media/Helvetica.ttf": "/capstone-project/static/media/Helvetica.06113bf748ae7dc33e05.ttf",
+    "static/media/popupimage.jpg": "/capstone-project/static/media/popupimage.3306a2ae0a0437221a57.jpg",
+    "static/media/womanPhoto.jpg": "/capstone-project/static/media/womanPhoto.fbb5ff0d33eca4ec6159.jpg",
+    "static/media/New.png": "/capstone-project/static/media/New.de2f127b5dc08561e77e.png",
+    "static/media/detailed-image-1.png": "/capstone-project/static/media/detailed-image-1.b02d1a70b4324ebe5e5d.png",
+    "static/media/fabrics.jpg": "/capstone-project/static/media/fabrics.aa9f0f393e57eba4185d.jpg",
+    "static/media/banquetPhoto.png": "/capstone-project/static/media/banquetPhoto.a797f1c9f774136faf95.png",
+    "static/media/moreWedding2.jpg": "/capstone-project/static/media/moreWedding2.21f62861b238279bab3d.jpg",
+    "static/media/aboutUs3.jpg": "/capstone-project/static/media/aboutUs3.172e77f000e4f6a76605.jpg",
+    "static/media/moreWedding1.jpg": "/capstone-project/static/media/moreWedding1.f536d43c4f51ce596834.jpg",
+    "static/media/weddingCategory.jpg": "/capstone-project/static/media/weddingCategory.bdf2da8c2404f48153a4.jpg",
+    "static/media/moreWedding3.jpg": "/capstone-project/static/media/moreWedding3.b8fe4da1f8880f29280e.jpg",
+    "index.html": "/capstone-project/index.html",
+    "static/media/getFetch.cjs": "/capstone-project/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.4c43f866.css.map": "/capstone-project/static/css/main.4c43f866.css.map",
+    "main.01ea6c69.js.map": "/capstone-project/static/js/main.01ea6c69.js.map",
+    "787.de344223.chunk.js.map": "/capstone-project/static/js/787.de344223.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c43f866.css",
+    "static/js/main.01ea6c69.js"
+  ]
+}
