@@ -239,6 +239,12 @@ export const ProductGrid = styled.div`
     right: 15px;
   }
 
+  .product-color {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+
   .product-name {
     font-family: ${FontFamily};
     font-size: 20px;
@@ -294,6 +300,12 @@ export const ProductGrid = styled.div`
     top: 45%;
     right: 42%;
     z-index: 999;
+  }
+
+  .price-and-color {
+    display: flex;
+    gap: 5px;
+    align-items: center;
   }
 
   // <<--
@@ -599,10 +611,57 @@ export const DetailedProducts = styled.div`
   }
 
   // admin mode -->>
+  .main-image-div {
+    position: relative;
+
+    .upload-widget-icon {
+      display: flex;
+      width: 108px;
+      justify-content: space-between;
+      position: absolute;
+      top: 50%;
+      left: 57%;
+      transform: translate(-50%, -50%);
+    }
+
+    .admin-slider {
+      position: relative;
+    }
+
+    .slider-upload-widget-icon {
+      position: absolute;
+      bottom: 160px;
+      left: -30%;
+      transform: translate(-50%, -50%);
+      z-index: 99;
+    }
+  }
+
+  input {
+    border-color: #0000ff;
+    padding: 10px;
+  }
+
+  h2 {
+    padding: 10px;
+  }
+
+  textarea {
+    border-color: #0000ff;
+    height: 150px;
+    resize: none;
+    padding: 10px;
+  }
+
+  .edit-mode-buttons {
+    position: absolute;
+    right: 10%;
+  }
 
   .edit-mode {
     filter: brightness(60%);
   }
+
   //  <<--
 
   @media screen and (max-width: 1300px) {

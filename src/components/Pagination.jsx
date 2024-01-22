@@ -3,17 +3,15 @@ import Stack from "@mui/material/Stack";
 import Pagination from "@mui/material/Pagination";
 import useScrollToTop from "../hooks/useScrollToTop";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHeart,
-  faCircle,
-} from "@fortawesome/free-solid-svg-icons";
+import { faHeart, faCircle } from "@fortawesome/free-solid-svg-icons";
 import { Link, useParams } from "react-router-dom";
 import { ProductGrid, ProductsListTop } from "../pages/AllPages";
 import { useProductsContext } from "../contexts/ProductsContextProvider";
 import { useEffect, useState } from "react";
 
 const ProductList = ({ products, productsPerPage, category }) => {
-  const { setMainPhoto, currentPage, setCurrentPage, favorites } = useProductsContext();
+  const { setMainPhoto, currentPage, setCurrentPage, favorites } =
+    useProductsContext();
   const startIndex = (currentPage - 1) * productsPerPage;
   const endIndex = startIndex + productsPerPage;
   const currentProducts = products.slice(startIndex, endIndex);
@@ -33,7 +31,7 @@ const ProductList = ({ products, productsPerPage, category }) => {
     setCurrentPage(value);
   };
 
-  const favoritesIds = favorites ? favorites.map(product => product.id) : [];
+  const favoritesIds = favorites ? favorites.map((product) => product.id) : [];
 
   return (
     <div>
@@ -69,9 +67,7 @@ const ProductList = ({ products, productsPerPage, category }) => {
               </div>
               {photoLoaded && <h2 className="product-name">{product.name}</h2>}
               {photoLoaded && (
-                <div
-                  style={{ display: "flex", gap: "5px", alignItems: "center" }}
-                >
+                <div className="product-color">
                   <h3 className="product-price">{`${product.price}$`}</h3>
                   <FontAwesomeIcon
                     icon={faCircle}

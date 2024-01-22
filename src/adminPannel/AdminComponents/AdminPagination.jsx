@@ -88,9 +88,7 @@ const ProductList = ({
               </div>
               {photoLoaded && <h2 className="product-name">{product.name}</h2>}
               {photoLoaded && (
-                <div
-                  style={{ display: "flex", gap: "5px", alignItems: "center" }}
-                >
+                <div className="price-and-color">
                   <h3 className="product-price">{`${product.price}$`}</h3>
                   <FontAwesomeIcon
                     icon={faCircle}

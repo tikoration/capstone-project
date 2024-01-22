@@ -522,6 +522,7 @@ export const ModalPopupStyle = styled.div`
   .image {
     width: 477px;
     height: 100%;
+    object-fit: cover;
   }
 
   .modal {

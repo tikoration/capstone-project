@@ -55,7 +55,7 @@ const Slider = ({ images }) => {
       >
         {images.map((product) => (
           <SwiperSlide key={product.id}>
-            <SliderDiv style={{ width: "100%" }} onClick={handleClick}>
+            <SliderDiv onClick={handleClick}>
               <Link to={`/${product.category}/products/${product.id}`} replace>
                 <SlidesImages src={product.image} alt="image" />
               </Link>

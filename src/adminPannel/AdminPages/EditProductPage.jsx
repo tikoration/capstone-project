@@ -110,23 +110,13 @@ const EditProductPage = () => {
                 <SliderForMobile images={[prod.image, ...prod.moreImages]} />
               )}
               {!isMobileView && (
-                <div style={{ position: "relative" }}>
+                <div className="main-image-div">
                   <img
                     className="detailed-product-image edit-mode"
                     src={url || mainPhoto || prod.image}
                     alt="img"
                   />
-                  <div
-                    style={{
-                      display: "flex",
-                      width: "108px",
-                      justifyContent: "space-between",
-                      position: "absolute",
-                      top: "50%",
-                      left: "57%",
-                      transform: "translate(-50%, -50%)",
-                    }}
-                  >
+                  <div className="upload-widget-icon">
                     <UploadWidget onUpload={handleOnUpload}>
                       {({ open }) => {
                         function handleOnClick(e) {
@@ -144,25 +134,14 @@ const EditProductPage = () => {
                       }}
                     </UploadWidget>
                   </div>
-                  <div
-                    style={{ position: "relative" }}
-                    className="detailed-slider edit-mode"
-                  >
+                  <div className="detailed-slider edit-mode admin-slider">
                     {!isMobileView && (
                       <PhotoSwiper
                         photos={[prod.image, ...prod.moreImages]}
                         id={prod.id}
                       />
                     )}
-                    <div
-                      style={{
-                        position: "absolute",
-                        bottom: "160px",
-                        left: "-30%",
-                        transform: "translate(-50%, -50%)",
-                        zIndex: 99,
-                      }}
-                    >
+                    <div className="slider-upload-widget-icon">
                       <UploadWidget onUpload={handleOnMoreImagesUpload}>
                         {({ open }) => {
                           function handleOnClick(e) {
@@ -191,14 +170,13 @@ const EditProductPage = () => {
                     </label>
                     <input
                       id="NaMe"
-                      style={{ borderColor: "#0000FF", padding: "10px" }}
                       className="detailed-product-name"
                       name="name"
                       type="text"
                       defaultValue={prod.name}
                       ref={nameRef}
                     />
-                    <h2 style={{ padding: "10px" }} className="d-p-id">
+                    <h2 className="d-p-id">
                       {prod.id.slice(-6)}
                     </h2>
                     <label htmlFor="PriCe" className="NoneLabel">
@@ -206,7 +184,6 @@ const EditProductPage = () => {
                     </label>
                     <input
                       id="PriCe"
-                      style={{ borderColor: "#0000FF", padding: "10px" }}
                       className="detailed-product-name"
                       name="price"
                       type="number"
@@ -220,7 +197,6 @@ const EditProductPage = () => {
                     </label>
                     <input
                       id="Color2"
-                      style={{ borderColor: "#0000FF", padding: "10px" }}
                       name="color"
                       type="text"
                       defaultValue={prod.color}
@@ -248,12 +224,6 @@ const EditProductPage = () => {
                   </label>
                   {(!isMobileView || details) && (
                     <textarea
-                      style={{
-                        borderColor: "#0000FF",
-                        height: "150px",
-                        resize: "none",
-                        padding: "10px",
-                      }}
                       id="DesCription"
                       className="product-description-text"
                       type="text"
@@ -264,7 +234,7 @@ const EditProductPage = () => {
                   )}
                 </div>
               </div>
-              <div style={{ position: "absolute", right: "10%" }}>
+              <div className="edit-mode-buttons">
                 <SubmitButton onClick={onSubmit}>{t("update")}</SubmitButton>
                 <SubmitButton
                   style={{ marginLeft: "16px" }}

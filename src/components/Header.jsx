@@ -74,7 +74,6 @@ const Header = () => {
               className="MediaLogo"
               src={isMainPage ? MediaLogo : Logo}
               alt="Logo"
-              // style={{ display: isMainPage ? "block" : "none" }}
             />
           </Link>
           <Link to="/">
