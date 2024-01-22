@@ -63,7 +63,7 @@ const AdminLogin = () => {
         <button type="submit">{t("Log in")}</button>
       </form>
       <button className="goBack" onClick={() => navigate("/")}>
-        <a style={{ color: "black" }} href="/">
+        <a style={{ color: "black" }} href="/capstone-project">
           {t("go back")}
         </a>
       </button>

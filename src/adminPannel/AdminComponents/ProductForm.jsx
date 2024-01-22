@@ -163,7 +163,7 @@ const ProductForm = ({
         <button type="submit">{t("add")}</button>
       </form>
       <button>
-        <a style={{ color: "black" }} href="/admin/products">
+        <a style={{ color: "black" }} href="/capstone-project/#/admin/products">
           {t("go back")}
         </a>
       </button>
