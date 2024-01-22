@@ -3,9 +3,9 @@ import EmailForm from "./Requests/EmailForm";
 import { Loading } from "./components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowsRotate, faCheck } from "@fortawesome/free-solid-svg-icons";
-const REACT_APP_USERS = '2H1LrD8uBcnkHsbtyVEgEtmQkwq_xMonnuhwQ72r-BVG_eVn9A'
 
 const Subscription = () => {
+  const REACT_APP_USERS = '07eGqeiaf3-15aAcn05IkczqpNazEWlFR5q20t36tNS1mKiVaA'
 
   const { loading, sentRequest, sendRequest } = useRequest({
     url: "/api/v1/users",
