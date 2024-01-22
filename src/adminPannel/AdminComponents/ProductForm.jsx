@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { AdminLoginDiv } from "../../pages/AllPages";
 import UploadWidget from "./UploadWidget";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 const ProductForm = ({
   onFormSubmit,
@@ -20,6 +21,7 @@ const ProductForm = ({
   const [, updateError] = useState();
   const [categoryInp, setCategoryInp] = useState();
   const [subCategoryInp, setSubCategoryInp] = useState();
+  const navigate = useNavigate()
 
   const handleOnUpload = (error, result, widget) => {
     if (error) {
@@ -42,6 +44,11 @@ const ProductForm = ({
     }
     setSliderImages((prevState) => [...prevState, result?.info?.secure_url]);
   };
+
+  const navigation = () => {
+    navigate(-1)
+    .then(() => window.location.reload())
+  }
 
   const result = "new product"
   const onSubmit = (e) => {
@@ -163,7 +170,7 @@ const ProductForm = ({
         <button type="submit">{t("add")}</button>
       </form>
       <button>
-        <a style={{ color: "black" }} href="/capstone-project/#/admin/products">
+        <a style={{ color: "black" }} onClick={navigation}>
           {t("go back")}
         </a>
       </button>
