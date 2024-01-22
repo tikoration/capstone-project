@@ -8,7 +8,7 @@ const Subscription = () => {
   const REACT_APP_USERS = '07eGqeiaf3-15aAcn05IkczqpNazEWlFR5q20t36tNS1mKiVaA'
 
   const { loading, sentRequest, sendRequest } = useRequest({
-    url: "/api/v1/users",
+    url: "https://crudapi.co.uk/api/v1/users",
     method: "POST",
     envVariable: REACT_APP_USERS,
   });
