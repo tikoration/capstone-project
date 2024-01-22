@@ -46,8 +46,10 @@ const ProductForm = ({
   };
 
   const navigation = () => {
-    navigate(-1)
-    .then(() => window.location.reload())
+    navigate('/admin/products')
+    setTimeout(() => {
+      window.location.reload()
+    }, 200)
   }
 
   const result = "new product"
@@ -169,10 +171,8 @@ const ProductForm = ({
         </UploadWidget>
         <button type="submit">{t("add")}</button>
       </form>
-      <button>
-        <a style={{ color: "black" }} onClick={navigation}>
+      <button style={{ color: "black" }} onClick={navigation}>
           {t("go back")}
-        </a>
       </button>
     </AdminLoginDiv>
   );
