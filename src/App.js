@@ -6,9 +6,7 @@ function App() {
   return (
     <div>
       <StyleSheetManager shouldForwardProp={(prop) => prop !== "isMainPage"}>
-        <RouterProvider router={createHashRouter(appRoutes, {
-          basename: "/capstone-project"
-        })} />
+        <RouterProvider router={createHashRouter(appRoutes)} />
       </StyleSheetManager>
     </div>
   );
