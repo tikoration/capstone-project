@@ -6,7 +6,7 @@ const useRequest = ({ url, method, envVariable }) => {
   const [sentRequest, setSentRequest] = useState(false);
   const { closeRegistration, closeRessetPassword } = useAuthorization(false);
 
-  // const envValue = envVariable;
+  const envValue = process.env[envVariable];
 
   const sendRequest = async (body, custom) => {
     setLoading(true);
@@ -15,7 +15,7 @@ const useRequest = ({ url, method, envVariable }) => {
       method,
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${envVariable}`,
+        Authorization: `Bearer ${envValue}`,
       },
       body: !!body && method !== "GET" ? JSON.stringify(body) : undefined,
     });
