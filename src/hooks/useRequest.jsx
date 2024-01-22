@@ -6,7 +6,7 @@ const useRequest = ({ url, method, envVariable }) => {
   const [sentRequest, setSentRequest] = useState(false);
   const { closeRegistration, closeRessetPassword } = useAuthorization(false);
 
-  const envValue = process.env[envVariable];
+  const envValue = envVariable;
 
   const sendRequest = async (body, custom) => {
     setLoading(true);
