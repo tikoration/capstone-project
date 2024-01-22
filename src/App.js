@@ -1,4 +1,4 @@
-import { RouterProvider, createBrowserRouter, createHashRouter } from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 import appRoutes from "./routes/AppRoutes";
 import { StyleSheetManager } from "styled-components";
 
