@@ -2,6 +2,8 @@ import kidPhoto from "../assets/kidPhoto.jpg"
 // import popularCollection from "../assets/popular-collection-1.png";
 import detailedImage1 from "../assets/detailed-image-1.png";
 import detailedImage2 from "../assets/detailed-image-2.png";
+import detailedImage3 from "../assets/detailed-image-3.png";
+import detailedImage4 from "../assets/detailed-image-4.png";
 import weddingPhoto from "../assets/wedding-photo.png";
 import moreWedding1 from "../assets/moreWedding1.jpg";
 import moreWedding2 from "../assets/moreWedding2.jpg";
@@ -20,10 +22,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "red",
     date: "2023-12-15",
@@ -40,10 +40,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -60,10 +58,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -80,10 +76,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -100,10 +94,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -120,10 +112,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -140,10 +130,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -160,10 +148,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -180,10 +166,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -200,10 +184,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -220,10 +202,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -240,10 +220,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -260,10 +238,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -280,10 +256,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -300,10 +274,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -320,10 +292,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -340,10 +310,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -360,10 +328,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -380,10 +346,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -400,10 +364,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -420,10 +382,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -440,10 +400,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -460,10 +418,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -480,10 +436,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -500,10 +454,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -520,10 +472,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -540,10 +490,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -560,10 +508,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -580,10 +526,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -600,10 +544,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -620,10 +562,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -640,10 +580,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -660,10 +598,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -680,10 +616,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -700,10 +634,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -720,10 +652,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -740,10 +670,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-15",
@@ -760,10 +688,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "red",
     date: "2023-12-15",
@@ -780,10 +706,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "red",
     date: "2023-12-15",
@@ -800,10 +724,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "red",
     date: "2023-12-15",
@@ -820,10 +742,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "red",
     date: "2023-12-15",
@@ -840,10 +760,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "red",
     date: "2023-12-15",
@@ -860,10 +778,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "red",
     date: "2023-12-15",
@@ -880,10 +796,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "red",
     date: "2023-12-15",
@@ -900,10 +814,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "red",
     date: "2023-12-15",
@@ -920,10 +832,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "red",
     date: "2023-12-15",
@@ -940,10 +850,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "red",
     date: "2023-12-15",
@@ -960,10 +868,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "red",
     date: "2023-12-15",
@@ -980,10 +886,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "red",
     date: "2023-12-15",
@@ -1000,10 +904,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1020,10 +922,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1040,10 +940,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1060,10 +958,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1080,10 +976,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1100,10 +994,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1120,10 +1012,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1140,10 +1030,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1160,10 +1048,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1180,10 +1066,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1200,10 +1084,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1220,10 +1102,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1240,10 +1120,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1260,10 +1138,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1280,10 +1156,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1300,10 +1174,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1320,10 +1192,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1340,10 +1210,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1360,10 +1228,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1380,10 +1246,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1400,10 +1264,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1420,10 +1282,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1440,10 +1300,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1460,10 +1318,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1480,10 +1336,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1500,10 +1354,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1520,10 +1372,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1540,10 +1390,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1560,10 +1408,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1580,10 +1426,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1600,10 +1444,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1620,10 +1462,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1640,10 +1480,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1660,10 +1498,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1680,10 +1516,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1700,10 +1534,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1720,10 +1552,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1740,10 +1570,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1760,10 +1588,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1780,10 +1606,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1800,10 +1624,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1820,10 +1642,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1840,10 +1660,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1860,10 +1678,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1880,10 +1696,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1900,10 +1714,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1920,10 +1732,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1940,10 +1750,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1960,10 +1768,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -1980,10 +1786,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "black",
     date: "2024-01-03",
@@ -2001,10 +1805,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "red",
     date: "2023-12-22",
@@ -2022,10 +1824,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "red",
     date: "2023-12-22",
@@ -2043,10 +1843,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "red",
     date: "2023-12-22",
@@ -2064,10 +1862,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "blue",
     date: "2023-12-22",
@@ -2085,10 +1881,8 @@ const products = [
     moreImages: [
       detailedImage1,
       detailedImage2,
-      weddingPhoto,
-      detailedImage1,
-      detailedImage2,
-      weddingPhoto,
+      detailedImage3,
+      detailedImage4
     ],
     color: "red",
     date: "2023-12-22",
