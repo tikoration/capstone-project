@@ -6,12 +6,13 @@ const NewProductsPage = () => {
   const { t } = useTranslation();
   const { clothes } = useProductsContext();
   const newClothes = clothes.filter((prod) => prod.result === "new product");
+  const isTablet =  window.innerWidth >= 720 && window.innerWidth <= 1020 ;
 
   return (
     <div className="container refresh-page">
       <ProductList
         products={newClothes}
-        productsPerPage={20}
+        productsPerPage={isTablet ? 21 : 20}
         category={t("New products")}
       />
     </div>

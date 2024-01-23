@@ -7,8 +7,9 @@ const AllProducts = () => {
   const { filteredProducts } = useFilterContext();
 
   const AllProducts = filteredProducts.map((prod) => prod);
+  const isTablet =  window.innerWidth >= 720 && window.innerWidth <= 1020 ;
 
-  const productsPerPage = 20;
+  const productsPerPage = isTablet ? 21 : 20;
 
   return (
     <div

@@ -7,11 +7,13 @@ import { LoadingDiv, SubmitButton } from "../../components/components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowsRotate } from "@fortawesome/free-solid-svg-icons";
 import { useAdminAuth } from "../AdminContexts/AdminAuthContext";
+import { AdminHeader } from "../../pages/AllPages";
 
 const AdminProducts = () => {
   const { t } = useTranslation();
   const { filteredProducts } = useFilterContext();
   const { logout } = useAdminAuth();
+  const isTablet =  window.innerWidth >= 720 && window.innerWidth <= 1020 ;
 
   const AdminProducts = filteredProducts.map((prod) => prod);
   const navigate = useNavigate();
@@ -39,21 +41,21 @@ const AdminProducts = () => {
 
   return (
     <div className="container">
-      <div style={{ margin: "16px 0 0 16px" }}>
-        <SubmitButton style={{ marginRight: "16px" }} onClick={handleLogout}>
+      <AdminHeader>
+        <SubmitButton onClick={handleLogout}>
           {t('logout')}
         </SubmitButton>
-        <SubmitButton style={{ marginRight: "16px" }} onClick={onClick}>
+        <SubmitButton onClick={onClick}>
           {t("add product")}
         </SubmitButton>
         <SubmitButton onClick={() => navigate("/admin/users")}>
           {t('user data')}
         </SubmitButton>
-      </div>
+      </AdminHeader>
       <ProductList
         products={AdminProducts}
         resendRequest={resendRequest}
-        productsPerPage={20}
+        productsPerPage={isTablet ? 21 : 20}
         category={t("allProducts")}
       />
     </div>

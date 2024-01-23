@@ -1503,3 +1503,25 @@ export const RatesStyle = styled.div`
     gap: 20px;
   }
 `;
+
+
+export const AdminHeader = styled.div`
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 16px;
+
+  @media screen and (max-width: 767px) {
+    width: 100%; 
+    padding: 0 16px;
+    justify-content: center;
+    margin: 16px 0;
+
+    button {
+      width: 100%;
+      padding-left: 16px;
+    }
+  }
+`
