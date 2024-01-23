@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 import { useProductsContext } from "./ProductsContextProvider";
 import { useLocation } from "react-router-dom";
+import productColors from "../data/ProductColors";
 
 const SearchContext = createContext(null);
 
@@ -23,9 +24,12 @@ export const SearchProvider = ({ children }) => {
         const categoryMatch = item.category
           .toLowerCase()
           .includes(search.toLowerCase());
-        const colorMatch = item.color
-          .toLowerCase()
-          .includes(search.toLowerCase());
+        const pickedColor = productColors.find(
+          (el) => el.english === search || el.georgian === search
+        ) || { english: null };
+        const colorMatch = pickedColor.english
+          ? item.color.toLowerCase().includes(pickedColor.english.toLowerCase())
+          : false;
         const newMatch = item?.result
           ?.toLowerCase()
           .includes(search.toLowerCase());
@@ -49,7 +53,7 @@ export const SearchProvider = ({ children }) => {
 
   return (
     <SearchContext.Provider
-      value={{ search, setSearch, filteredData, handleFilter }}
+      value={{ search, setSearch, setFilteredData, filteredData, handleFilter }}
     >
       {children}
     </SearchContext.Provider>

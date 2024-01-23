@@ -19,6 +19,7 @@ import { useProductsContext } from "../contexts/ProductsContextProvider";
 import { HeaderBg, HeaderContent, Navigation, Parameters } from "./components";
 import BurgerMenu from "./BurgerMenu/BurgerMenu";
 import { useBurgerMenu } from "../contexts/BurgerMenuProvider";
+import { useFilterContext } from "../contexts/FilterContextProvider";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -29,6 +30,12 @@ const Header = () => {
   const [click, setClick] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const location = useLocation();
+  const {
+    setFilterByColor,
+    setSortByPrice,
+    setFilterBySale,
+    setSortByNewestDate,
+  } = useFilterContext();
 
   const isMobileView = window.innerWidth <= 768;
   const isMainPage = isMobileView ? location.pathname === "/" : false;
@@ -43,8 +50,19 @@ const Header = () => {
   useEffect(() => {
     if (click) {
       setCurrentPage(1);
+      setFilterByColor("");
+      setSortByPrice(null);
+      setFilterBySale(false);
+      setSortByNewestDate(false);
     }
-  }, [click, setCurrentPage]);
+  }, [
+    click,
+    setCurrentPage,
+    setFilterByColor,
+    setSortByPrice,
+    setFilterBySale,
+    setSortByNewestDate,
+  ]);
 
   return (
     <HeaderBg id="MainHeader" onClick={() => setClick(!click)}>

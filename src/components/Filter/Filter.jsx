@@ -2,14 +2,23 @@ import "./FilterStyle.css";
 import { useEffect, useState, useCallback, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { useFilterContext } from "../../contexts/FilterContextProvider";
+import { useProductsContext } from "../../contexts/ProductsContextProvider";
 
 const Filter = () => {
   const [showFilter, setShowFilter] = useState(false);
   const [selectedPriceOption, setSelectedPriceOption] = useState("");
   const [selectedColorOption, setSelectedColorOption] = useState("");
   const { t } = useTranslation();
-  const { setSortByPrice, setFilterByColor, setFilterBySale, setSortByNewestDate } = useFilterContext();
+  const {
+    setSortByPrice,
+    setFilterByColor,
+    setFilterBySale,
+    setSortByNewestDate,
+  } = useFilterContext();
+  const { clothes } = useProductsContext();
   const filterRef = useRef(null);
+
+  const colorOptions = [...new Set(clothes.map((prod) => prod.color))];
 
   useEffect(() => {
     setSortByPrice(selectedPriceOption);
@@ -29,14 +38,14 @@ const Filter = () => {
   };
 
   const handleOnSale = () => {
-    setFilterBySale(true)
+    setFilterBySale(true);
     setShowFilter(false);
-  }
+  };
 
   const handleNewest = () => {
-    setSortByNewestDate(true)
-    setShowFilter(false)
-  }
+    setSortByNewestDate(true);
+    setShowFilter(false);
+  };
 
   const handleColorChange = useCallback(
     (event) => {
@@ -50,11 +59,14 @@ const Filter = () => {
     [setSelectedColorOption, setShowFilter]
   );
 
-  const handleDocumentClick = useCallback((event) => {
-    if (filterRef.current && !filterRef.current.contains(event.target)) {
-      setShowFilter(false);
-    }
-  }, [setShowFilter]);
+  const handleDocumentClick = useCallback(
+    (event) => {
+      if (filterRef.current && !filterRef.current.contains(event.target)) {
+        setShowFilter(false);
+      }
+    },
+    [setShowFilter]
+  );
 
   useEffect(() => {
     document.addEventListener("click", handleDocumentClick);
@@ -91,13 +103,18 @@ const Filter = () => {
             onChange={handleColorChange}
           >
             <option value="color">{t("Color")}</option>
-            <option value="red">{t("Red")}</option>
-            <option value="blue">{t("Blue")}</option>
-            <option value="white">{t("White")}</option>
-            <option value="black">{t("Black")}</option>
+            {colorOptions.map((color, index) => (
+              <option key={`color${index}`} value={color}>
+                {t(color)}
+              </option>
+            ))}
           </select>
-          <span onClick={handleOnSale} className="filter-options">{t("With Discount")}</span>
-          <span onClick={handleNewest} className="filter-options">{t("Newest")}</span>
+          <span onClick={handleOnSale} className="filter-options">
+            {t("With Discount")}
+          </span>
+          <span onClick={handleNewest} className="filter-options">
+            {t("Newest")}
+          </span>
         </div>
       )}
     </div>

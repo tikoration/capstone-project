@@ -3,7 +3,7 @@ import useProductFetch from "../adminPannel/AdminHooks/useProductFetch";
 import products from "../data/products";
 import useLocalStorage from "../hooks/useLocalStorage";
 import { createContext, useContext, useState, useEffect } from "react";
-import productColors from "../ProductColors";
+import productColors from "../data/ProductColors";
 
 const ProductsContext = createContext(null);
 
