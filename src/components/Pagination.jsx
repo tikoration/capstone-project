@@ -5,13 +5,15 @@ import useScrollToTop from "../hooks/useScrollToTop";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faCircle } from "@fortawesome/free-solid-svg-icons";
 import { Link, useParams } from "react-router-dom";
-import { ProductGrid, ProductsListTop } from "../pages/AllPages";
+import { FavoritePage, ProductGrid, ProductsListTop } from "../pages/AllPages";
 import { useProductsContext } from "../contexts/ProductsContextProvider";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const ProductList = ({ products, productsPerPage, category }) => {
   const { setMainPhoto, currentPage, setCurrentPage, favorites } =
     useProductsContext();
+    const {t} = useTranslation()
   const startIndex = (currentPage - 1) * productsPerPage;
   const endIndex = startIndex + productsPerPage;
   const currentProducts = products.slice(startIndex, endIndex);
@@ -34,6 +36,10 @@ const ProductList = ({ products, productsPerPage, category }) => {
   const favoritesIds = favorites ? favorites.map((product) => product.id) : [];
 
   return (
+    <div>
+
+{products.length > 0 ? 
+    
     <div>
       <ProductsListTop>
         <h2 className="new-collection-title">{category}</h2>
@@ -89,6 +95,18 @@ const ProductList = ({ products, productsPerPage, category }) => {
           />
         </Stack>
       )}
+    </div> :
+    (
+      <FavoritePage>
+      <div className="favorites-no-products">
+        <h2 className="favorites-text">{t("not found")}</h2>
+        <Link className="favorites-back-button" to="/">
+          {t("back to main")}
+        </Link>
+      </div>
+      </FavoritePage>
+    )}
+    
     </div>
   );
 };

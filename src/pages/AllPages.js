@@ -580,7 +580,6 @@ export const DetailedProducts = styled.div`
   .d-p-favorite {
     border: 1px solid black;
     border-radius: 10px;
-    gap: 10px;
     display: flex;
     align-items: center;
     margin-top: 30px;

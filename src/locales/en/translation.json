@@ -103,5 +103,7 @@
   "Sub Category": "Sub Category",
   "color": "color",
   "update": "Update",
-  "category": "Category"
+  "category": "Category",
+  "not found": "Product Not Found",
+  "back to main": "Back to Main Page"
 }
