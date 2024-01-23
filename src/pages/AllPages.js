@@ -552,10 +552,10 @@ export const DetailedProducts = styled.div`
   .detailed-product-details {
     padding: 10px;
     margin-top: 172px;
-     h2 {
+    h2 {
       padding-left: 0px;
       font-family: ${FontFamily};
-     }
+    }
   }
 
   .detailed-product-name {
@@ -587,7 +587,6 @@ export const DetailedProducts = styled.div`
     padding: 0 10px;
     height: 34px;
     cursor: pointer;
-
   }
 
   .product-description {
@@ -788,6 +787,7 @@ export const PhotoSwiperContainer = styled.div`
 
 export const FavoritePage = styled.div`
   min-height: 600px;
+  margin-bottom: 100px;
 
   .pagination {
     display: flex;
@@ -1504,7 +1504,6 @@ export const RatesStyle = styled.div`
   }
 `;
 
-
 export const AdminHeader = styled.div`
   display: flex;
   justify-content: left;
@@ -1514,7 +1513,7 @@ export const AdminHeader = styled.div`
   margin: 16px;
 
   @media screen and (max-width: 767px) {
-    width: 100%; 
+    width: 100%;
     padding: 0 16px;
     justify-content: center;
     margin: 16px 0;
@@ -1524,4 +1523,4 @@ export const AdminHeader = styled.div`
       padding-left: 16px;
     }
   }
-`
+`;

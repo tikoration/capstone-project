@@ -34,6 +34,7 @@ const ProductList = ({ products, productsPerPage, category }) => {
   };
 
   const favoritesIds = favorites ? favorites.map((product) => product.id) : [];
+  const isPaginationNeeded = products.length <= productsPerPage
 
   return (
     <div>
@@ -85,7 +86,7 @@ const ProductList = ({ products, productsPerPage, category }) => {
           </div>
         ))}
       </ProductGrid>
-      {photoLoaded && (
+      {photoLoaded && !isPaginationNeeded &&(
         <Stack spacing={2}>
           <Pagination
             className="pagination"
