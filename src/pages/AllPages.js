@@ -340,6 +340,7 @@ export const ProductGrid = styled.div`
       font-weight: 400;
       font-size: 14px;
       line-height: 16px;
+      font-family: ${FontFamily};
     }
 
     .product-price {
@@ -364,6 +365,7 @@ export const AdminLoginDiv = styled.div`
 
     label {
       display: none;
+      font-family: ${FontFamily};
     }
 
     .UploadImage {
@@ -379,21 +381,25 @@ export const AdminLoginDiv = styled.div`
       display: flex;
       flex-direction: column;
       gap: 10px;
+      font-family: ${FontFamily};
     }
 
     input {
       height: 40px;
       padding: 10px;
+      font-family: ${FontFamily};
     }
 
     h3 {
       padding: 10px 0px;
+      font-family: ${FontFamily};
     }
 
     select {
       height: 40px;
       padding: 10px;
       width: 440px;
+      font-family: ${FontFamily};
 
       @media screen and (max-width: 767px) {
         width: 100%;
@@ -403,12 +409,14 @@ export const AdminLoginDiv = styled.div`
       border: none;
       color: white;
       background: #000;
+      font-family: ${FontFamily};
     }
 
     textarea {
       height: 150px;
       padding: 10px;
       resize: none;
+      font-family: ${FontFamily};
     }
   }
 
@@ -422,6 +430,7 @@ export const AdminLoginDiv = styled.div`
     font-style: normal;
     font-weight: 700;
     cursor: pointer;
+    font-family: ${FontFamily};
 
     &:hover {
       opacity: 0.7;
@@ -455,6 +464,7 @@ export const UsersChart = styled.div`
   h1 {
     font-size: 25px;
     margin-bottom: 40px;
+    font-family: ${FontFamily};
   }
 
   .user-row {
@@ -474,6 +484,7 @@ export const UsersChart = styled.div`
     h2 {
       width: 250px;
       text-align: left;
+      font-family: ${FontFamily};
     }
 
     h2:first-child {
@@ -543,6 +554,7 @@ export const DetailedProducts = styled.div`
     margin-top: 172px;
      h2 {
       padding-left: 0px;
+      font-family: ${FontFamily};
      }
   }
 
@@ -562,6 +574,7 @@ export const DetailedProducts = styled.div`
     color: rgba(0, 0, 0, 0.4);
     font-weight: 300;
     margin-top: 5px;
+    font-family: ${FontFamily};
   }
 
   .d-p-favorite {
@@ -585,6 +598,8 @@ export const DetailedProducts = styled.div`
   .product-description-text {
     width: 300px;
     margin-top: 25px;
+    line-height: 22px;
+    font-family: ${FontFamily};
   }
 
   .product-sizes {
@@ -646,10 +661,12 @@ export const DetailedProducts = styled.div`
   input {
     border-color: #0000ff;
     padding: 10px;
+    font-family: ${FontFamily};
   }
 
   h2 {
     padding: 10px;
+    font-family: ${FontFamily};
   }
 
   textarea {
@@ -657,11 +674,13 @@ export const DetailedProducts = styled.div`
     height: 150px;
     resize: none;
     padding: 10px;
+    font-family: ${FontFamily};
   }
 
   .edit-mode-buttons {
     position: absolute;
     right: 10%;
+    font-family: ${FontFamily};
   }
 
   .edit-mode {
@@ -730,6 +749,7 @@ export const DetailedProducts = styled.div`
     .back-button {
       margin-bottom: 10px;
       margin-left: 15px;
+      font-family: ${FontFamily};
     }
   }
 `;
