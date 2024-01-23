@@ -70,7 +70,10 @@ const Comments = ({ comments, resendRequest }) => {
     e.preventDefault();
     if (edittedComment.current) {
       const comm = edittedComment.current.value;
-      sendRequestForEdit({ userComment: comm }, `https://crudapi.co.uk/api/v1/comments/${id}`)
+      sendRequestForEdit(
+        { userComment: comm },
+        `https://crudapi.co.uk/api/v1/comments/${id}`
+      )
         .then(() => {
           resendRequest();
         })
@@ -129,18 +132,20 @@ const Comments = ({ comments, resendRequest }) => {
             )}
           </div>
         ))}
-        <div className="showComments">
-          <Link className="viewMore" onClick={showMoreComments}>
-            {t("View more")}
-            <FontAwesomeIcon icon={faChevronDown} />
-          </Link>
-          {hideComment && (
-            <Link className="viewMore" onClick={hideAllComments}>
-              {t("Hide all")}
-              <FontAwesomeIcon icon={faChevronUp} />
+        {commentsList.length > 2 && (
+          <div className="showComments">
+            <Link className="viewMore" onClick={showMoreComments}>
+              {t("View more")}
+              <FontAwesomeIcon icon={faChevronDown} />
             </Link>
-          )}
-        </div>
+            {hideComment && (
+              <Link className="viewMore" onClick={hideAllComments}>
+                {t("Hide all")}
+                <FontAwesomeIcon icon={faChevronUp} />
+              </Link>
+            )}
+          </div>
+        )}
       </div>
     </RatesStyle>
   );
