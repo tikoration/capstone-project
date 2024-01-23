@@ -330,6 +330,7 @@ export const UserForm = styled.form`
         font-weight: 600;
         line-height: 12px;
         color: black;
+        cursor: pointer;
       }
     }
   }
