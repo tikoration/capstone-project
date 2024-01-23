@@ -3,6 +3,7 @@ import useProductFetch from "../adminPannel/AdminHooks/useProductFetch";
 import products from "../data/products";
 import useLocalStorage from "../hooks/useLocalStorage";
 import { createContext, useContext, useState, useEffect } from "react";
+import productColors from "../ProductColors";
 
 const ProductsContext = createContext(null);
 
@@ -42,13 +43,19 @@ const ProductsContextProvider = ({ children }) => {
 
   const productsList =
     adminProducts?.items.map((product) => {
+      const colorObject = productColors.find(
+        (color) => color.georgian === product.color
+      );
+
+      const color = colorObject ? colorObject.english : product.color;
+
       return {
         name: product.name,
         price: product.price,
         description: product.description,
         category: product.category,
         subCategory: product.subCategory,
-        color: product.color,
+        color: color,
         id: product._uuid,
         image: product.url,
         moreImages: product.sliderImages,

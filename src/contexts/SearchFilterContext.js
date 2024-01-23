@@ -32,7 +32,9 @@ export const SearchProvider = ({ children }) => {
         const descMatch = item?.description
           ?.toLowerCase()
           .includes(search.toLowerCase());
-        return nameMatch || categoryMatch || colorMatch || newMatch || descMatch;
+        return (
+          nameMatch || categoryMatch || colorMatch || newMatch || descMatch
+        );
       });
 
       setFilteredData(filteredResult);
