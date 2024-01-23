@@ -21,7 +21,11 @@ const SliderForMobile = ({ images }) => {
     >
       {images.map((image, index) => (
         <SwiperSlide key={index}>
-          <img style={{ width: "100%" }} src={image} alt="" />
+          <img
+            style={{ width: "100%", objectFit: "cover" }}
+            src={image}
+            alt="swiperimage"
+          />
         </SwiperSlide>
       ))}
     </Swiper>

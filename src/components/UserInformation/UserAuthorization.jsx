@@ -113,7 +113,9 @@ const UserAuthorization = () => {
         {isRessOpen && (
           <UserRessetPassword users={users} onSuccess={RegisterOnSuccess} />
         )}
-        {userLoggedIn && <UserLoggedIn onSuccess={RegisterOnSuccess} users={users}/>}
+        {userLoggedIn && (
+          <UserLoggedIn onSuccess={RegisterOnSuccess} users={users} />
+        )}
         {!isUserOpen && !userLoggedIn && (
           <div>
             <div className="UserHeading">
@@ -176,7 +178,7 @@ const UserAuthorization = () => {
                   onClick={togglePassword}
                 />
                 <div onClick={openRessetPassword} className="ResPass">
-                  <Link>{t("Recover Password")}</Link>
+                  <span>{t("Recover Password")}</span>
                 </div>
               </div>
               <div className="formButtons">

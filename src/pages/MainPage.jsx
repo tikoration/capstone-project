@@ -28,7 +28,7 @@ const MainPage = () => {
           <img
             className="main-page-photo"
             src={promoPhoto}
-            alt=""
+            alt="mainPhoto"
             onLoad={handlePromoPhotoLoad}
           />
           <div className="mainBtn">

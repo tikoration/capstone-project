@@ -210,7 +210,8 @@ export const Authorization = styled.div`
       margin-bottom: 60px;
     }
 
-    a {
+    a,
+    span {
       display: flex;
       align-items: center;
       gap: 12px;
@@ -259,9 +260,14 @@ export const UserForm = styled.form`
   gap: 20px;
   padding: 0 5px;
 
+  @media screen and (max-height: 830px) {
+    overflow: auto;
+    height: 70%;
+  }
+
   .icon {
     position: absolute;
-    top: 55%;
+    top: 58%;
     left: 48%;
     transform: translate(-50%, -50%)
     font-size: 20px;
@@ -313,10 +319,9 @@ export const UserForm = styled.form`
       width: 100px;
       align-self: end;
 
-      a {
-        
+      span {  
         font-family: ${FontFamily};
-        font-size: 10px;
+        font-size: 12px;
         font-weight: 600;
         line-height: 12px;
         color: black;

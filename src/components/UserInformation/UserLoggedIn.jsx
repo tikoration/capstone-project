@@ -15,7 +15,7 @@ import { SubmitButton } from "../components";
 import { useState } from "react";
 import UserInfo from "./UserInfo";
 
-const UserLoggedIn = ({users, onSuccess}) => {
+const UserLoggedIn = ({ users, onSuccess }) => {
   const { t } = useTranslation();
   const {
     closeAuthorization,
@@ -74,10 +74,10 @@ const UserLoggedIn = ({users, onSuccess}) => {
                   />
                   {t("liked Products")}
                 </Link>
-                <Link onClick={() => setUserInfo(true)}>
+                <span onClick={() => setUserInfo(true)}>
                   <FontAwesomeIcon className="BurgerIcon" icon={faUserCircle} />
                   {t("My Information")}
-                </Link>
+                </span>
                 <Link onClick={handleOverlayClick} to={"/contact"}>
                   <FontAwesomeIcon
                     className="BurgerIcon"
@@ -94,7 +94,13 @@ const UserLoggedIn = ({users, onSuccess}) => {
               </div>
             </div>
           )}
-          {userInfo && <UserInfo onSuccess={onSuccess} users={users} setUserInfo={setUserInfo}/>}
+          {userInfo && (
+            <UserInfo
+              onSuccess={onSuccess}
+              users={users}
+              setUserInfo={setUserInfo}
+            />
+          )}
         </Authorization>
         {/* <Overlay onClick={handleOverlayClick}></Overlay> */}
       </UserContent>
