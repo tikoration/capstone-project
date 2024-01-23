@@ -22,6 +22,7 @@ const FilterForm = ({ nav }) => {
     navigate(nav);
     setInputValue("");
     setBurgerMenuOpen(false);
+    setSearch("")
   };
 
   useEffect(() => {

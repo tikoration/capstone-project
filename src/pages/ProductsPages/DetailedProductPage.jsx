@@ -67,7 +67,7 @@ const DetailedProductPage = () => {
                   />
                 )}
               <div className="detailed-slider">
-                {!isMobileView && (
+                {!isMobileView && prod.moreImages.length > 0 && (
                   <PhotoSwiper
                     photos={[prod.image, ...prod.moreImages]}
                     id={prod.id}

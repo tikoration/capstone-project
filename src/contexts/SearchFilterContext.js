@@ -29,7 +29,10 @@ export const SearchProvider = ({ children }) => {
         const newMatch = item?.result
           ?.toLowerCase()
           .includes(search.toLowerCase());
-        return nameMatch || categoryMatch || colorMatch || newMatch;
+        const descMatch = item?.description
+          ?.toLowerCase()
+          .includes(search.toLowerCase());
+        return nameMatch || categoryMatch || colorMatch || newMatch || descMatch;
       });
 
       setFilteredData(filteredResult);

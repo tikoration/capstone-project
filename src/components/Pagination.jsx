@@ -68,7 +68,7 @@ const ProductList = ({ products, productsPerPage, category }) => {
               {photoLoaded && <h2 className="product-name">{product.name}</h2>}
               {photoLoaded && (
                 <div className="product-color">
-                  <h3 className="product-price">{`${product.price}$`}</h3>
+                  <h3 className="product-price">{`${product.price}₾`}</h3>
                   <FontAwesomeIcon
                     icon={faCircle}
                     style={{ color: `${product.color}` }}

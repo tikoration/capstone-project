@@ -41,13 +41,13 @@ const AdminProducts = () => {
     <div className="container">
       <div style={{ margin: "16px 0 0 16px" }}>
         <SubmitButton style={{ marginRight: "16px" }} onClick={handleLogout}>
-          Logout
+          {t('logout')}
         </SubmitButton>
         <SubmitButton style={{ marginRight: "16px" }} onClick={onClick}>
-          Add Product
+          {t("add product")}
         </SubmitButton>
         <SubmitButton onClick={() => navigate("/admin/users")}>
-          User Information
+          {t('user data')}
         </SubmitButton>
       </div>
       <ProductList

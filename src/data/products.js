@@ -1,5 +1,4 @@
 import kidPhoto from "../assets/kidPhoto.jpg"
-// import popularCollection from "../assets/popular-collection-1.png";
 import detailedImage1 from "../assets/detailed-image-1.png";
 import detailedImage2 from "../assets/detailed-image-2.png";
 import detailedImage3 from "../assets/detailed-image-3.png";
@@ -14,7 +13,7 @@ import womanPhoto from "../assets/womanPhoto.jpg"
 const products = [
   {
     id: "V0bA_wyAL5vX_Nfg5NguJ",
-    name: "Product 1",
+    name: "კაბა 1",
     image: womanPhoto,
     price: 10,
     isOnSale: false,
@@ -27,12 +26,11 @@ const products = [
     ],
     color: "red",
     date: "2023-12-15",
-    description:
-      "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
+    description: "ყვითელი მოკლე კაბა, ამოჭრილი ზურგითა და დეკოლტეთი. მასალა ბამბა."
   },
   {
     id: "IzzBJKy66-YvAX-bbLjOj",
-    name: "Product 2",
+    name: "კაბა 2",
     image: womanPhoto,
     price: 10,
     isOnSale: false,
@@ -50,7 +48,7 @@ const products = [
   },
   {
     id: "7lbRV86qQIOCiFABflW1z",
-    name: "Product 3",
+    name: "კაბა 3",
     image: womanPhoto,
     price: 10,
     isOnSale: false,
@@ -68,7 +66,7 @@ const products = [
   },
   {
     id: "jdQi8HcDUrkHnjOcb26k2",
-    name: "Product 4",
+    name: "კაბა 4",
     image: womanPhoto,
     price: 10,
     isOnSale: false,
@@ -86,7 +84,7 @@ const products = [
   },
   {
     id: "7joyifQasuYKM3NQmqgbw",
-    name: "Product 5",
+    name: "კაბა 5",
     image: womanPhoto,
     price: 10,
     isOnSale: false,
@@ -104,7 +102,7 @@ const products = [
   },
   {
     id: "URDPb4F_sZYoL_UfzHYFI",
-    name: "Product 6",
+    name: "კაბა 6",
     image: womanPhoto,
     price: 40,
     isOnSale: false,
@@ -122,7 +120,7 @@ const products = [
   },
   {
     id: "uUDbGka8ygGsL5AdVElkk",
-    name: "Product 7",
+    name: "კაბა 7",
     image: womanPhoto,
     price: 30,
     isOnSale: false,
@@ -140,7 +138,7 @@ const products = [
   },
   {
     id: "t3wFSavCDn-mR25xusYPv",
-    name: "Product 8",
+    name: "კაბა 8",
     image: womanPhoto,
     price: 10,
     isOnSale: false,
@@ -158,7 +156,7 @@ const products = [
   },
   {
     id: "2eaK9hD-7vnuqKv5jrzeD",
-    name: "Product 9",
+    name: "კაბა 9",
     image: womanPhoto,
     price: 10,
     isOnSale: false,
@@ -176,7 +174,7 @@ const products = [
   },
   {
     id: "hKT8mr9kVFHapb0VksB8G",
-    name: "Product 10",
+    name: "კაბა 10",
     image: womanPhoto,
     price: 10,
     isOnSale: false,
@@ -194,7 +192,7 @@ const products = [
   },
   {
     id: "wDmwGVU2GQ7qhZnhk8QrO",
-    name: "Product 11",
+    name: "კაბა 11",
     image: womanPhoto,
     price: 10,
     isOnSale: false,
@@ -212,7 +210,7 @@ const products = [
   },
   {
     id: "XouykANboIGeCSDWUJn4q",
-    name: "Product 12",
+    name: "კაბა 12",
     image: womanPhoto,
     price: 10,
     isOnSale: false,
@@ -230,7 +228,7 @@ const products = [
   },
   {
     id: "Br97Y9-iol6Ob1GzvymKK",
-    name: "Product 13",
+    name: "კაბა 13",
     image: womanPhoto,
     price: 10,
     isOnSale: false,
@@ -248,7 +246,7 @@ const products = [
   },
   {
     id: "pOI-O8ZcoIABKdRKx53bv",
-    name: "Product 14",
+    name: "კაბა 14",
     image: womanPhoto,
     price: 10,
     isOnSale: false,
@@ -266,7 +264,7 @@ const products = [
   },
   {
     id: "othUbqZcnkSuGzcJWyiYm",
-    name: "Product 15",
+    name: "კაბა 15",
     image: womanPhoto,
     price: 10,
     isOnSale: false,
@@ -284,7 +282,7 @@ const products = [
   },
   {
     id: "_yfKzVEtn2186YzZ5r4Q2",
-    name: "Product 16",
+    name: "კაბა 16",
     image: womanPhoto,
     price: 10,
     isOnSale: false,
@@ -302,7 +300,7 @@ const products = [
   },
   {
     id: "wn_EBzNlQ6wSZRdFvb-CR",
-    name: "Product 17",
+    name: "კაბა 17",
     image: womanPhoto,
     price: 10,
     isOnSale: false,
@@ -320,7 +318,7 @@ const products = [
   },
   {
     id: "SlTMPGb-K-Czj9dzMh0E0",
-    name: "Product 18",
+    name: "კაბა 18",
     image: womanPhoto,
     price: 10,
     isOnSale: false,
@@ -338,7 +336,7 @@ const products = [
   },
   {
     id: "bNwruK4hqLnx4R-vq1L_C",
-    name: "Product 19",
+    name: "კაბა 19",
     image: womanPhoto,
     price: 10,
     isOnSale: false,
@@ -356,7 +354,7 @@ const products = [
   },
   {
     id: "u1nws3npOkZlkNtCLJyG8",
-    name: "Product 20",
+    name: "კაბა 20",
     image: womanPhoto,
     price: 10,
     isOnSale: false,
@@ -374,7 +372,7 @@ const products = [
   },
   {
     id: "4lwW42t9byHndFe7r4frk",
-    name: "Product 21",
+    name: "კაბა 21",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -392,7 +390,7 @@ const products = [
   },
   {
     id: "lHqDYWjQf_lgFwTlvdQ1Z",
-    name: "Product 22",
+    name: "კაბა 22",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -410,7 +408,7 @@ const products = [
   },
   {
     id: "Se1sOTePtFA2ry3s9qMnL",
-    name: "Product 23",
+    name: "კაბა 23",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -428,7 +426,7 @@ const products = [
   },
   {
     id: "BQkdBt6-uORsJH6vN4jct",
-    name: "Product 24",
+    name: "კაბა 24",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -446,7 +444,7 @@ const products = [
   },
   {
     id: "K7YDPogrdUG-EY6TvSumJ",
-    name: "Product 25",
+    name: "კაბა 25",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -464,7 +462,7 @@ const products = [
   },
   {
     id: "1baaQQb04ONCVaGgeNgdB",
-    name: "Product 26",
+    name: "კაბა 26",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -482,7 +480,7 @@ const products = [
   },
   {
     id: "fynuUNzMK5OkWKLFq0FdV",
-    name: "Product 27",
+    name: "კაბა 27",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -500,7 +498,7 @@ const products = [
   },
   {
     id: "w9-O1ZEea29pMAo5kne_I",
-    name: "Product 28",
+    name: "კაბა 28",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -518,7 +516,7 @@ const products = [
   },
   {
     id: "rFYBuk79h9ftHJLk2JFs8",
-    name: "Product 29",
+    name: "კაბა 29",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -536,7 +534,7 @@ const products = [
   },
   {
     id: "D_NsmYeB1OR4ThB1sDPHk",
-    name: "Product 30",
+    name: "კაბა 30",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -554,7 +552,7 @@ const products = [
   },
   {
     id: "oRzahFavXVOMUMRzXEIiR",
-    name: "Product 31",
+    name: "კაბა 31",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -572,7 +570,7 @@ const products = [
   },
   {
     id: "KkcdRKNfcesngiUgEZOZj",
-    name: "Product 32",
+    name: "კაბა 32",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -590,7 +588,7 @@ const products = [
   },
   {
     id: "Na-r5A2NdO2Xba0UqlG0N",
-    name: "Product 33",
+    name: "კაბა 33",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -608,7 +606,7 @@ const products = [
   },
   {
     id: "rsc_ksBzFIEpMR_KnHgut",
-    name: "Product 34",
+    name: "კაბა 34",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -626,7 +624,7 @@ const products = [
   },
   {
     id: "3Mng69pBzRtTgm5UZ-j-1",
-    name: "Product 35",
+    name: "კაბა 35",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -644,7 +642,7 @@ const products = [
   },
   {
     id: "DG84odtPlJ1OncMfNKUmw",
-    name: "Product 36",
+    name: "კაბა 36",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -662,7 +660,7 @@ const products = [
   },
   {
     id: "TfbTqSISeOMkq25SZb3pI",
-    name: "Product 37",
+    name: "კაბა 37",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -680,7 +678,7 @@ const products = [
   },
   {
     id: "z727cNaU576OGFHb4mHi9",
-    name: "Product 38",
+    name: "კაბა 38",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -698,7 +696,7 @@ const products = [
   },
   {
     id: "pJaB2GqvU979djI31BO1W",
-    name: "Product 39",
+    name: "კაბა 39",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -716,7 +714,7 @@ const products = [
   },
   {
     id: "6OLfGKTrScNl4kBSYzyAp",
-    name: "Product 40",
+    name: "კაბა 40",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -734,7 +732,7 @@ const products = [
   },
   {
     id: "ckAATfObqA87rPwD5_aP3",
-    name: "Product 41",
+    name: "კაბა 41",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -752,7 +750,7 @@ const products = [
   },
   {
     id: "8V12M3OC9G6WL20R837CD",
-    name: "Product 42",
+    name: "კაბა 42",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -770,7 +768,7 @@ const products = [
   },
   {
     id: "TjUCYCNNerihuqkyn7Tqs",
-    name: "Product 43",
+    name: "კაბა 43",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -788,7 +786,7 @@ const products = [
   },
   {
     id: "NlAh9_ZcH9U4VLSu070zt",
-    name: "Product 44",
+    name: "კაბა 44",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -806,7 +804,7 @@ const products = [
   },
   {
     id: "Bqf_LhzNqcIIpzljedhmG",
-    name: "Product 45",
+    name: "კაბა 45",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -824,7 +822,7 @@ const products = [
   },
   {
     id: "u6sTF6xp8OGTfnZAWTNQY",
-    name: "Product 46",
+    name: "კაბა 46",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -842,7 +840,7 @@ const products = [
   },
   {
     id: "TsfEaMszl1i6w7KujE4BG",
-    name: "Product 47",
+    name: "კაბა 47",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -860,7 +858,7 @@ const products = [
   },
   {
     id: "NIxmhqBtjURSd1vTZhJ5O",
-    name: "Product 48",
+    name: "კაბა 48",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -878,7 +876,7 @@ const products = [
   },
   {
     id: "3RhWpsbZLRUe2KNbr_ysU",
-    name: "Product 49",
+    name: "კაბა 49",
     image: womanPhoto,
     price: 10,
     isOnSale: true,
@@ -896,7 +894,7 @@ const products = [
   },
   {
     id: "P5Y4qT6NymhtgHgujj_Qh",
-    name: "Product 1",
+    name: "კაბა 1",
     image: kidPhoto,
     price: 10,
     isOnSale: true,
@@ -914,7 +912,7 @@ const products = [
   },
   {
     id: "4HniWl8rUwp00jawDBci_",
-    name: "Product 2",
+    name: "კაბა 2",
     image: kidPhoto,
     price: 10,
     isOnSale: true,
@@ -932,7 +930,7 @@ const products = [
   },
   {
     id: "bW8uqv4mnnNGLpUN7jnJq",
-    name: "Product 3",
+    name: "კაბა 3",
     image: kidPhoto,
     price: 10,
     isOnSale: true,
@@ -950,7 +948,7 @@ const products = [
   },
   {
     id: "oTHj1VR43rRqM9C8NUnsA",
-    name: "Product 4",
+    name: "კაბა 4",
     image: kidPhoto,
     price: 10,
     isOnSale: true,
@@ -968,7 +966,7 @@ const products = [
   },
   {
     id: "OA7CojB_7gKc7uOygeMq9",
-    name: "Product 5",
+    name: "კაბა 5",
     image: kidPhoto,
     price: 10,
     isOnSale: true,
@@ -986,7 +984,7 @@ const products = [
   },
   {
     id: "lfQbvfeleV3IflO3UEFHH",
-    name: "Product 6",
+    name: "კაბა 6",
     image: kidPhoto,
     price: 10,
     isOnSale: true,
@@ -1004,7 +1002,7 @@ const products = [
   },
   {
     id: "7UP3lhz26xXG-Bp91Y0Ht",
-    name: "Product 7",
+    name: "კაბა 7",
     image: kidPhoto,
     price: 10,
     isOnSale: true,
@@ -1022,7 +1020,7 @@ const products = [
   },
   {
     id: "5Z3LTPypInQYh1U6A-nGD",
-    name: "Product 8",
+    name: "კაბა 8",
     image: kidPhoto,
     price: 10,
     isOnSale: true,
@@ -1040,7 +1038,7 @@ const products = [
   },
   {
     id: "2Rf7VDeCy0g1crDDUzeZG",
-    name: "Product 9",
+    name: "კაბა 9",
     image: kidPhoto,
     price: 10,
     isOnSale: true,
@@ -1058,7 +1056,7 @@ const products = [
   },
   {
     id: "J6OW6hMpMHqgZSex8c6Oy",
-    name: "Product 10",
+    name: "კაბა 10",
     image: kidPhoto,
     price: 10,
     isOnSale: true,
@@ -1076,7 +1074,7 @@ const products = [
   },
   {
     id: "PiRCXWWavrZnpCk0GKeXY",
-    name: "Product 11",
+    name: "კაბა 11",
     image: kidPhoto,
     price: 10,
     isOnSale: true,
@@ -1094,7 +1092,7 @@ const products = [
   },
   {
     id: "lTFtTZLrdjyz_-Mh_LD9f",
-    name: "Product 12",
+    name: "კაბა 12",
     image: kidPhoto,
     price: 10,
     isOnSale: true,
@@ -1112,7 +1110,7 @@ const products = [
   },
   {
     id: "6v7E9QiruDYx4MAuJCYX8",
-    name: "Product 13",
+    name: "კაბა 13",
     image: kidPhoto,
     price: 10,
     isOnSale: true,
@@ -1130,7 +1128,7 @@ const products = [
   },
   {
     id: "kGIaszhwfiOaYaO7gXTln",
-    name: "Product 14",
+    name: "კაბა 14",
     image: kidPhoto,
     price: 10,
     isOnSale: true,
@@ -1148,7 +1146,7 @@ const products = [
   },
   {
     id: "9NLdHCir4nCdOXRJqXgsm",
-    name: "Product 15",
+    name: "კაბა 15",
     image: kidPhoto,
     price: 10,
     isOnSale: true,
@@ -1166,7 +1164,7 @@ const products = [
   },
   {
     id: "WuxjoCaILshmtxCc_F3B-",
-    name: "Product 16",
+    name: "კაბა 16",
     image: kidPhoto,
     price: 10,
     isOnSale: true,
@@ -1184,7 +1182,7 @@ const products = [
   },
   {
     id: "LDxfdL9vMcoaKlj2q5OzF",
-    name: "Product 17",
+    name: "კაბა 17",
     image: kidPhoto,
     price: 10,
     isOnSale: true,
@@ -1202,7 +1200,7 @@ const products = [
   },
   {
     id: "JnGRW6Kunh_UQJfTedruD",
-    name: "Product 18",
+    name: "კაბა 18",
     image: kidPhoto,
     price: 10,
     isOnSale: true,
@@ -1220,7 +1218,7 @@ const products = [
   },
   {
     id: "Ra8hbsC3Lf2Lp1Y_DBIUw",
-    name: "Product 19",
+    name: "კაბა 19",
     image: kidPhoto,
     price: 10,
     isOnSale: true,
@@ -1238,7 +1236,7 @@ const products = [
   },
   {
     id: "FmT0EYQ-X9FUo3b6ZnC0k",
-    name: "Product 20",
+    name: "კაბა 20",
     image: kidPhoto,
     price: 10,
     isOnSale: true,
@@ -1256,7 +1254,7 @@ const products = [
   },
   {
     id: "bb4vPl_DcpaImCy8axmqU",
-    name: "Product 21",
+    name: "კაბა 21",
     image: kidPhoto,
     price: 10,
     isOnSale: true,
@@ -1274,7 +1272,7 @@ const products = [
   },
   {
     id: "QaDeg5zzHOxK9DFG2FLBa",
-    name: "Product 22",
+    name: "კაბა 22",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
@@ -1292,7 +1290,7 @@ const products = [
   },
   {
     id: "0n2XdEw5j1LzTXarEJQdd",
-    name: "Product 23",
+    name: "კაბა 23",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
@@ -1310,7 +1308,7 @@ const products = [
   },
   {
     id: "9RzDej-Jh3CbyrMe48yEx",
-    name: "Product 24",
+    name: "კაბა 24",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
@@ -1328,7 +1326,7 @@ const products = [
   },
   {
     id: "3xwqNEVo2w0uHzfZPTyAQ",
-    name: "Product 25",
+    name: "კაბა 25",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
@@ -1346,7 +1344,7 @@ const products = [
   },
   {
     id: "2rHvpNsviP3dqyS0J7hX1",
-    name: "Product 26",
+    name: "კაბა 26",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
@@ -1364,7 +1362,7 @@ const products = [
   },
   {
     id: "QNWD2ItEJ2F68v61qDC-G",
-    name: "Product 27",
+    name: "კაბა 27",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
@@ -1382,7 +1380,7 @@ const products = [
   },
   {
     id: "JbeQeCU6VyCtcj5pDASWb",
-    name: "Product 28",
+    name: "კაბა 28",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
@@ -1400,7 +1398,7 @@ const products = [
   },
   {
     id: "8pD5FlG0cSwBBO2wmchlP",
-    name: "Product 29",
+    name: "კაბა 29",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
@@ -1418,7 +1416,7 @@ const products = [
   },
   {
     id: "K_1cCexalIeswhCpNySu-",
-    name: "Product 30",
+    name: "კაბა 30",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
@@ -1436,7 +1434,7 @@ const products = [
   },
   {
     id: "cEFMKvT2zbgvzVNWGmua0",
-    name: "Product 31",
+    name: "კაბა 31",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
@@ -1454,7 +1452,7 @@ const products = [
   },
   {
     id: "dRc6cR21yl12-fIx_F3XC",
-    name: "Product 32",
+    name: "კაბა 32",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
@@ -1472,7 +1470,7 @@ const products = [
   },
   {
     id: "zaO5U8Ph0Njh3E897cO46",
-    name: "Product 33",
+    name: "კაბა 33",
     image: kidPhoto,
     price: 20,
     isOnSale: false,
@@ -1490,7 +1488,7 @@ const products = [
   },
   {
     id: "0Bws54Ul1Ln-k3TsNvbjF",
-    name: "Product 34",
+    name: "კაბა 34",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
@@ -1508,7 +1506,7 @@ const products = [
   },
   {
     id: "3zH2y2bqm18OaNdZmxFVX",
-    name: "Product 35",
+    name: "კაბა 35",
     image: kidPhoto,
     price: 40,
     isOnSale: false,
@@ -1526,7 +1524,7 @@ const products = [
   },
   {
     id: "bOLehKcBhejoGCiFJwDkV",
-    name: "Product 36",
+    name: "კაბა 36",
     image: kidPhoto,
     price: 15,
     isOnSale: false,
@@ -1544,7 +1542,7 @@ const products = [
   },
   {
     id: "UGScrs7SBvWiXSN5QSRhF",
-    name: "Product 37",
+    name: "კაბა 37",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
@@ -1562,7 +1560,7 @@ const products = [
   },
   {
     id: "m_crssqLSEn63ZtD_FYAx",
-    name: "Product 38",
+    name: "კაბა 38",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
@@ -1580,7 +1578,7 @@ const products = [
   },
   {
     id: "DRd54CuXTyOUmloTXNr8S",
-    name: "Product 39",
+    name: "კაბა 39",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
@@ -1598,7 +1596,7 @@ const products = [
   },
   {
     id: "Tf7_kBEU40rEEnFIsK5qq",
-    name: "Product 40",
+    name: "კაბა 40",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
@@ -1616,7 +1614,7 @@ const products = [
   },
   {
     id: "CMOviwusmOfcm8dzKAsvT",
-    name: "Product 41",
+    name: "კაბა 41",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
@@ -1634,7 +1632,7 @@ const products = [
   },
   {
     id: "B1CenPADoCXi2oGrrgAbf",
-    name: "Product 42",
+    name: "კაბა 42",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
@@ -1652,7 +1650,7 @@ const products = [
   },
   {
     id: "bqYwCrBwSacLIeTdKbQ24",
-    name: "Product 43",
+    name: "კაბა 43",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
@@ -1670,7 +1668,7 @@ const products = [
   },
   {
     id: "Vo0cvyyV_AzSecDvpFVxH",
-    name: "Product 44",
+    name: "კაბა 44",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
@@ -1688,7 +1686,7 @@ const products = [
   },
   {
     id: "FafbedxJ-nMZP_qH55y7X",
-    name: "Product 45",
+    name: "კაბა 45",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
@@ -1706,7 +1704,7 @@ const products = [
   },
   {
     id: "CJ2AUw-fMk3LhqNph7zlf",
-    name: "Product 46",
+    name: "კაბა 46",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
@@ -1724,7 +1722,7 @@ const products = [
   },
   {
     id: "A845iyJ5pGI4jkrOsG3lU",
-    name: "Product 47",
+    name: "კაბა 47",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
@@ -1742,7 +1740,7 @@ const products = [
   },
   {
     id: "aebPg3YaCMAs2aev1qOGS",
-    name: "Product 48",
+    name: "კაბა 48",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
@@ -1760,7 +1758,7 @@ const products = [
   },
   {
     id: "ZOOLpka7R6J7k3wOwrPAA",
-    name: "Product 49",
+    name: "კაბა 49",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
@@ -1778,7 +1776,7 @@ const products = [
   },
   {
     id: "Hc_udY8g5nc7zl6RX-VN5",
-    name: "Product 50",
+    name: "კაბა 50",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
@@ -1796,12 +1794,12 @@ const products = [
   },
   {
     id: "xrY9cOffwphWCz7pfHVje321",
-    name: "Product 1010",
+    name: "კაბა 1010",
     image: kidPhoto,
     price: 10,
     isOnSale: false,
     category: "kids",
-    result: "new product",
+    result: "new კაბა",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1815,12 +1813,12 @@ const products = [
   },
   {
     id: "xrY9cOffwphWCz7pfHVje21",
-    name: "Product 1010",
+    name: "კაბა 1010",
     image: kidPhoto,
     price: 40,
     isOnSale: false,
     category: "kids",
-    result: "new product",
+    result: "new კაბა",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1834,7 +1832,7 @@ const products = [
   },
   {
     id: "apcCnOI6B2LasazoIHpcPxLE",
-    name: "Product 96",
+    name: "კაბა 96",
     image: banquetPhoto,
     price: 10,
     isOnSale: false,
@@ -1853,7 +1851,7 @@ const products = [
   },
   {
     id: "apcCnOI6B2LasazdsfhdgcPxLE",
-    name: "Product 97",
+    name: "კაბა 97",
     image: banquetPhoto,
     price: 10,
     isOnSale: false,
@@ -1872,7 +1870,7 @@ const products = [
   },
   {
     id: "7I7zjhEA-LfasS4XoEm_cCLj",
-    name: "Product 97",
+    name: "კაბა 97",
     image: banquetPhoto,
     price: 10,
     isOnSale: false,
@@ -1891,7 +1889,7 @@ const products = [
   },
   {
     id: "xKKsid3dSdsapMzk1IjcJCaI",
-    name: "Product 98",
+    name: "კაბა 98",
     image: weddingPhoto,
     price: 10,
     isOnSale: false,
@@ -1912,7 +1910,7 @@ const products = [
   },
   {
     id: "zHECC_HYbTBQWqte5dasonAn",
-    name: "Product 99",
+    name: "კაბა 99",
     image: weddingPhoto,
     price: 10,
     isOnSale: false,
@@ -1933,7 +1931,7 @@ const products = [
   },
   {
     id: "xrY9cOffwphWCz7pasafHVjesad",
-    name: "Product 100",
+    name: "კაბა 100",
     image: weddingPhoto,
     price: 10,
     isOnSale: false,

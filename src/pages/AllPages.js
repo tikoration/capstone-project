@@ -541,6 +541,9 @@ export const DetailedProducts = styled.div`
   .detailed-product-details {
     padding: 10px;
     margin-top: 172px;
+     h2 {
+      padding-left: 0px;
+     }
   }
 
   .detailed-product-name {
@@ -563,13 +566,16 @@ export const DetailedProducts = styled.div`
 
   .d-p-favorite {
     border: 1px solid black;
-    padding: 5px 15px;
     border-radius: 10px;
     gap: 10px;
-    display: inline-flex;
+    display: flex;
+    align-items: center;
     margin-top: 30px;
-    width: auto;
+    width: fit-content;
+    padding: 0 10px;
+    height: 34px;
     cursor: pointer;
+
   }
 
   .product-description {
