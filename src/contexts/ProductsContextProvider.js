@@ -66,7 +66,7 @@ const ProductsContextProvider = ({ children }) => {
   const clothes = [...productsList, ...oldProducts];
 
   const ids = clothes.map((prod) => prod.id);
-  const checkFavorites = favorites.filter((fav) => ids.includes(fav.id));
+  const checkFavorites = favorites ? favorites.filter((fav) => ids.includes(fav.id)): null;
 
   useEffect(() => {
     if (!arraysEqual(favorites, checkFavorites)) {
