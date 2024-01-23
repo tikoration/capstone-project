@@ -132,7 +132,7 @@ const Comments = ({ comments, resendRequest }) => {
             )}
           </div>
         ))}
-        {commentsList.length > 2 && (
+        {filteredComments.length > 2 && (
           <div className="showComments">
             <Link className="viewMore" onClick={showMoreComments}>
               {t("View more")}
