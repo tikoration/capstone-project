@@ -424,7 +424,7 @@ export const FooterDiv = styled.div`
         color: white;
 
         &:hover {
-          color: gray;
+          color: #c2c2c2;
         }
       }
     }
@@ -442,7 +442,7 @@ export const FooterDiv = styled.div`
       transition: 0.3s;
 
       &:hover {
-        color: gray;
+        color: #c2c2c2;
       }
     }
   }

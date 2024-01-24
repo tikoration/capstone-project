@@ -13,7 +13,6 @@ const productColors = [
   { georgian: "ბეჟი", english: "beige" },
   { georgian: "ყავისფერი", english: "brown" },
   { georgian: "ყვითელი", english: "yellow" },
-  { georgian: "ბორდოსფერი", english: "burgundy" },
 ];
 
 export default productColors;
