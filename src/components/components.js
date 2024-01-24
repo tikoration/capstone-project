@@ -62,6 +62,11 @@ export const HeaderContent = styled.header`
   padding-top: 15px;
   padding-bottom: 15px;
   width: 100%;
+  padding: 15px 15px;
+
+  @media screen and (max-width: 1400px) {
+    padding: 15px 0;
+  }
 
   .Logo {
     display: block;

@@ -3,6 +3,7 @@ import i18next from "i18next";
 
 const isEnglish = i18next.language === "en";
 const FontFamily = isEnglish ? "Helvetica" : "Montserrat";
+const AboutUsFF = "LinotypeDidot";
 
 export const ErrorElement = styled.div`
   display: flex;
@@ -242,7 +243,7 @@ export const ProductGrid = styled.div`
     top: 15px;
     right: 15px;
     padding: 10px;
-    color: #FF0000;
+    color: #ff0000;
   }
 
   .product-color {
@@ -257,6 +258,10 @@ export const ProductGrid = styled.div`
     font-weight: 300;
     text-transform: capitalize;
     margin: 9px 0px;
+
+    @media screen and (max-width: 767px) {
+      margin: 0;
+    }
   }
 
   .product-price {
@@ -272,6 +277,7 @@ export const ProductGrid = styled.div`
 
     @media screen and (max-width: 1023px) {
       height: 400px;
+      margin-bottom: 2px;
     }
   }
 
@@ -514,18 +520,24 @@ export const UsersChart = styled.div`
 export const ProductsListTop = styled.div`
   position: relative;
   display: flex;
-  padding: 0 45px 40px;
+  padding: 0 11px 5px;
   justify-content: space-between;
-  margin-top: 140px;
+  margin-top: 106px;
 
   .new-collection-title {
+    font-weight: 700;
     font-family: ${FontFamily};
     font-size: 28px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 22px;
+      margin-top: -5px;
+    }
   }
 
   @media screen and (max-width: 1023px) {
     margin-top: 100px;
-    padding: 0 16px 20px;
+    padding: 0 16px 15px;
 
     .filter-container,
     .filter-dropdown {
@@ -567,6 +579,10 @@ export const DetailedProducts = styled.div`
   .detailed-product-name {
     font-family: ${FontFamily};
     font-size: 22px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 18px;
+    }
   }
 
   .detailed-product-price {
@@ -574,6 +590,10 @@ export const DetailedProducts = styled.div`
     font-size: 22px;
     margin-top: 10px;
     font-weight: 700;
+
+    @media screen and (max-width: 767px) {
+      font-size: 18px;
+    }
   }
 
   .d-p-id {
@@ -597,6 +617,10 @@ export const DetailedProducts = styled.div`
 
   .product-description {
     margin-top: 41px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+    }
   }
 
   .product-description-text {
@@ -604,6 +628,10 @@ export const DetailedProducts = styled.div`
     margin-top: 25px;
     line-height: 22px;
     font-family: ${FontFamily};
+
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+    }
   }
 
   .product-sizes {
@@ -765,6 +793,10 @@ export const SimilarProductTitle = styled.h3`
   text-align: center;
   margin-top: 50px;
   margin-bottom: 20px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 20px;
+  }
 `;
 
 export const PhotoSwiperContainer = styled.div`
@@ -943,7 +975,7 @@ export const LocationStyle = styled.div`
 // Contact Us Page
 
 export const ContactStyle = styled.div`
-  margin-top: 140px;
+  margin-top: 106px;
   padding: 0 40px;
 
   @media screen and (max-width: 767px) {
@@ -1136,7 +1168,7 @@ export const ContactStyle = styled.div`
 `;
 
 export const AboutStyle = styled.div`
-  margin-top: 140px;
+  margin-top: 106px;
   padding: 0 40px;
 
   h2 {
@@ -1144,29 +1176,30 @@ export const AboutStyle = styled.div`
     font-size: 26px;
     font-weight: 700;
     line-height: 30px;
-    margin-bottom: 21px;
+    margin-bottom: 40px;
   }
 
   .aboutContent {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 
     h1 {
-      font-family: ${FontFamily};
+      font-family: ${AboutUsFF};
       font-size: 70px;
       font-weight: 500;
       line-height: 88px;
       text-transform: uppercase;
       max-width: 376px;
       text-align: center;
-      margin-left: 115px;
+      margin-right: 115px;
     }
 
     img {
       width: 45%;
-      height: 450px;
+      height: 400px;
       object-fit: cover;
     }
   }
@@ -1236,7 +1269,7 @@ export const AboutStyle = styled.div`
     padding: 16px;
 
     h2 {
-      font-weight: 500;
+      font-weight: 700;
     }
 
     .aboutContent {
@@ -1319,10 +1352,6 @@ export const RatesStyle = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media screen and (max-width: 767px) {
-
-  }
-
   h1 {
     font-family: ${FontFamily};
     font-weight: 400;
@@ -1331,8 +1360,9 @@ export const RatesStyle = styled.div`
     margin-bottom: 30px;
 
     @media screen and (max-width: 767px) {
-      font-size: 28px;
+      font-size: 20px;
       line-height: 30px;
+      margin-bottom: 15px;
     }
   }
 
@@ -1343,6 +1373,10 @@ export const RatesStyle = styled.div`
     align-items: start;
     gap: 20px;
 
+    @media screen and (max-width: 767px) {
+      gap: 5px;
+    }
+
     label {
       font-family: ${FontFamily};
       font-size: 20px;
@@ -1350,8 +1384,8 @@ export const RatesStyle = styled.div`
       line-height: 23px;
 
       @media screen and (max-width: 767px) {
-        font-weight: 500;
-        font-size: 18px;
+        font-weight: 700;
+        font-size: 14px;
       }
     }
 
@@ -1368,6 +1402,8 @@ export const RatesStyle = styled.div`
 
       @media screen and (max-width: 767px) {
         width: 450px;
+        font-size: 12px;
+        margin-bottom: 5px;
       }
 
       @media screen and (max-width: 460px) {
@@ -1452,7 +1488,7 @@ export const RatesStyle = styled.div`
 
           @media screen and (max-width: 767px) {
             font-size: 18px;
-            font-weight: 500;
+            font-weight: 700;
           }
         }
     
@@ -1464,7 +1500,7 @@ export const RatesStyle = styled.div`
 
           @media screen and (max-width: 767px) {
             font-size: 18px;
-            font-weight: 500;
+            font-weight: 700;
           }
         }
         

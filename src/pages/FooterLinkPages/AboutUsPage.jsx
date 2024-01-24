@@ -1,6 +1,6 @@
 import AboutUs from "../../assets/fabrics.jpg";
 import AboutUs2 from "../../assets/mariamsAtelier.mp4";
-import AboutUs3 from "../../assets/aboutUs3.jpg";
+import AboutUs3 from "../../assets/aboutUs3.jpeg";
 import { useTranslation } from "react-i18next";
 import { AboutStyle } from "../AllPages";
 import { useState } from "react";
@@ -17,7 +17,7 @@ const AboutUsPage = () => {
     <AboutStyle className="container refresh-page">
       <h2>{t("About Us")}</h2>
       <div className="aboutContent">
-        <h1>{t("mariam’s atelier")}</h1>
+        <h1>mariam’s atelier</h1>
         <img src={AboutUs3} alt="Logo" />
       </div>
       <div className="aboutContentInfo">
@@ -30,8 +30,7 @@ const AboutUsPage = () => {
             <source src={AboutUs2} type="video/mp4" />
           </video>
         </div>
-        <div className="second_paragraph">
-        </div>
+        <div className="second_paragraph"></div>
         <div className="third_paragraph">
           <img src={AboutUs} alt="aboutUs" />
           <p>

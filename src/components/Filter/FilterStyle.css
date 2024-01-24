@@ -7,7 +7,7 @@
   align-items: center;
   /* width: 170px; */
   gap: 6px;
-  right: 45px;
+  right: 0px;
   position: absolute;
   z-index: 3;
 }
@@ -19,11 +19,17 @@
   top: 5px;
 }
 
+@media screen and (max-width: 767px) {
+  .filter-icon {
+    right: 0;
+  }
+}
+
 .filter-dropdown {
   height: 100px;
   display: flex;
   width: 170px;
-  right: 45px;
+  right: 25px;
   top: 35px;
   position: absolute;
   height: 134.867px;

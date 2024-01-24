@@ -44,7 +44,9 @@ const ProductList = ({ products, productsPerPage, category }) => {
             <h2 className="new-collection-title">{category}</h2>
             <Filter />
           </ProductsListTop>
-          <ProductGrid>
+          <ProductGrid
+            style={{ marginBottom: isPaginationNeeded ? "100px" : "0" }}
+          >
             {currentProducts.map((product) => (
               <div
                 className="product-container"

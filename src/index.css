@@ -7,6 +7,11 @@
   src: url("./assets/fonts/Montserrat-VariableFont_wght.ttf");
 }
 
+@font-face {
+  font-family: "LinotypeDidot";
+  src: url("./assets//fonts/LinotypeDidotHeadlineRegular.ttf");
+}
+
 *,
 *::before,
 ::after {
@@ -177,12 +182,12 @@ svg {
 }
 
 .refresh-page {
-  min-height: 100vh;
+  min-height: 70vh;
 }
 
 @media screen and (max-width: 767px) {
   .refresh-page {
-    min-height: 60vh;
+    min-height: 80vh;
   }
 }
 
