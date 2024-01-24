@@ -116,10 +116,6 @@ export const Navigation = styled.nav`
     transition: 0.3s ease;
     font-family: ${FontFamily};
     font-weight: 700;
-
-    &:hover {
-      color: #0000ff;
-    }
   }
 
   @media screen and (max-width: 767px) {
@@ -200,10 +196,6 @@ export const Parameters = styled.div`
         }
       }
     }
-
-    .icons {
-      color: yellow;
-    }
   }
 
   div {
@@ -218,10 +210,6 @@ export const Parameters = styled.div`
       background-color: transparent;
       font-family: ${FontFamily};
       font-weight: 500;
-
-      &:hover {
-        border-color: #0000ff;
-      }
     }
 
     svg {
@@ -248,15 +236,6 @@ export const Parameters = styled.div`
     color: black;
     cursor: pointer;
     transition: 0.3s;
-  }
-
-  svg:hover {
-    color: #0000ff;
-  }
-
-  button:hover {
-    color: #0000ff;
-    border-color: #0000ff;
   }
 `;
 
