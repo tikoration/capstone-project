@@ -29,6 +29,26 @@ import paginationImage17 from "../assets/paginationImage17.png"
 import paginationImage18 from "../assets/paginationImage18.png"
 import paginationImage19 from "../assets/paginationImage19.png"
 import paginationImage20 from "../assets/paginationImage20.png"
+import paginationImage21 from "../assets/paginationImage21.png"
+import paginationImage22 from "../assets/paginationImage22.png"
+import paginationImage23 from "../assets/paginationImage23.png"
+import paginationImage24 from "../assets/paginationImage24.png"
+import paginationImage25 from "../assets/paginationImage25.png"
+import paginationImage26 from "../assets/paginationImage26.png"
+import paginationImage27 from "../assets/paginationImage27.png"
+import paginationImage28 from "../assets/paginationImage28.png"
+import paginationImage29 from "../assets/paginationImage29.png"
+import paginationImage30 from "../assets/paginationImage30.png"
+import paginationImage31 from "../assets/paginationImage31.png"
+import paginationImage32 from "../assets/paginationImage32.png"
+import paginationImage33 from "../assets/paginationImage33.png"
+import paginationImage34 from "../assets/paginationImage34.png"
+import paginationImage35 from "../assets/paginationImage35.png"
+import paginationImage36 from "../assets/paginationImage36.png"
+import paginationImage37 from "../assets/paginationImage37.png"
+import paginationImage38 from "../assets/paginationImage38.png"
+import paginationImage39 from "../assets/paginationImage39.png"
+import paginationImage40 from "../assets/paginationImage40.png"
 
 const products = [
   {
@@ -53,7 +73,7 @@ const products = [
     name: "კაბა 2",
     image: paginationImage1,
     price: 10,
-    isOnSale: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -71,7 +91,7 @@ const products = [
     name: "კაბა 3",
     image: paginationImage2,
     price: 10,
-    isOnSale: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -89,7 +109,7 @@ const products = [
     name: "კაბა 4",
     image: paginationImage3,
     price: 10,
-    isOnSale: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -107,7 +127,7 @@ const products = [
     name: "კაბა 5",
     image: paginationImage4,
     price: 10,
-    isOnSale: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -125,7 +145,7 @@ const products = [
     name: "კაბა 6",
     image: paginationImage5,
     price: 40,
-    isOnSale: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -143,7 +163,7 @@ const products = [
     name: "კაბა 7",
     image: paginationImage6,
     price: 30,
-    isOnSale: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -161,7 +181,7 @@ const products = [
     name: "კაბა 8",
     image: paginationImage7,
     price: 10,
-    isOnSale: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -179,7 +199,7 @@ const products = [
     name: "კაბა 9",
     image: paginationImage8,
     price: 10,
-    isOnSale: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -231,7 +251,7 @@ const products = [
   {
     id: "XouykANboIGeCSDWUJn4q",
     name: "კაბა 12",
-    image: womanPhoto,
+    image: paginationImage34,
     price: 10,
     isOnSale: false,
     category: "woman",
@@ -241,7 +261,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "yellow",
+    color: "blue",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -249,7 +269,7 @@ const products = [
   {
     id: "Br97Y9-iol6Ob1GzvymKK",
     name: "კაბა 13",
-    image: womanPhoto,
+    image: paginationImage32,
     price: 10,
     isOnSale: false,
     category: "woman",
@@ -267,7 +287,7 @@ const products = [
   {
     id: "pOI-O8ZcoIABKdRKx53bv",
     name: "კაბა 14",
-    image: womanPhoto,
+    image: paginationImage37,
     price: 10,
     isOnSale: false,
     category: "woman",
@@ -277,7 +297,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "yellow",
+    color: "silver",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -285,7 +305,7 @@ const products = [
   {
     id: "othUbqZcnkSuGzcJWyiYm",
     name: "კაბა 15",
-    image: womanPhoto,
+    image: paginationImage31,
     price: 10,
     isOnSale: false,
     category: "woman",
@@ -295,7 +315,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "yellow",
+    color: "pink",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -303,7 +323,7 @@ const products = [
   {
     id: "_yfKzVEtn2186YzZ5r4Q2",
     name: "კაბა 16",
-    image: womanPhoto,
+    image: paginationImage35,
     price: 10,
     isOnSale: false,
     category: "woman",
@@ -313,7 +333,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "yellow",
+    color: "gold",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -321,7 +341,7 @@ const products = [
   {
     id: "wn_EBzNlQ6wSZRdFvb-CR",
     name: "კაბა 17",
-    image: womanPhoto,
+    image: paginationImage36,
     price: 10,
     isOnSale: false,
     category: "woman",
@@ -331,7 +351,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "yellow",
+    color: "black",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -339,7 +359,7 @@ const products = [
   {
     id: "SlTMPGb-K-Czj9dzMh0E0",
     name: "კაბა 18",
-    image: womanPhoto,
+    image: paginationImage33,
     price: 10,
     isOnSale: false,
     category: "woman",
@@ -349,7 +369,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "yellow",
+    color: "white",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -357,7 +377,7 @@ const products = [
   {
     id: "bNwruK4hqLnx4R-vq1L_C",
     name: "კაბა 19",
-    image: womanPhoto,
+    image: paginationImage38,
     price: 10,
     isOnSale: false,
     category: "woman",
@@ -367,7 +387,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "yellow",
+    color: "silver",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -375,7 +395,7 @@ const products = [
   {
     id: "u1nws3npOkZlkNtCLJyG8",
     name: "კაბა 20",
-    image: womanPhoto,
+    image: paginationImage39,
     price: 10,
     isOnSale: false,
     category: "woman",
@@ -385,7 +405,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "yellow",
+    color: "black",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -393,9 +413,9 @@ const products = [
   {
     id: "4lwW42t9byHndFe7r4frk",
     name: "კაბა 21",
-    image: womanPhoto,
+    image: paginationImage40,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -403,7 +423,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "yellow",
+    color: "black",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -413,7 +433,7 @@ const products = [
     name: "კაბა 22",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -431,7 +451,7 @@ const products = [
     name: "კაბა 23",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -449,7 +469,7 @@ const products = [
     name: "კაბა 24",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -467,7 +487,7 @@ const products = [
     name: "კაბა 25",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -485,7 +505,7 @@ const products = [
     name: "კაბა 26",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -503,7 +523,7 @@ const products = [
     name: "კაბა 27",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -521,7 +541,7 @@ const products = [
     name: "კაბა 28",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -539,7 +559,7 @@ const products = [
     name: "კაბა 29",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -557,7 +577,7 @@ const products = [
     name: "კაბა 30",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -575,7 +595,7 @@ const products = [
     name: "კაბა 31",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -593,7 +613,7 @@ const products = [
     name: "კაბა 32",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -611,7 +631,7 @@ const products = [
     name: "კაბა 33",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -629,7 +649,7 @@ const products = [
     name: "კაბა 34",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -647,7 +667,7 @@ const products = [
     name: "კაბა 35",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -665,7 +685,7 @@ const products = [
     name: "კაბა 36",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -683,7 +703,7 @@ const products = [
     name: "კაბა 37",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -701,7 +721,7 @@ const products = [
     name: "კაბა 38",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -719,7 +739,7 @@ const products = [
     name: "კაბა 39",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -737,7 +757,7 @@ const products = [
     name: "კაბა 40",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -755,7 +775,7 @@ const products = [
     name: "კაბა 41",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -773,7 +793,7 @@ const products = [
     name: "კაბა 42",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -791,7 +811,7 @@ const products = [
     name: "კაბა 43",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -809,7 +829,7 @@ const products = [
     name: "კაბა 44",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -827,7 +847,7 @@ const products = [
     name: "კაბა 45",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -845,7 +865,7 @@ const products = [
     name: "კაბა 46",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -863,7 +883,7 @@ const products = [
     name: "კაბა 47",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -881,7 +901,7 @@ const products = [
     name: "კაბა 48",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -899,7 +919,7 @@ const products = [
     name: "კაბა 49",
     image: womanPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -917,7 +937,7 @@ const products = [
     name: "კაბა 1",
     image: kidPhoto,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -935,7 +955,7 @@ const products = [
     name: "კაბა 2",
     image: paginationImage11,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -953,7 +973,7 @@ const products = [
     name: "კაბა 3",
     image: paginationImage12,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -971,7 +991,7 @@ const products = [
     name: "კაბა 4",
     image: paginationImage13,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -989,7 +1009,7 @@ const products = [
     name: "კაბა 5",
     image: paginationImage15,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -1007,7 +1027,7 @@ const products = [
     name: "კაბა 6",
     image: paginationImage14,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -1025,7 +1045,7 @@ const products = [
     name: "კაბა 7",
     image: paginationImage16,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -1043,7 +1063,7 @@ const products = [
     name: "კაბა 8",
     image: paginationImage17,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -1061,7 +1081,7 @@ const products = [
     name: "კაბა 9",
     image: paginationImage18,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -1079,7 +1099,7 @@ const products = [
     name: "კაბა 10",
     image: paginationImage19,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -1097,7 +1117,7 @@ const products = [
     name: "კაბა 11",
     image: paginationImage20,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -1113,9 +1133,9 @@ const products = [
   {
     id: "lTFtTZLrdjyz_-Mh_LD9f",
     name: "კაბა 12",
-    image: kidPhoto,
+    image: paginationImage21,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -1123,7 +1143,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "red",
+    color: "yellow",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1131,9 +1151,9 @@ const products = [
   {
     id: "6v7E9QiruDYx4MAuJCYX8",
     name: "კაბა 13",
-    image: kidPhoto,
+    image: paginationImage22,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -1141,7 +1161,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "red",
+    color: "green",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1149,9 +1169,9 @@ const products = [
   {
     id: "kGIaszhwfiOaYaO7gXTln",
     name: "კაბა 14",
-    image: kidPhoto,
+    image: paginationImage23,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -1159,7 +1179,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "red",
+    color: "white",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1167,9 +1187,9 @@ const products = [
   {
     id: "9NLdHCir4nCdOXRJqXgsm",
     name: "კაბა 15",
-    image: kidPhoto,
+    image: paginationImage24,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -1177,7 +1197,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "red",
+    color: "pink",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1185,9 +1205,9 @@ const products = [
   {
     id: "WuxjoCaILshmtxCc_F3B-",
     name: "კაბა 16",
-    image: kidPhoto,
+    image: paginationImage25,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -1195,7 +1215,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "red",
+    color: "pink",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1203,9 +1223,9 @@ const products = [
   {
     id: "LDxfdL9vMcoaKlj2q5OzF",
     name: "კაბა 17",
-    image: kidPhoto,
+    image: paginationImage26,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -1213,7 +1233,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "red",
+    color: "green",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1221,9 +1241,9 @@ const products = [
   {
     id: "JnGRW6Kunh_UQJfTedruD",
     name: "კაბა 18",
-    image: kidPhoto,
+    image: paginationImage27,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -1231,7 +1251,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "red",
+    color: "blue",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1239,9 +1259,9 @@ const products = [
   {
     id: "Ra8hbsC3Lf2Lp1Y_DBIUw",
     name: "კაბა 19",
-    image: kidPhoto,
+    image: paginationImage28,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -1249,7 +1269,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "red",
+    color: "pink",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1257,9 +1277,9 @@ const products = [
   {
     id: "FmT0EYQ-X9FUo3b6ZnC0k",
     name: "კაბა 20",
-    image: kidPhoto,
+    image: paginationImage29,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -1267,7 +1287,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "red",
+    color: "gold",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1275,9 +1295,9 @@ const products = [
   {
     id: "bb4vPl_DcpaImCy8axmqU",
     name: "კაბა 21",
-    image: kidPhoto,
+    image: paginationImage30,
     price: 10,
-    isOnSale: true,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -1285,7 +1305,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "red",
+    color: "green",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",

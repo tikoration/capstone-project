@@ -16,6 +16,7 @@ import { AuthorizationProvider } from "../contexts/AuthorizationContext";
 import { SearchProvider } from "../contexts/SearchFilterContext";
 import { BurgerMenuProvider } from "../contexts/BurgerMenuProvider";
 import LocationPage from "../pages/FooterLinkPages/LocationPage";
+import PopularCollection from "../pages/ProductsPages/PopularCollection";
 
 const userRoutes = [
   {
@@ -49,6 +50,10 @@ const userRoutes = [
       {
         element: <NewProductsPage />,
         path: "newProducts",
+      },
+      {
+        element: <PopularCollection />,
+        path: "popular",
       },
       {
         element: <ProductsPage />,

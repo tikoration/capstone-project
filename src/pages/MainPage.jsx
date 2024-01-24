@@ -16,6 +16,7 @@ const MainPage = () => {
   const handlePromoPhotoLoad = () => {
     setPromoPhotoLoaded(true);
   };
+  const popularImages = clothes.filter(prod => prod.isOnSale)
 
   return (
     <MainContainer
@@ -41,9 +42,9 @@ const MainPage = () => {
               <h3 className="popular-collection-title">{t("Popular")}</h3>
               <div className="popular-collection-gallary container">
                 <div className="mainBtn">
-                  <SubmitBtn name={t("View All")} nav={"allProducts"} />
+                  <SubmitBtn name={t("View All")} nav={"popular"} />
                 </div>
-                <Slider images={clothes} imagesPerView={4} />
+                <Slider images={popularImages} imagesPerView={4} />
               </div>
             </PopularCollections>
             <SwiperSlider />
