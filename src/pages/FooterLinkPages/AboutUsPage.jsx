@@ -21,7 +21,6 @@ const AboutUsPage = () => {
         <img src={AboutUs3} alt="Logo" />
       </div>
       <div className="aboutContentInfo">
-        <h1>{t("title")}</h1>
         <div className="first_paragraph">
           <p>
             {t("lorem1")}
