@@ -31,7 +31,6 @@ const AboutUsPage = () => {
           </video>
         </div>
         <div className="second_paragraph">
-          <p>{t("lorem1")}</p>
         </div>
         <div className="third_paragraph">
           <img src={AboutUs} alt="aboutUs" />
