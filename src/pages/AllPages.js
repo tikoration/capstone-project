@@ -232,11 +232,17 @@ export const ProductGrid = styled.div`
     }
   }
 
-  .product-heart-icon {
-    color: brown;
+  .favorite-icon-circle {
+    background-color: white;
+    border-radius: 50%;
+    border: none;
+    align-items: center;
+    cursor: pointer;
     position: absolute;
     top: 15px;
     right: 15px;
+    padding: 10px;
+    color: #FF0000;
   }
 
   .product-color {

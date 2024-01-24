@@ -23,8 +23,8 @@ const AboutUsPage = () => {
       <div className="aboutContentInfo">
         <div className="first_paragraph">
           <p>
-            {t("lorem1")}
-            {t("lorem1")}
+            {t("about us 1")}
+            {t("about us 2")}
           </p>
           <video autoPlay muted={muted} onClick={toggleMute}>
             <source src={AboutUs2} type="video/mp4" />
@@ -35,8 +35,8 @@ const AboutUsPage = () => {
         <div className="third_paragraph">
           <img src={AboutUs} alt="aboutUs" />
           <p>
-            {t("lorem1")}
-            {t("lorem1")}
+            {t("about us 3")}
+            {t("about us 4")}
           </p>
         </div>
       </div>

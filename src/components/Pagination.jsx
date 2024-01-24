@@ -65,11 +65,12 @@ const ProductList = ({ products, productsPerPage, category }) => {
                   onLoad={() => setPhotoLoaded(true)}
                 />
                 {favoritesIds.includes(product.id) && (
-                  <FontAwesomeIcon
-                    size="lg"
-                    className="product-heart-icon"
-                    icon={faHeart}
-                  />
+                  <div className="favorite-icon-circle">
+                    <FontAwesomeIcon
+                      size="lg"
+                      icon={faHeart}
+                    />
+                  </div>
                 )}
               </div>
               {photoLoaded && <h2 className="product-name">{product.name}</h2>}

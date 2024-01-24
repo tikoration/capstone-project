@@ -97,8 +97,8 @@ const DetailedProductPage = () => {
                   </h2>
                   <FontAwesomeIcon
                     className="heart-icon"
-                    icon={isMobileView && !isFavorited ? farHeart : faHeart}
-                    style={{ color: isFavorited ? "brown" : "black" }}
+                    icon={ !isFavorited ? farHeart : faHeart}
+                    style={{ color: isFavorited ? "#FF0000" : "black" }}
                   />
                 </div>
                 <h5 className="product-description">
