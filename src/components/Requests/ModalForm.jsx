@@ -1,5 +1,5 @@
 import useEmailForm from "../../hooks/useEmailForm";
-import modalPhoto from "../../assets/popupimage.jpg";
+import modalPhoto from "../../assets/popupimage.png";
 import { Overlay } from "../UserInformation/UserInformation";
 import useLocalStorage from "../../hooks/useLocalStorage";
 import { ErrorMessage, ModalPopupStyle } from "../components";

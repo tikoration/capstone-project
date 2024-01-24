@@ -1,5 +1,5 @@
 import Slider from "../components/Slider";
-import promoPhoto from "../assets/promo-photo.webp";
+import promoPhoto from "../assets/promo-photo.png";
 import Subscription from "../components/Subscription";
 import SwiperSlider from "../components/Swiper/SwiperSlider";
 import { useState } from "react";
