@@ -189,6 +189,10 @@ export const Authorization = styled.div`
     flex-direction: column;
     align-items: start;
 
+    .BurgerIcon {
+      color: black;
+    }
+
     @media screen and (max-width: 650px) {
       margin-top: 28px;
       padding: 0 16px;
@@ -221,6 +225,7 @@ export const Authorization = styled.div`
       line-height: 23px;
       color: black;
       margin-bottom: 21px;
+      cursor: pointer;
     }
   }
 
@@ -325,6 +330,7 @@ export const UserForm = styled.form`
         font-weight: 600;
         line-height: 12px;
         color: black;
+        cursor: pointer;
       }
     }
   }

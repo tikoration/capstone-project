@@ -80,7 +80,7 @@ const UserLoggedIn = ({ users, onSuccess }) => {
                 </span>
                 <Link onClick={handleOverlayClick} to={"/contact"}>
                   <FontAwesomeIcon
-                    className="BurgerIcon"
+                    className="BurgerIcon DD"
                     icon={faCommentDots}
                   />
                   {t("Contact Information")}
