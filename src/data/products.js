@@ -241,7 +241,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "blue",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -259,7 +259,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "blue",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -277,7 +277,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "blue",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -295,7 +295,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "blue",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -313,7 +313,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "blue",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -331,7 +331,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "blue",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -349,7 +349,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "blue",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -367,7 +367,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "blue",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -385,7 +385,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "blue",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -403,7 +403,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "blue",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -421,7 +421,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "blue",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -439,7 +439,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "blue",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -457,7 +457,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "blue",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -475,7 +475,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "blue",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -493,7 +493,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "blue",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -511,7 +511,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "blue",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -529,7 +529,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "blue",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -547,7 +547,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "blue",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -565,7 +565,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "blue",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -583,7 +583,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "blue",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -601,7 +601,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "blue",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -619,7 +619,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "blue",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -637,7 +637,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "blue",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -655,7 +655,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "blue",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -673,7 +673,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "blue",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -691,7 +691,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "blue",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -709,7 +709,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "red",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -727,7 +727,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "red",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -745,7 +745,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "red",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -763,7 +763,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "red",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -781,7 +781,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "red",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -799,7 +799,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "red",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -817,7 +817,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "red",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -835,7 +835,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "red",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -853,7 +853,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "red",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -871,7 +871,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "red",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -889,7 +889,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "red",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -907,7 +907,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "red",
+    color: "yellow",
     date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -925,7 +925,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1123,7 +1123,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1141,7 +1141,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1159,7 +1159,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1177,7 +1177,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1195,7 +1195,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1213,7 +1213,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1231,7 +1231,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1249,7 +1249,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1267,7 +1267,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1285,7 +1285,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1303,7 +1303,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1321,7 +1321,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1339,7 +1339,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1357,7 +1357,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1375,7 +1375,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1393,7 +1393,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1411,7 +1411,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1429,7 +1429,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1447,7 +1447,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1465,7 +1465,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1483,7 +1483,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1501,7 +1501,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1519,7 +1519,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1537,7 +1537,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1555,7 +1555,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1573,7 +1573,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1591,7 +1591,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1609,7 +1609,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1627,7 +1627,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1645,7 +1645,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1663,7 +1663,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1681,7 +1681,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1699,7 +1699,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1717,7 +1717,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1735,7 +1735,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1753,7 +1753,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1771,7 +1771,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1789,7 +1789,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1807,7 +1807,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "black",
+    color: "red",
     date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1864,7 +1864,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "red",
+    color: "blue",
     date: "2023-12-22",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1902,7 +1902,7 @@ const products = [
       detailedImage3,
       detailedImage4
     ],
-    color: "red",
+    color: "blue",
     date: "2023-12-22",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1923,7 +1923,7 @@ const products = [
       moreWedding2,
       moreWedding3,
     ],
-    color: "red",
+    color: "white",
     date: "2023-12-22",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1944,7 +1944,7 @@ const products = [
       moreWedding2,
       moreWedding3,
     ],
-    color: "red",
+    color: "white",
     date: "2023-12-22",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
@@ -1965,7 +1965,7 @@ const products = [
       moreWedding2,
       moreWedding3,
     ],
-    color: "red",
+    color: "white",
     date: "2023-12-22",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
