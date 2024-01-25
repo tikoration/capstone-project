@@ -12,7 +12,7 @@ const FavoritesPage = () => {
   return (
     <FavoritePage className="container refresh-page">
       {favorites && favorites.length > 0 ? (
-        <ProductList products={favorites} productsPerPage={isTablet ? 9 : 8} />
+        <ProductList products={favorites} productsPerPage={isTablet ? 9 : 8} category="favorites" />
       ) : (
         <div className="favorites-no-products">
           <h2 className="favorites-text">{t("not added")}</h2>

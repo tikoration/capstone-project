@@ -41,8 +41,8 @@ const ProductList = ({ products, productsPerPage, category }) => {
       {products.length > 0 ? (
         <div>
           <ProductsListTop>
-            <h2 className="new-collection-title">{category}</h2>
-            <Filter />
+            <h2 className="new-collection-title">{t(category)}</h2>
+            {category !== "favorites" && <Filter />}
           </ProductsListTop>
           <ProductGrid
             style={{ marginBottom: isPaginationNeeded ? "100px" : "0" }}

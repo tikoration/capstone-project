@@ -523,11 +523,11 @@ export const ProductsListTop = styled.div`
   padding: 0 11px 5px;
   justify-content: space-between;
   margin-top: 106px;
-
+  
   .new-collection-title {
     font-weight: 700;
     font-family: ${FontFamily};
-    font-size: 28px;
+    font-size: 26px;
 
     @media screen and (max-width: 767px) {
       font-size: 22px;
@@ -779,7 +779,7 @@ export const DetailedProducts = styled.div`
     }
 
     .back-button {
-      margin-bottom: 10px;
+      margin-bottom: 30px;
       margin-left: 15px;
       font-family: ${FontFamily};
     }
@@ -989,6 +989,10 @@ export const ContactStyle = styled.div`
     font-weight: 700;
     line-height: 30px;
     margin-bottom: 50px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+    }
   }
 
   .about_info {
@@ -1177,6 +1181,10 @@ export const AboutStyle = styled.div`
     font-weight: 700;
     line-height: 30px;
     margin-bottom: 40px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+    }
   }
 
   .aboutContent {
