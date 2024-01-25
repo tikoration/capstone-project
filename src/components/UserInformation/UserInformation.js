@@ -265,7 +265,7 @@ export const UserForm = styled.form`
   gap: 20px;
   padding: 0 5px;
 
-  @media screen and (max-height: 830px) {
+  @media screen and (max-height: 800px) {
     overflow: auto;
     height: 70%;
   }
