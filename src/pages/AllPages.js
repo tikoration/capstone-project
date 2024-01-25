@@ -267,7 +267,7 @@ export const ProductGrid = styled.div`
   .product-price {
     font-family: ${FontFamily};
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 700;
   }
 
   .product-image {
