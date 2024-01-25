@@ -55,6 +55,7 @@ const Header = () => {
       setFilterBySale(false);
       setSortByNewestDate(false);
     }
+    return () => {setClick(false)}
   }, [
     click,
     setCurrentPage,
