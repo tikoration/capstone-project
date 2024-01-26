@@ -1895,44 +1895,6 @@ const products = [
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
   {
-    id: "apcCnOI6B2LasazdsfhdgcPxLE",
-    name: "კაბა 97",
-    image: banquetPhoto,
-    price: 99,
-    isOnSale: false,
-    category: "woman",
-    subCategory: "banquet",
-    moreImages: [
-      detailedImage1,
-      detailedImage2,
-      detailedImage3,
-      detailedImage4
-    ],
-    color: "blue",
-    date: "2023-12-22",
-    description:
-      "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
-  },
-  {
-    id: "7I7zjhEA-LfasS4XoEm_cCLj",
-    name: "კაბა 97",
-    image: banquetPhoto,
-    price: 99,
-    isOnSale: false,
-    category: "woman",
-    subCategory: "banquet",
-    moreImages: [
-      detailedImage1,
-      detailedImage2,
-      detailedImage3,
-      detailedImage4
-    ],
-    color: "blue",
-    date: "2023-12-22",
-    description:
-      "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
-  },
-  {
     id: "xKKsid3dSdsapMzk1IjcJCaI",
     name: "კაბა 98",
     image: weddingPhoto,
