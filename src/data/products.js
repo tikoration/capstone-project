@@ -49,6 +49,8 @@ import paginationImage37 from "../assets/paginationImage37.png"
 import paginationImage38 from "../assets/paginationImage38.png"
 import paginationImage39 from "../assets/paginationImage39.png"
 import paginationImage40 from "../assets/paginationImage40.png"
+import weddingCategory1 from "../assets/weddingCategory1.png"
+import weddingCategory3 from "../assets/weddingCategory3.png"
 
 const products = [
   {
@@ -60,7 +62,7 @@ const products = [
     category: "woman",
     moreImages: [
       detailedImage1,
-      detailedImage2,
+      detailedImage3,
       detailedImage3,
       detailedImage4
     ],
@@ -75,6 +77,7 @@ const products = [
     price: 129,
     isOnSale: true,
     category: "woman",
+    subCategory: "banquet",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -111,6 +114,7 @@ const products = [
     price: 120,
     isOnSale: true,
     category: "woman",
+    subCategory: "banquet",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -165,6 +169,7 @@ const products = [
     price: 75,
     isOnSale: true,
     category: "woman",
+    subCategory: "banquet",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1951,7 +1956,7 @@ const products = [
   {
     id: "zHECC_HYbTBQWqte5dasonAn",
     name: "კაბა 99",
-    image: weddingPhoto,
+    image: weddingCategory1,
     price: 99,
     isOnSale: false,
     category: "woman",
@@ -1972,7 +1977,7 @@ const products = [
   {
     id: "xrY9cOffwphWCz7pasafHVjesad",
     name: "კაბა 100",
-    image: weddingPhoto,
+    image: weddingCategory3,
     price: 99,
     isOnSale: false,
     category: "woman",
